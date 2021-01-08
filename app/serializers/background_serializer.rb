@@ -1,6 +1,5 @@
 class BackgroundSerializer < ActiveModel::Serializer
-  attributes :id, :title, :url, :tag, :category
+  attributes :id, :title, :path, :tags
 
-  has_many :categories
-  has_many :tags
+  # has_many :categories
 end

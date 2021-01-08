@@ -4,7 +4,7 @@ class CreateUsers < ActiveRecord::Migration[6.1]
       t.string :nickname
       t.string :email
       t.string :password
-      t.integer :type
+      t.integer :type, default: 3
 
       t.timestamps
     end

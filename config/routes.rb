@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  get 'prueba1/index'
-  get 'prueba/index'
   root :to => "welcome#index"
   get 'welcome/index'
 
@@ -8,7 +6,7 @@ Rails.application.routes.draw do
     namespace 'v1' do
       resources :backgrounds
       resources :categories
-      resources :tags
+      resources :users
     end
   end
 end
