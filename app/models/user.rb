@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_many :backgrounds
+  has_many :backgrounds, foreign_key: :author_id
   has_many :likes
   validates_presence_of :nickname, :email, :password, :type
   validates :password, length:{minimum:8,maximum:32}

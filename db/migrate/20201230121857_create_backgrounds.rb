@@ -4,7 +4,6 @@ class CreateBackgrounds < ActiveRecord::Migration[6.1]
       t.string :title
       t.string :path
       t.string :tags
-      t.belongs_to :user, null: false, foreign_key: true
 
       t.timestamps
     end
