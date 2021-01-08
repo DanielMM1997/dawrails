@@ -4,14 +4,8 @@ one:
   title: MyString
   path: MyString
   tags: MyString
-  category: one
-  user: one
-  likes: one
 
 two:
   title: MyString
   path: MyString
   tags: MyString
-  category: two
-  user: two
-  likes: two

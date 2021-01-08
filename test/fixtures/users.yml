@@ -4,8 +4,12 @@ one:
   nickname: MyString
   email: MyString
   password: MyString
+  type: 1
+  background: one
 
 two:
   nickname: MyString
   email: MyString
   password: MyString
+  type: 1
+  background: two
