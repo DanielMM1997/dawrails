@@ -168,7 +168,7 @@
         "title": "Lobo cósmico",
         "url": "app/assets/backgrounds/animales-universo-lobo-fantasía-cosmico-espacio.jpg",
         "tags": "animales-universo-lobo-fantasía-cosmico-espacio",
-        "categories": "animales"
+        "categories": "animales-universo"
       }
     ],
     [
@@ -465,7 +465,7 @@
         "title": "Montañas bajo el universo",
         "url": "app/assets/backgrounds/universo-montañas-planetas-estrellas-paisajes.jpg",
         "tags": "universo-montañas-planetas-estrellas-paisajes",
-        "categories": "universo"
+        "categories": "universo-paisajes"
       }
     ],
     [
@@ -1239,7 +1239,7 @@
         "title": "Avión en orilla de playa",
         "url": "app/assets/backgrounds/aviones-paisajes-mar-playa-azul.jpg",
         "tags": "aviones-paisajes-mar-playa-azul",
-        "categories": "aviones"
+        "categories": "aviones-paisajes"
       }
     ],
     [
@@ -1662,7 +1662,7 @@
         "title": "Canasta baloncesto montañas",
         "url": "app/assets/backgrounds/baloncesto-paisajes-blanco-negro-cancha-canasta-montañas.jpg",
         "tags": "baloncesto-paisajes-blanco-negro-cancha-canasta-montañas",
-        "categories": "baloncesto"
+        "categories": "baloncesto-paisajes"
       }
     ],
     [
@@ -1861,114 +1861,6 @@
         "url": "app/assets/backgrounds/tenis-roger federer-raqueta-blanco-negro-celebrar.jpg",
         "tags": "tenis-roger federer-raqueta-blanco-negro-celebrar",
         "categories": "tenis"
-      }
-    ],
-    [
-      {
-        "id": 208,
-        "title": "Búho en el bosque",
-        "url": "app/assets/backgrounds/animales-buho-blanco-verde-bosque.jpg",
-        "tags": "animales-buho-blanco-verde-bosque",
-        "categories": "destacados"
-      }
-    ],
-    [
-      {
-        "id": 209,
-        "title": "Caballo galopando en la playa",
-        "url": "app/assets/backgrounds/animales-caballo-galopando-agua-mar-playa.jpg",
-        "tags": "animales-caballo-galopando-agua-mar-playa",
-        "categories": "destacados"
-      }
-    ],
-    [
-      {
-        "id": 210,
-        "title": "Cebras en blanco y negro",
-        "url": "app/assets/backgrounds/animales-cebras-blanco y negro.jpg",
-        "tags": "animales-cebras-blanco y negro",
-        "categories": "destacados"
-      }
-    ],
-    [
-      {
-        "id": 211,
-        "title": "Cerdito en la hierba",
-        "url": "app/assets/backgrounds/animales-cerdito-pequeño-hierba-verde.jpg",
-        "tags": "animales-cerdito-pequeño-hierba-verde",
-        "categories": "destacados"
-      }
-    ],
-    [
-      {
-        "id": 212,
-        "title": "Dos delfines saludando",
-        "url": "app/assets/backgrounds/animales-delfines-agua.jpg",
-        "tags": "animales-delfines-agua",
-        "categories": "destacados"
-      }
-    ],
-    [
-      {
-        "id": 213,
-        "title": "Pequeña foca en la nieve",
-        "url": "app/assets/backgrounds/animales-foca-pequeño-nieve.jpg",
-        "tags": "animales-foca-pequeño-nieve",
-        "categories": "destacados"
-      }
-    ],
-    [
-      {
-        "id": 214,
-        "title": "Gansos volando",
-        "url": "app/assets/backgrounds/animales-gansos-aves-volando.jpg",
-        "tags": "animales-gansos-aves-volando",
-        "categories": "recientes"
-      }
-    ],
-    [
-      {
-        "id": 215,
-        "title": "Gato mirando fijamente",
-        "url": "app/assets/backgrounds/animales-gato-ojos-mirar-mirando.jpg",
-        "tags": "animales-gato-ojos-mirar-mirando",
-        "categories": "recientes"
-      }
-    ],
-    [
-      {
-        "id": 216,
-        "title": "Halcón en primer plano",
-        "url": "app/assets/backgrounds/animales-halcon-aves-primer plano.jpg",
-        "tags": "animales-halcon-aves-primer plano",
-        "categories": "recientes"
-      }
-    ],
-    [
-      {
-        "id": 217,
-        "title": "Hipopótamo en el río",
-        "url": "app/assets/backgrounds/animales-hipopotamo-agua.jpg",
-        "tags": "animales-hipopotamo-agua",
-        "categories": "recientes"
-      }
-    ],
-    [
-      {
-        "id": 218,
-        "title": "Jirafas en la pradera",
-        "url": "app/assets/backgrounds/animales-jirafas.jpg",
-        "tags": "animales-jirafas",
-        "categories": "recientes"
-      }
-    ],
-    [
-      {
-        "id": 219,
-        "title": "León sobre fondo negro",
-        "url": "app/assets/backgrounds/animales-leon.jpg",
-        "tags": "animales-leon",
-        "categories": "recientes"
       }
     ]
   ]
