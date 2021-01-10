@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 2021_01_08_174438) do
   end
 
   create_table "categories", force: :cascade do |t|
-    t.string "name", null: false
+    t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -50,7 +50,7 @@ ActiveRecord::Schema.define(version: 2021_01_08_174438) do
     t.string "nickname"
     t.string "email"
     t.string "password"
-    t.integer "type"
+    t.integer "type", default: 3
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
