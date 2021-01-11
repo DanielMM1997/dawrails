@@ -13,16 +13,16 @@ User.create({:nickname => "admin", :email => "admin@gmail.com", :password => "12
 User.create({:nickname => "moderador", :email => "moderador@gmail.com", :password => "123456789", :type => 2})
 
 Category.create([
-    { :name => 'animales' }, 
-    { :name => 'paisajes' }, 
-    { :name => 'universo' }, 
-    { :name => 'ciudades' }, 
-    { :name => 'coches' }, 
-    { :name => 'motos' }, 
-    { :name => 'aviones' }, 
-    { :name => 'futbol' }, 
-    { :name => 'baloncesto' }, 
-    { :name => 'tenis' }])
+    { :name => 'Animales' }, 
+    { :name => 'Paisajes' }, 
+    { :name => 'Universo' }, 
+    { :name => 'Ciudades' }, 
+    { :name => 'Coches' }, 
+    { :name => 'Motos' }, 
+    { :name => 'Aviones' }, 
+    { :name => 'Fútbol' }, 
+    { :name => 'Baloncesto' }, 
+    { :name => 'Tenis' }])
 
 datos = JSON.parse(file)
 backgrounds = datos['backgrounds']

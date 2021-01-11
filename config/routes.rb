@@ -4,13 +4,8 @@ Rails.application.routes.draw do
   # get 'api/v1/categories#findCategory/:id'
   # get "/categories/:id" => "api/v1/categories#findCategory"
   
-
-  namespace 'api' do
-    namespace 'v1' do
-      resources :backgrounds
-      resources :categories
-      resources :users
-      # get 'getBackgrounds/:id', to: 'categories#findCategory', as: 'category'
-    end
-  end
+  resources :backgrounds
+  resources :categories
+  resources :users
+  # get 'getBackgrounds/:id', to: 'categories#findCategory', as: 'category'
 end

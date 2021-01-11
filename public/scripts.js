@@ -43,7 +43,7 @@ function getJSON(url) {
 }
 
 function getCategory(category) {
-  var datos = getJSON('http://localhost:3000/api/v1/categories/' + category);
+  var datos = getJSON('http://localhost:3000/categories/' + category);
   var onylThisCategory = [];
   $.each(datos.backgrounds, function (i, element) {
     for (let field = 0; field < element.length; field++) {
@@ -56,7 +56,7 @@ function getCategory(category) {
 }
 
 function getImage(id) {
-  var datos = getJSON('http://localhost:3000/api/v1/backgrounds');
+  var datos = getJSON('http://localhost:3000/backgrounds');
   var imagen;
     $.each(datos.backgrounds, function (i, element) {
     for (let field = 0; field < element.length; field++) {
@@ -69,7 +69,7 @@ function getImage(id) {
 }
 
 function updateImagesDestacadas() {
-  var datos = getJSON('http://localhost:3000/api/v1/backgrounds');
+  var datos = getJSON('http://localhost:3000/backgrounds');
   console.log(datos)
   for (let i = 0; i < 6; i++) {
     var img = '<div class="col-' + colunmSize + ' responsive p-1">' +
@@ -81,7 +81,7 @@ function updateImagesDestacadas() {
 }
 
 function updateImagesRecientes() {
-  var datos = getJSON('http://localhost:3000/api/v1/backgrounds');
+  var datos = getJSON('http://localhost:3000/backgrounds');
   for (let i = 6; i < 12; i++) {
     var img = '<div class="col-' + colunmSize + ' responsive p-1">' +
       '<a href="view_image.php?id=' + datos[i]['id'] + '&category=' + datos[i]['categories'] + '">' +
