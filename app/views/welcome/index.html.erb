@@ -1,1 +1,30 @@
-<h1>Holaa</h1>
+<% content_for :head do %>
+  <title>Wallpapers House - Home</title>
+<% end %>
+
+<% content_for :content do %>
+
+    <article class="article col-lg-10 col-12">
+      <section class="destacados">
+        <div class="container-fluid p-lg-3 p-0">
+          <div class="my-3">
+            <h2>Imágenes destacadas</h2>
+          </div>
+          <div class="row rellenarDestacadas mx-0"></div>
+          <div class="row justify-content-end pr-3">
+            <a class="btn btn-outline-primary" href="#">Ver todas &raquo</a>
+          </div>
+        </div>
+      </section>
+      <section class="recientes">
+        <div class="container-fluid p-3">
+          <h2>Imágenes recientes</h2>
+          <div class="row rellenarRecientes mx-0"></div>
+          <div class="row justify-content-end pr-3">
+            <a class="btn btn-outline-primary" href="#">Ver todas &raquo</a>
+          </div>
+        </div>
+      </section>
+    </article>
+
+<% end %>

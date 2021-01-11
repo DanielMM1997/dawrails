@@ -1,0 +1,263 @@
+/* Estilos generales */
+.web_name {
+  font-size: 6vw;
+}
+
+h2 {
+  font-size: 3vw;
+}
+a, p {
+  font-size: 1rem;
+}
+
+span {
+  color: #c71010;
+}
+
+.nolinks {
+  color: #000000;
+}
+
+.menu-hidden {
+  display: none;
+}
+
+#movil_search {
+  display: none;
+  width: 100%;
+}
+#movil_search input{
+  width: 100%;
+}
+
+/* Estilos para la cabecera de la pagina */
+.header {
+  background-color: #009DF5;
+}
+
+.logo {
+  width: 80%;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.options {
+  margin: auto;
+}
+
+.search {
+  flex-flow: nowrap;
+}
+
+/* Estilos para la barra de navegacion */
+.my-nav {
+  width: 20%;
+  background-color: #15a5f8;
+}
+
+.nav-item a {
+  color: #000000;
+}
+
+.nav li:hover{
+  background-color: #0079BD;
+}
+
+/* Estilos para el cuerpo de la pagina */
+.article {
+  margin-bottom: 20px;
+}
+
+.responsive img {
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: #0079BD;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Estilos para sola una imagen */
+
+.imagen {
+  padding: 20px;
+}
+
+.imagen img {
+  width: 100%;
+  height: auto;
+  border: solid;
+}
+
+.actions img {
+  padding: 5px;
+  width: 40px;
+}
+
+.actions img:hover {
+  background-color: #009DF5;
+}
+
+/* Estilos para el formulario de login */
+
+.formlogin {
+  width: 60%;
+  max-width: 48.75em;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 7px;
+}
+
+.formlogin h2 {
+  text-align: center;
+}
+
+.formlogin input {
+  display: block;
+  padding-top: 5px;
+  width: 100%;
+  margin: 5px 0 20px 0;
+  font-size: 20px;
+}
+
+.formlogin input[type="submit"] {
+  width: 50%;
+  background: #0079BD;
+  color: #fff;
+  border: 0;
+  opacity: 0.8;
+  cursor: pointer;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.formlogin input[type="submit"]:hover {
+  opacity: 1;
+}
+
+.next, .previous {
+  max-width: 50px;
+  min-width: 25px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body { font-family: sans-serif; }
+
+.gallery {
+  background: #EEE;
+}
+
+.gallery-cell img{
+  /* width: 28%; */
+  height: 200px;
+  /* margin-right: 10px; */
+  /* background: #8C8; */
+  /* counter-increment: gallery-cell; */
+}
+
+.gallery-cell.is-selected {
+  /* background: #ED2; */
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  /* text-align: center; */
+  /* content: counter(gallery-cell); */
+  /* line-height: 200px; */
+  /* font-size: 80px; */
+  /* color: white; */
+}
+
+/* buttons, no circle */
+.flickity-prev-next-button {
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  opacity: 0.6;
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+  opacity: 1;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+/* closer to edge */
+.flickity-prev-next-button.previous { left: 0; }
+.flickity-prev-next-button.next { right: 0; }
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+  display: none;
+}
+
+@media screen and (max-width: 62em) {
+  .body {
+    display: block;
+  }
+  .menu-hidden {
+    display: none;
+  }
+  .my-nav {
+    display: block;
+    width: 100%;
+    max-width: 3000px;
+  }
+  .formlogin {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .article {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .my-nav {
+    display: none;
+    margin-top: 9%;
+  }
+  .options {
+    display: none;
+  }
+  .body {
+    display: block;
+    margin-top: 9%;
+  }
+  .article {
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .menu-hidden {
+    display: block;
+  }
+  .header {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+  }
+}
