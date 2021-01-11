@@ -91,7 +91,7 @@ function updateImagesRecientes() {
 }
 
 function updateImagesCategories(category) {
-  var thisCategory = getCategory(category);
+  var thisCategory = category;
   $('#pagination').pagination({
     dataSource: thisCategory,
     pageSize: 6,
@@ -100,8 +100,8 @@ function updateImagesCategories(category) {
       $.each(data, function (i, element) {
         for (let field = 0; field < element.length; field++) {
           var img = '<div class="col-' + colunmSize + ' responsive p-1">' +
-            '<a href="view_image.php?id=' + element[field].id + '&category=' + element[field].categories + '">' +
-            '<img id="' + element[field].id + '" src="' + element[field].url + '" alt="' + element[field].title + '"></a></div>';
+            '<a href="#">' +
+            '<img id="' + element[field]['id'] + '" src="' + element[field]['path'] + '" alt="' + element[field]['title'] + '"></a></div>';
           $('.rellenarCategorias').append(img);
         }
       });

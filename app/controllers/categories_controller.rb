@@ -8,9 +8,9 @@ class CategoriesController < ActionController::Base
       
   def show
     @categories = Category.all
-    backgrounds = @category.backgrounds
+    @backgrounds = @category.backgrounds
     render layout:"application"
-    #render json: {status:'SECCESS', message:'Category updated', data:backgrounds, status: :ok}
+    #render json: {status:'SECCESS', message:'Category updated', data:@backgrounds, status: :ok}
   end
       
   def create

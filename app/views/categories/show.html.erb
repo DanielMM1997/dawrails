@@ -1,5 +1,5 @@
 <% content_for :head do %>
-  <title>Wallpapers House - </title>
+  <title>Wallpapers House - <%=@category.name%></title>
 <% end %>
 
 <% content_for :content do %>
@@ -14,4 +14,12 @@
       </section>
     </article>
 
+<% end %>
+
+<% content_for :pageScripts do %>
+  <script>
+    var category_backgrounds = '<%= @backgrounds.to_json.html_safe %>';
+    console.log(category_backgrounds);
+    updateImagesCategories(category_backgrounds);
+  </script>
 <% end %>

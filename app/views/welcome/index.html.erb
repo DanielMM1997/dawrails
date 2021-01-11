@@ -28,3 +28,8 @@
     </article>
 
 <% end %>
+
+<% content_for :pageScripts do %>
+  <%= javascript_tag "updateImagesDestacadas()" %>
+  <%= javascript_tag "updateImagesRecientes()" %>
+<% end %>
