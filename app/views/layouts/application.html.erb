@@ -14,7 +14,9 @@
     <body>
     <header class='header row mx-0'>
       <div class='logo col-2'>
-        <a href='index.php'><img class='logo' src='imgs/logo.png' alt='logo'></a>
+        <%= link_to welcome_path do %>
+          <img class='logo' src="<%= image_url('/imgs/logo.png')%>" alt='logo'>
+        <% end %>
       </div>
       <div class='title col-8 col-md-7 col-xl-6'>
         <h1 class='web_name'>Wallpapers house</h1>
@@ -35,14 +37,14 @@
           <form class='form-inline search' action=''>
             <input class='form-control' type='search' name='query' placeholder='Buscar...'>
             <button class='btn btn-success' type='submit' value='buscar'>
-              <img src='imgs/search-alt-2-regular-24.png' alt='buscar'>
+              <img src="<%= image_url('/imgs/search-alt-2-regular-24.png')%>" alt='buscar'>
             </button>
           </form>
         </div>
       </div>
       <div class='menu-hidden align-self-center'>
-        <img class='search' src='imgs/search-alt-2-regular-24.png' alt='menu'>
-        <img class='menu' src='imgs/menu-regular-24.png' alt='menu'>
+        <img class='search' src="<%= image_url('/imgs/search-alt-2-regular-24.png')%>" alt='menu'>
+        <img class='menu' src="<%= image_url('/imgs/menu-regular-24.png')%>" alt='menu'>
       </div>
     </header>
 
@@ -65,7 +67,6 @@
             <% @categories.each do |category| %>
               <li class='nav-item'>
                 <%= link_to category.name, category_path(category.id), :class => "nav-link" %>
-                <%# <%=category.name%>
               </li>
             <% end %>
           </ul>
@@ -87,10 +88,10 @@
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://pagination.js.org/dist/2.1.5/pagination.min.js"></script>
-        <script src="scripts.js"></script>
-        <%# <%= javascript_include_tag "scripts.js" %>
+        <script src="/scripts.js"></script>
         <%= javascript_tag "updateImagesDestacadas()" %>
         <%= javascript_tag "updateImagesRecientes()" %>
+        <%# <%= javascript_include_tag "scripts.js" %>
         <%#echo '<script type="text/javascript">updateImagesDestacadas(); </script>';
         echo '<script type="text/javascript">updateImagesRecientes(); </script>';%>
   </body>
