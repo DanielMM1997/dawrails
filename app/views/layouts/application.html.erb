@@ -63,7 +63,8 @@
               <a class='nav-link' href='#'>Fondos destacados</a>
             </li>
             <li class='nav-item'>
-              <a class='nav-link' href='#'>Animales</a>
+              <%= link_to "Animales", {:controller => "category", :action => "show"}, :id => '1' %>
+              <%# link_to "Profile", controller: "profiles", action: "show", id: @profile %>
             </li>
             <li class='nav-item'>
               <a class='nav-link' href='#'>Paisaje</a>
@@ -112,6 +113,9 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://pagination.js.org/dist/2.1.5/pagination.min.js"></script>
         <script src="scripts.js"></script>
+        <%# <%= javascript_include_tag "scripts.js" %> %>
+        <%= javascript_tag "updateImagesDestacadas()" %>
+        <%= javascript_tag "updateImagesRecientes()" %>
         <%#echo '<script type="text/javascript">updateImagesDestacadas(); </script>';
         echo '<script type="text/javascript">updateImagesRecientes(); </script>';%>
   </body>

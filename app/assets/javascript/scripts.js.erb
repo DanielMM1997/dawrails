@@ -39,11 +39,11 @@ function getJSON(url) {
   var request = new XMLHttpRequest();
   request.open("GET", url, false);
   request.send(null);
-  return request.status == 200 ? JSON.parse(request.responseText) : ''
+  return request.status == 200 ? request.responseText : ''
 }
 
 function getCategory(category) {
-  var datos = getJSON('http://localhost:3000/api/v1/categories/' + category);
+  var datos = getJSON('http://localhost:3000/api/v1/backgrounds');
   var onylThisCategory = [];
   $.each(datos.backgrounds, function (i, element) {
     for (let field = 0; field < element.length; field++) {
@@ -69,24 +69,25 @@ function getImage(id) {
 }
 
 function updateImagesDestacadas() {
-  var datos = getJSON('http://localhost:3000/api/v1/backgrounds');
+  var datos = JSON.parse(getJSON('http://localhost:3000/api/v1/backgrounds'));
   console.log(datos)
   for (let i = 0; i < 6; i++) {
     var img = '<div class="col-' + colunmSize + ' responsive p-1">' +
       '<a href="view_image.php?id=' + datos[i]['id'] + '&category=' + datos[i]['categories'] + '">' +
-      '<img id="' + datos[i]['id'] + '" src="' + datos[i]['path'] + '"alt="' + datos[i]['title'] + '"></a></div>';
-      // <%= asset_path("backgrounds/" + "datos[i]['path']") %> 
+      '<img id="' + datos[i]['id'] + '" <%= asset_path("backgrounds/" + "datos[i]['path']") %> alt="' + datos[i]['title'] + '"></a></div>';
     $('.rellenarDestacadas').append(img);
   }
 }
 
 function updateImagesRecientes() {
-  var datos = JSON.parse(getJSON('http://localhost:3000/api/v1/backgrounds'));
+  var datos = getJSON('http://localhost:3000/api/v1/backgrounds');
   for (let i = 6; i < 12; i++) {
-    var img = '<div class="col-' + colunmSize + ' responsive p-1">' +
-      '<a href="view_image.php?id=' + datos[i]['id'] + '&category=' + datos[i]['categories'] + '">' +
-      '<img id="' + datos[i]['id'] + '" src="' + datos[i]['path'] + '" alt="' + datos[i]['title'] + '"></a></div>';
-    $('.rellenarRecientes').append(img);
+    for (var j in datos['backgrounds'][i]) {
+      var img = '<div class="col-' + colunmSize + ' responsive p-1">' +
+        '<a href="view_image.php?id=' + datos['backgrounds'][i][j]['id'] + '&category=' + datos['backgrounds'][i][j]['categories'] + '">' +
+        '<img id="' + datos['backgrounds'][i][j]['id'] + '" src="' + datos['backgrounds'][i][j]['url'] + '" alt="' + datos['backgrounds'][i][j]['title'] + '"></a></div>';
+      $('.rellenarRecientes').append(img);
+    }
   }
 }
 

@@ -2,14 +2,15 @@ module Api
   module V1
     class CategoriesController < ApplicationController
 
-      before_action :find_category, only: [:show, :update, :destroy]
+      before_action :find_category, only: [:show, :update, :destroy, :find_backgrounds]
 
       def index
         render json:Category.all
       end
       
       def show
-        render json:@category
+        backgrounds = @category.backgrounds
+        render json: {status:'SECCESS', message:'Category updated', data:backgrounds, status: :ok}
       end
       
       def create
@@ -33,6 +34,11 @@ module Api
         @category.destroy
         render json: {status:'SECCESS', message:'Category deleted', data:category, status: :ok}
       end
+
+      def find_backgrounds
+        backgrounds = @category.backgrounds
+        render json: {status:'SECCESS', message:'Category updated', data:backgrounds, status: :ok}
+      end
       
       private
       def get_params
@@ -42,6 +48,7 @@ module Api
       def find_category
         @category = Category.find(params[:id])
       end
+      
     end
   end
 end

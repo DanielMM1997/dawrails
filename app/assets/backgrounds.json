@@ -4,7 +4,7 @@
       {
         "id": 1,
         "title": "Búho en el bosque",
-        "url": "app/assets/backgrounds/animales-buho-blanco-verde-bosque.jpg",
+        "url": "/backgrounds/animales-buho-blanco-verde-bosque.jpg",
         "tags": "animales-buho-blanco-verde-bosque",
         "categories": "animales"
       }
@@ -13,7 +13,7 @@
       {
         "id": 2,
         "title": "Caballo galopando en la playa",
-        "url": "app/assets/backgrounds/animales-caballo-galopando-agua-mar-playa.jpg",
+        "url": "/backgrounds/animales-caballo-galopando-agua-mar-playa.jpg",
         "tags": "animales-caballo-galopando-agua-mar-playa",
         "categories": "animales"
       }
@@ -22,7 +22,7 @@
       {
         "id": 3,
         "title": "Cebras en blanco y negro",
-        "url": "app/assets/backgrounds/animales-cebras-blanco y negro.jpg",
+        "url": "/backgrounds/animales-cebras-blanco y negro.jpg",
         "tags": "animales-cebras-blanco y negro",
         "categories": "animales"
       }
@@ -31,7 +31,7 @@
       {
         "id": 4,
         "title": "Cerdito en la hierba",
-        "url": "app/assets/backgrounds/animales-cerdito-pequeño-hierba-verde.jpg",
+        "url": "/backgrounds/animales-cerdito-pequeño-hierba-verde.jpg",
         "tags": "animales-cerdito-pequeño-hierba-verde",
         "categories": "animales"
       }
@@ -40,7 +40,7 @@
       {
         "id": 5,
         "title": "Dos delfines saludando",
-        "url": "app/assets/backgrounds/animales-delfines-agua.jpg",
+        "url": "/backgrounds/animales-delfines-agua.jpg",
         "tags": "animales-delfines-agua",
         "categories": "animales"
       }
@@ -49,7 +49,7 @@
       {
         "id": 6,
         "title": "Pequeña foca en la nieve",
-        "url": "app/assets/backgrounds/animales-foca-pequeño-nieve.jpg",
+        "url": "/backgrounds/animales-foca-pequeño-nieve.jpg",
         "tags": "animales-foca-pequeño-nieve",
         "categories": "animales"
       }
@@ -58,7 +58,7 @@
       {
         "id": 7,
         "title": "Gansos volando",
-        "url": "app/assets/backgrounds/animales-gansos-aves-volando.jpg",
+        "url": "/backgrounds/animales-gansos-aves-volando.jpg",
         "tags": "animales-gansos-aves-volando",
         "categories": "animales"
       }
@@ -67,7 +67,7 @@
       {
         "id": 8,
         "title": "Gato mirando fijamente",
-        "url": "app/assets/backgrounds/animales-gato-ojos-mirar-mirando.jpg",
+        "url": "/backgrounds/animales-gato-ojos-mirar-mirando.jpg",
         "tags": "animales-gato-ojos-mirar-mirando",
         "categories": "animales"
       }
@@ -76,7 +76,7 @@
       {
         "id": 9,
         "title": "Halcón en primer plano",
-        "url": "app/assets/backgrounds/animales-halcon-aves-primer plano.jpg",
+        "url": "/backgrounds/animales-halcon-aves-primer plano.jpg",
         "tags": "animales-halcon-aves-primer plano",
         "categories": "animales"
       }
@@ -85,7 +85,7 @@
       {
         "id": 10,
         "title": "Hipopótamo en el río",
-        "url": "app/assets/backgrounds/animales-hipopotamo-agua.jpg",
+        "url": "/backgrounds/animales-hipopotamo-agua.jpg",
         "tags": "animales-hipopotamo-agua",
         "categories": "animales"
       }
@@ -94,7 +94,7 @@
       {
         "id": 11,
         "title": "Jirafas en la pradera",
-        "url": "app/assets/backgrounds/animales-jirafas.jpg",
+        "url": "/backgrounds/animales-jirafas.jpg",
         "tags": "animales-jirafas",
         "categories": "animales"
       }
@@ -103,7 +103,7 @@
       {
         "id": 12,
         "title": "León sobre fondo negro",
-        "url": "app/assets/backgrounds/animales-leon.jpg",
+        "url": "/backgrounds/animales-leon.jpg",
         "tags": "animales-leon",
         "categories": "animales"
       }
@@ -112,7 +112,7 @@
       {
         "id": 13,
         "title": "Lobo corriendo en la nieve",
-        "url": "app/assets/backgrounds/animales-lobo-corriendo-nieve.jpg",
+        "url": "/backgrounds/animales-lobo-corriendo-nieve.jpg",
         "tags": "animales-lobo-corriendo-nieve",
         "categories": "animales"
       }
@@ -121,7 +121,7 @@
       {
         "id": 14,
         "title": "Mapache mirando fijamente",
-        "url": "app/assets/backgrounds/animales-mapache-ojos-mirando.jpg",
+        "url": "/backgrounds/animales-mapache-ojos-mirando.jpg",
         "tags": "animales-mapache-ojos-mirando",
         "categories": "animales"
       }
@@ -130,7 +130,7 @@
       {
         "id": 15,
         "title": "Oso polar bajo el agua",
-        "url": "app/assets/backgrounds/animales-oso polar-agua-bajo el agua-nadando-buceando.jpg",
+        "url": "/backgrounds/animales-oso polar-agua-bajo el agua-nadando-buceando.jpg",
         "tags": "animales-oso polar-agua-bajo el agua-nadando-buceando",
         "categories": "animales"
       }
@@ -139,7 +139,7 @@
       {
         "id": 16,
         "title": "Pelícano en el agua",
-        "url": "app/assets/backgrounds/animales-pelicano-aves-agua.jpg",
+        "url": "/backgrounds/animales-pelicano-aves-agua.jpg",
         "tags": "animales-pelicano-aves-agua",
         "categories": "animales"
       }
@@ -148,7 +148,7 @@
       {
         "id": 17,
         "title": "Rottweiler en terraza con nieve",
-        "url": "app/assets/backgrounds/animales-perro-rottweiler-nieve-ojos-mirando.jpg",
+        "url": "/backgrounds/animales-perro-rottweiler-nieve-ojos-mirando.jpg",
         "tags": "animales-perro-rottweiler-nieve-ojos-mirando",
         "categories": "animales"
       }
@@ -157,7 +157,7 @@
       {
         "id": 18,
         "title": "Pollito amarillo",
-        "url": "app/assets/backgrounds/animales-pollo-aves-amarillo.jpg",
+        "url": "/backgrounds/animales-pollo-aves-amarillo.jpg",
         "tags": "animales-pollo-aves-amarillo",
         "categories": "animales"
       }
@@ -166,7 +166,7 @@
       {
         "id": 19,
         "title": "Lobo cósmico",
-        "url": "app/assets/backgrounds/animales-universo-lobo-fantasía-cosmico-espacio.jpg",
+        "url": "/backgrounds/animales-universo-lobo-fantasía-cosmico-espacio.jpg",
         "tags": "animales-universo-lobo-fantasía-cosmico-espacio",
         "categories": "animales-universo"
       }
@@ -175,7 +175,7 @@
       {
         "id": 20,
         "title": "Zorrito caminando",
-        "url": "app/assets/backgrounds/animales-zorro-pequeño-hierba.jpg",
+        "url": "/backgrounds/animales-zorro-pequeño-hierba.jpg",
         "tags": "animales-zorro-pequeño-hierba",
         "categories": "animales"
       }
@@ -184,7 +184,7 @@
       {
         "id": 21,
         "title": "Banco junto al lago",
-        "url": "app/assets/backgrounds/paisajes-banco-arbol-montañas-orilla-lago.jpg",
+        "url": "/backgrounds/paisajes-banco-arbol-montañas-orilla-lago.jpg",
         "tags": "paisajes-banco-arbol-montañas-orilla-lago",
         "categories": "paisajes"
       }
@@ -193,7 +193,7 @@
       {
         "id": 22,
         "title": "Bosque otoñal en la montaña",
-        "url": "app/assets/backgrounds/paisajes-bosque-arbol-montaña-sol-otoño.jpg",
+        "url": "/backgrounds/paisajes-bosque-arbol-montaña-sol-otoño.jpg",
         "tags": "paisajes-bosque-arbol-montaña-sol-otoño",
         "categories": "paisajes"
       }
@@ -202,7 +202,7 @@
       {
         "id": 23,
         "title": "Camino en bosque verde",
-        "url": "app/assets/backgrounds/paisajes-bosque-camino-arbol-verde-sombra.jpg",
+        "url": "/backgrounds/paisajes-bosque-camino-arbol-verde-sombra.jpg",
         "tags": "paisajes-bosque-camino-arbol-verde-sombra",
         "categories": "paisajes"
       }
@@ -211,7 +211,7 @@
       {
         "id": 24,
         "title": "Sendero con hojas",
-        "url": "app/assets/backgrounds/paisajes-camino-sendero-bosque-madera-hojas.jpg",
+        "url": "/backgrounds/paisajes-camino-sendero-bosque-madera-hojas.jpg",
         "tags": "paisajes-camino-sendero-bosque-madera-hojas",
         "categories": "paisajes"
       }
@@ -220,7 +220,7 @@
       {
         "id": 25,
         "title": "Árbol junto a camino de la pradera",
-        "url": "app/assets/backgrounds/paisajes-campo-pradera-arbol-pradera-flores.jpg",
+        "url": "/backgrounds/paisajes-campo-pradera-arbol-pradera-flores.jpg",
         "tags": "paisajes-campo-pradera-arbol-pradera-flores",
         "categories": "paisajes"
       }
@@ -229,7 +229,7 @@
       {
         "id": 26,
         "title": "Cascada del lago en el bosque",
-        "url": "app/assets/backgrounds/paisajes-cascada-lago-bosque-montaña.jpg",
+        "url": "/backgrounds/paisajes-cascada-lago-bosque-montaña.jpg",
         "tags": "paisajes-cascada-lago-bosque-montaña",
         "categories": "paisajes"
       }
@@ -238,7 +238,7 @@
       {
         "id": 27,
         "title": "Atardecer rojo en la costa",
-        "url": "app/assets/backgrounds/paisajes-costa-muelle-barcos-faro-atardecer-rojo.jpg",
+        "url": "/backgrounds/paisajes-costa-muelle-barcos-faro-atardecer-rojo.jpg",
         "tags": "paisajes-costa-muelle-barcos-faro-atardecer-rojo",
         "categories": "paisajes"
       }
@@ -247,7 +247,7 @@
       {
         "id": 28,
         "title": "Puente de la bahía al anochecer",
-        "url": "app/assets/backgrounds/paisajes-costa-orilla-puente-anochecer.jpg",
+        "url": "/backgrounds/paisajes-costa-orilla-puente-anochecer.jpg",
         "tags": "paisajes-costa-orilla-puente-anochecer",
         "categories": "paisajes"
       }
@@ -256,7 +256,7 @@
       {
         "id": 29,
         "title": "Vista al mar con sol y nubes",
-        "url": "app/assets/backgrounds/paisajes-hierba-mar-arbol-nubes-sol.jpg",
+        "url": "/backgrounds/paisajes-hierba-mar-arbol-nubes-sol.jpg",
         "tags": "paisajes-hierba-mar-arbol-nubes-sol",
         "categories": "paisajes"
       }
@@ -265,7 +265,7 @@
       {
         "id": 30,
         "title": "Lago rojo de Kyoto",
-        "url": "app/assets/backgrounds/paisajes-japon-kyoto-lago-puente-rojo.jpg",
+        "url": "/backgrounds/paisajes-japon-kyoto-lago-puente-rojo.jpg",
         "tags": "paisajes-japon-kyoto-lago-puente-rojo",
         "categories": "paisajes"
       }
@@ -274,7 +274,7 @@
       {
         "id": 31,
         "title": "Cabaña en medio del lago",
-        "url": "app/assets/backgrounds/paisajes-lago-cabaña-valle-montañas.jpg",
+        "url": "/backgrounds/paisajes-lago-cabaña-valle-montañas.jpg",
         "tags": "paisajes-lago-cabaña-valle-montañas",
         "categories": "paisajes"
       }
@@ -283,7 +283,7 @@
       {
         "id": 32,
         "title": "Lago en montañas nevadas",
-        "url": "app/assets/backgrounds/paisajes-lago-montaña-nieve.jpg",
+        "url": "/backgrounds/paisajes-lago-montaña-nieve.jpg",
         "tags": "paisajes-lago-montaña-nieve",
         "categories": "paisajes"
       }
@@ -292,7 +292,7 @@
       {
         "id": 33,
         "title": "Pequeño muelle del lago",
-        "url": "app/assets/backgrounds/paisajes-lago-muelle-montaña-orilla.jpg",
+        "url": "/backgrounds/paisajes-lago-muelle-montaña-orilla.jpg",
         "tags": "paisajes-lago-muelle-montaña-orilla",
         "categories": "paisajes"
       }
@@ -301,7 +301,7 @@
       {
         "id": 34,
         "title": "Lago al pie de montaña con cielo mágico",
-        "url": "app/assets/backgrounds/paisajes-lago-noche-montaña-nieve-estrellas-cosmico.jpg",
+        "url": "/backgrounds/paisajes-lago-noche-montaña-nieve-estrellas-cosmico.jpg",
         "tags": "paisajes-lago-noche-montaña-nieve-estrellas-cosmico",
         "categories": "paisajes"
       }
@@ -310,7 +310,7 @@
       {
         "id": 35,
         "title": "Cascadas de las grandes montañas",
-        "url": "app/assets/backgrounds/paisajes-montaña-cascada-alturas-nubes-valle.jpg",
+        "url": "/backgrounds/paisajes-montaña-cascada-alturas-nubes-valle.jpg",
         "tags": "paisajes-montaña-cascada-alturas-nubes-valle",
         "categories": "paisajes"
       }
@@ -319,7 +319,7 @@
       {
         "id": 36,
         "title": "Cielo azul, lago azul",
-        "url": "app/assets/backgrounds/paisajes-parque-montañas-lago-azul-verde.jpg",
+        "url": "/backgrounds/paisajes-parque-montañas-lago-azul-verde.jpg",
         "tags": "paisajes-parque-montañas-lago-azul-verde",
         "categories": "paisajes"
       }
@@ -328,7 +328,7 @@
       {
         "id": 37,
         "title": "Cueva en la playa",
-        "url": "app/assets/backgrounds/paisajes-playa-costa-cueva-rocas-mar-sombra.jpg",
+        "url": "/backgrounds/paisajes-playa-costa-cueva-rocas-mar-sombra.jpg",
         "tags": "paisajes-playa-costa-cueva-rocas-mar-sombra",
         "categories": "paisajes"
       }
@@ -337,7 +337,7 @@
       {
         "id": 38,
         "title": "Pequeña cascada escondida en el bosque",
-        "url": "app/assets/backgrounds/paisajes-rio-cascada-bosque-sol-agua.jpg",
+        "url": "/backgrounds/paisajes-rio-cascada-bosque-sol-agua.jpg",
         "tags": "paisajes-rio-cascada-bosque-sol-agua",
         "categories": "paisajes"
       }
@@ -346,7 +346,7 @@
       {
         "id": 39,
         "title": "Casas en las montañas",
-        "url": "app/assets/backgrounds/paisajes-valle-bosque-casa-nubes-verde.jpg",
+        "url": "/backgrounds/paisajes-valle-bosque-casa-nubes-verde.jpg",
         "tags": "paisajes-valle-bosque-casa-nubes-verde",
         "categories": "paisajes"
       }
@@ -355,7 +355,7 @@
       {
         "id": 40,
         "title": "Valle bajo las estrellas",
-        "url": "app/assets/backgrounds/paisajes-valle-montañas-estrellas-nubes.jpg",
+        "url": "/backgrounds/paisajes-valle-montañas-estrellas-nubes.jpg",
         "tags": "paisajes-valle-montañas-estrellas-nubes",
         "categories": "paisajes"
       }
@@ -364,7 +364,7 @@
       {
         "id": 41,
         "title": "León rugiendo al universo",
-        "url": "app/assets/backgrounds/universo-animales-violeta-galaxias-estrellas-montañas-leon.jpg",
+        "url": "/backgrounds/universo-animales-violeta-galaxias-estrellas-montañas-leon.jpg",
         "tags": "universo-animales-violeta-galaxias-estrellas-montañas-leon",
         "categories": "universo-animales"
       }
@@ -373,7 +373,7 @@
       {
         "id": 42,
         "title": "Logo Apple en el universo",
-        "url": "app/assets/backgrounds/universo-apple-violeta-logo-estrellas.jpg",
+        "url": "/backgrounds/universo-apple-violeta-logo-estrellas.jpg",
         "tags": "universo-apple-violeta-logo-estrellas",
         "categories": "universo"
       }
@@ -382,7 +382,7 @@
       {
         "id": 43,
         "title": "Astronauta perdido en el espacio",
-        "url": "app/assets/backgrounds/universo-astronauta-flotar-perdido-azul-negro-violeta-estrellas.jpg",
+        "url": "/backgrounds/universo-astronauta-flotar-perdido-azul-negro-violeta-estrellas.jpg",
         "tags": "universo-astronauta-flotar-perdido-azul-negro-violeta-estrellas",
         "categories": "universo"
       }
@@ -391,7 +391,7 @@
       {
         "id": 44,
         "title": "Astronauta selfie en el espacio",
-        "url": "app/assets/backgrounds/universo-astronauta-selfie-estrellas-blanco-azul-naranja-negro.jpg",
+        "url": "/backgrounds/universo-astronauta-selfie-estrellas-blanco-azul-naranja-negro.jpg",
         "tags": "universo-astronauta-selfie-estrellas-blanco-azul-naranja-negro",
         "categories": "universo"
       }
@@ -400,7 +400,7 @@
       {
         "id": 45,
         "title": "Astronautas en la Luna",
-        "url": "app/assets/backgrounds/universo-astronautas-luna-bandera-tierra-nave-artistico-estrellas.jpg",
+        "url": "/backgrounds/universo-astronautas-luna-bandera-tierra-nave-artistico-estrellas.jpg",
         "tags": "universo-astronautas-luna-bandera-tierra-nave-artistico-estrellas",
         "categories": "universo"
       }
@@ -409,7 +409,7 @@
       {
         "id": 46,
         "title": "Estrellas azules en el espacio",
-        "url": "app/assets/backgrounds/universo-azul-estrellas.jpg",
+        "url": "/backgrounds/universo-azul-estrellas.jpg",
         "tags": "universo-azul-estrellas",
         "categories": "universo"
       }
@@ -418,7 +418,7 @@
       {
         "id": 47,
         "title": "Estrella de la Muerte destruida Star Wars",
-        "url": "app/assets/backgrounds/universo-ciencia ficción-estrella de la muerte-estrellas-negro-oscuro.jpg",
+        "url": "/backgrounds/universo-ciencia ficción-estrella de la muerte-estrellas-negro-oscuro.jpg",
         "tags": "universo-ciencia ficción-estrella de la muerte-estrellas-negro-oscuro",
         "categories": "universo"
       }
@@ -427,7 +427,7 @@
       {
         "id": 48,
         "title": "Dibujo universo minimalista",
-        "url": "app/assets/backgrounds/universo-dibujo-minimalista-sol-estrellas-planetas-naves.png",
+        "url": "/backgrounds/universo-dibujo-minimalista-sol-estrellas-planetas-naves.png",
         "tags": "universo-dibujo-minimalista-sol-estrellas-planetas-naves",
         "categories": "universo"
       }
@@ -436,7 +436,7 @@
       {
         "id": 49,
         "title": "Estrellas azules y rojas",
-        "url": "app/assets/backgrounds/universo-estrellas-galaxias-azul-rojo.jpg",
+        "url": "/backgrounds/universo-estrellas-galaxias-azul-rojo.jpg",
         "tags": "universo-estrellas-galaxias-azul-rojo",
         "categories": "universo"
       }
@@ -445,7 +445,7 @@
       {
         "id": 50,
         "title": "Planetas y galaxias",
-        "url": "app/assets/backgrounds/universo-estrellas-galaxias-planetas-azul-negro.jpg",
+        "url": "/backgrounds/universo-estrellas-galaxias-planetas-azul-negro.jpg",
         "tags": "universo-estrellas-galaxias-planetas-azul-negro",
         "categories": "universo"
       }
@@ -454,7 +454,7 @@
       {
         "id": 51,
         "title": "Astronauta en la Luna con cerveza",
-        "url": "app/assets/backgrounds/universo-luna-tierra-astronauta-sentado-cerveza-estrellas.jpg",
+        "url": "/backgrounds/universo-luna-tierra-astronauta-sentado-cerveza-estrellas.jpg",
         "tags": "universo-luna-tierra-astronauta-sentado-cerveza-estrellas",
         "categories": "universo"
       }
@@ -463,7 +463,7 @@
       {
         "id": 52,
         "title": "Montañas bajo el universo",
-        "url": "app/assets/backgrounds/universo-montañas-planetas-estrellas-paisajes.jpg",
+        "url": "/backgrounds/universo-montañas-planetas-estrellas-paisajes.jpg",
         "tags": "universo-montañas-planetas-estrellas-paisajes",
         "categories": "universo-paisajes"
       }
@@ -472,7 +472,7 @@
       {
         "id": 53,
         "title": "Nebulosas azules",
-        "url": "app/assets/backgrounds/universo-nebulosa-azul-estrellas.jpg",
+        "url": "/backgrounds/universo-nebulosa-azul-estrellas.jpg",
         "tags": "universo-nebulosa-azul-estrellas",
         "categories": "universo"
       }
@@ -481,7 +481,7 @@
       {
         "id": 54,
         "title": "Nebulosas naranjas y azules",
-        "url": "app/assets/backgrounds/universo-nebulosa-naranja-azul-estrellas.jpg",
+        "url": "/backgrounds/universo-nebulosa-naranja-azul-estrellas.jpg",
         "tags": "universo-nebulosa-naranja-azul-estrellas",
         "categories": "universo"
       }
@@ -490,7 +490,7 @@
       {
         "id": 55,
         "title": "Estrellas en cielo oscuro",
-        "url": "app/assets/backgrounds/universo-negro-oscuro-estrellas.png",
+        "url": "/backgrounds/universo-negro-oscuro-estrellas.png",
         "tags": "universo-negro-oscuro-estrellas",
         "categories": "universo"
       }
@@ -499,7 +499,7 @@
       {
         "id": 56,
         "title": "Montaña nevada bajo el universo",
-        "url": "app/assets/backgrounds/universo-paisaje-noche-estrellas-galaxias-montañas-nieve.jpg",
+        "url": "/backgrounds/universo-paisaje-noche-estrellas-galaxias-montañas-nieve.jpg",
         "tags": "universo-paisaje-noche-estrellas-galaxias-montañas-nieve",
         "categories": "universo-paisaje"
       }
@@ -508,7 +508,7 @@
       {
         "id": 57,
         "title": "Telescopio bajo las estrellas",
-        "url": "app/assets/backgrounds/universo-noche-estrellas-telescopio-arbol.jpg",
+        "url": "/backgrounds/universo-noche-estrellas-telescopio-arbol.jpg",
         "tags": "universo-noche-estrellas-telescopio-arbol",
         "categories": "universo"
       }
@@ -517,7 +517,7 @@
       {
         "id": 58,
         "title": "Cohetes saliendo al espacio",
-        "url": "app/assets/backgrounds/universo-planeta-estrellas-cohetes.jpg",
+        "url": "/backgrounds/universo-planeta-estrellas-cohetes.jpg",
         "tags": "universo-planeta-estrellas-cohetes",
         "categories": "universo"
       }
@@ -526,7 +526,7 @@
       {
         "id": 59,
         "title": "Estrellas rojas del espacio",
-        "url": "app/assets/backgrounds/universo-rojo-estrellas.jpg",
+        "url": "/backgrounds/universo-rojo-estrellas.jpg",
         "tags": "universo-rojo-estrellas",
         "categories": "universo"
       }
@@ -535,7 +535,7 @@
       {
         "id": 60,
         "title": "Cinturón de asteroides de Saturno",
-        "url": "app/assets/backgrounds/universo-saturno-asteroides-cinturon-oscuro-negro-gris-luna-estrellas.jpg",
+        "url": "/backgrounds/universo-saturno-asteroides-cinturon-oscuro-negro-gris-luna-estrellas.jpg",
         "tags": "universo-saturno-asteroides-cinturon-oscuro-negro-gris-luna-estrellas",
         "categories": "universo"
       }
@@ -544,7 +544,7 @@
       {
         "id": 61,
         "title": "Tierra azul y rojo",
-        "url": "app/assets/backgrounds/universo-tierra-azul-rojo-estrellas.jpg",
+        "url": "/backgrounds/universo-tierra-azul-rojo-estrellas.jpg",
         "tags": "universo-tierra-azul-rojo-estrellas",
         "categories": "universo"
       }
@@ -553,7 +553,7 @@
       {
         "id": 62,
         "title": "Galaxia verde",
-        "url": "app/assets/backgrounds/universo-verde-galaxia-estrellas-planetas.jpg",
+        "url": "/backgrounds/universo-verde-galaxia-estrellas-planetas.jpg",
         "tags": "universo-verde-galaxia-estrellas-planetas",
         "categories": "universo"
       }
@@ -562,7 +562,7 @@
       {
         "id": 63,
         "title": "Ciudad gris al atardecer",
-        "url": "app/assets/backgrounds/ciudades-aereo-gris-nubes-atardecer.jpg",
+        "url": "/backgrounds/ciudades-aereo-gris-nubes-atardecer.jpg",
         "tags": "ciudades-aereo-gris-nubes-atardecer",
         "categories": "ciudades"
       }
@@ -571,7 +571,7 @@
       {
         "id": 64,
         "title": "Ciudad con luces al anochecer",
-        "url": "app/assets/backgrounds/ciudades-anochecer-nubes-luces.jpg",
+        "url": "/backgrounds/ciudades-anochecer-nubes-luces.jpg",
         "tags": "ciudades-anochecer-nubes-luces",
         "categories": "ciudades"
       }
@@ -580,7 +580,7 @@
       {
         "id": 65,
         "title": "Ciudad apocalíptica al atardecer",
-        "url": "app/assets/backgrounds/ciudades-apocaliptico-atardecer-aves-vegetacion-nubes-naranja.jpg",
+        "url": "/backgrounds/ciudades-apocaliptico-atardecer-aves-vegetacion-nubes-naranja.jpg",
         "tags": "ciudades-apocaliptico-atardecer-aves-vegetacion-nubes-naranja",
         "categories": "ciudades"
       }
@@ -589,7 +589,7 @@
       {
         "id": 66,
         "title": "Parque en Chicago",
-        "url": "app/assets/backgrounds/ciudades-arquitectura-chicago-parque-noche-luces.jpg",
+        "url": "/backgrounds/ciudades-arquitectura-chicago-parque-noche-luces.jpg",
         "tags": "ciudades-arquitectura-chicago-parque-noche-luces",
         "categories": "ciudades"
       }
@@ -598,7 +598,7 @@
       {
         "id": 67,
         "title": "Muelle nocturno de la ciudad",
-        "url": "app/assets/backgrounds/ciudades-barcos-muelle-noche-luces-naranja-azul.jpg",
+        "url": "/backgrounds/ciudades-barcos-muelle-noche-luces-naranja-azul.jpg",
         "tags": "ciudades-barcos-muelle-noche-luces-naranja-azul",
         "categories": "ciudades"
       }
@@ -607,7 +607,7 @@
       {
         "id": 68,
         "title": "Calles lluviosas en blanco y negro",
-        "url": "app/assets/backgrounds/ciudades-blanco-negro-calle-lluvia.jpg",
+        "url": "/backgrounds/ciudades-blanco-negro-calle-lluvia.jpg",
         "tags": "ciudades-blanco-negro-calle-lluvia",
         "categories": "ciudades"
       }
@@ -616,7 +616,7 @@
       {
         "id": 69,
         "title": "Avenida con luces",
-        "url": "app/assets/backgrounds/ciudades-calle-avenida-amarillo-naranja-luces.jpg",
+        "url": "/backgrounds/ciudades-calle-avenida-amarillo-naranja-luces.jpg",
         "tags": "ciudades-calle-avenida-amarillo-naranja-luces",
         "categories": "ciudades"
       }
@@ -625,7 +625,7 @@
       {
         "id": 70,
         "title": "Ciudad Cyberpunk noche",
-        "url": "app/assets/backgrounds/ciudades-cyberpunk-futurista-noche-luces-neon.jpg",
+        "url": "/backgrounds/ciudades-cyberpunk-futurista-noche-luces-neon.jpg",
         "tags": "ciudades-cyberpunk-futurista-noche-luces-neon",
         "categories": "ciudades"
       }
@@ -634,7 +634,7 @@
       {
         "id": 71,
         "title": "Ciudad futurista circular",
-        "url": "app/assets/backgrounds/ciudades-futurista-gris-agua.jpg",
+        "url": "/backgrounds/ciudades-futurista-gris-agua.jpg",
         "tags": "ciudades-futurista-gris-agua",
         "categories": "ciudades"
       }
@@ -643,7 +643,7 @@
       {
         "id": 72,
         "title": "Ciudad futurista atardecer",
-        "url": "app/assets/backgrounds/ciudades-futurista-sol-nubes-atardecer.jpg",
+        "url": "/backgrounds/ciudades-futurista-sol-nubes-atardecer.jpg",
         "tags": "ciudades-futurista-sol-nubes-atardecer",
         "categories": "ciudades"
       }
@@ -652,7 +652,7 @@
       {
         "id": 73,
         "title": "Ciudad de grises y luces",
-        "url": "app/assets/backgrounds/ciudades-gris-noche-nubes-luces.jpg",
+        "url": "/backgrounds/ciudades-gris-noche-nubes-luces.jpg",
         "tags": "ciudades-gris-noche-nubes-luces",
         "categories": "ciudades"
       }
@@ -661,7 +661,7 @@
       {
         "id": 74,
         "title": "Puente de luces en ciudad",
-        "url": "app/assets/backgrounds/ciudades-mar-puente-luces-noche-nubes.jpg",
+        "url": "/backgrounds/ciudades-mar-puente-luces-noche-nubes.jpg",
         "tags": "ciudades-mar-puente-luces-noche-nubes",
         "categories": "ciudades"
       }
@@ -670,7 +670,7 @@
       {
         "id": 75,
         "title": "Dibujo ciudad minimalista",
-        "url": "app/assets/backgrounds/ciudades-minimalista-artistico-violeta-naranja.jpg",
+        "url": "/backgrounds/ciudades-minimalista-artistico-violeta-naranja.jpg",
         "tags": "ciudades-minimalista-artistico-violeta-naranja",
         "categories": "ciudades"
       }
@@ -679,7 +679,7 @@
       {
         "id": 76,
         "title": "Ciudad al anochecer cielo naranja y violeta",
-        "url": "app/assets/backgrounds/ciudades-naranja-violeta-negro-anochecer-luces.jpg",
+        "url": "/backgrounds/ciudades-naranja-violeta-negro-anochecer-luces.jpg",
         "tags": "ciudades-naranja-violeta-negro-anochecer-luces",
         "categories": "ciudades"
       }
@@ -688,7 +688,7 @@
       {
         "id": 77,
         "title": "Ciudad noche azul",
-        "url": "app/assets/backgrounds/ciudades-negro-azul-reflejo-noche-luna.jpg",
+        "url": "/backgrounds/ciudades-negro-azul-reflejo-noche-luna.jpg",
         "tags": "ciudades-negro-azul-reflejo-noche-luna",
         "categories": "ciudades"
       }
@@ -697,7 +697,7 @@
       {
         "id": 78,
         "title": "Ciudad noche y luces",
-        "url": "app/assets/backgrounds/ciudades-negro-noche-luces.jpg",
+        "url": "/backgrounds/ciudades-negro-noche-luces.jpg",
         "tags": "ciudades-negro-noche-luces",
         "categories": "ciudades"
       }
@@ -706,7 +706,7 @@
       {
         "id": 79,
         "title": "Gasolinera de neón",
-        "url": "app/assets/backgrounds/ciudades-neon-calle-noche-oscuro-luces.jpg",
+        "url": "/backgrounds/ciudades-neon-calle-noche-oscuro-luces.jpg",
         "tags": "ciudades-neon-calle-noche-oscuro-luces",
         "categories": "ciudades"
       }
@@ -715,7 +715,7 @@
       {
         "id": 80,
         "title": "Tejados de la ciudad noche",
-        "url": "app/assets/backgrounds/ciudades-tejado-noche-luces-azul.jpg",
+        "url": "/backgrounds/ciudades-tejado-noche-luces-azul.jpg",
         "tags": "ciudades-tejado-noche-luces-azul",
         "categories": "ciudades"
       }
@@ -724,7 +724,7 @@
       {
         "id": 81,
         "title": "Ciudad con tono verde",
-        "url": "app/assets/backgrounds/ciudades-verde-oscuro-nubes-agua.jpg",
+        "url": "/backgrounds/ciudades-verde-oscuro-nubes-agua.jpg",
         "tags": "ciudades-verde-oscuro-nubes-agua",
         "categories": "ciudades"
       }
@@ -733,7 +733,7 @@
       {
         "id": 82,
         "title": "Parque otoñal ciudad",
-        "url": "app/assets/backgrounds/ciudades-verde-parque-otoño-hojas-nubes.jpg",
+        "url": "/backgrounds/ciudades-verde-parque-otoño-hojas-nubes.jpg",
         "tags": "ciudades-verde-parque-otoño-hojas-nubes",
         "categories": "ciudades"
       }
@@ -742,7 +742,7 @@
       {
         "id": 83,
         "title": "Camionetas Chevrolet",
-        "url": "app/assets/backgrounds/coches-chevrolet-camioneta-azul-verde-arbol.jpg",
+        "url": "/backgrounds/coches-chevrolet-camioneta-azul-verde-arbol.jpg",
         "tags": "coches-chevrolet-camioneta-azul-verde-arbol",
         "categories": "coches"
       }
@@ -751,7 +751,7 @@
       {
         "id": 84,
         "title": "Coche Chevrolet verde y negro",
-        "url": "app/assets/backgrounds/coches-chevrolet-verde-negro-oscuro.jpg",
+        "url": "/backgrounds/coches-chevrolet-verde-negro-oscuro.jpg",
         "tags": "coches-chevrolet-verde-negro-oscuro",
         "categories": "coches"
       }
@@ -760,7 +760,7 @@
       {
         "id": 85,
         "title": "Lamborghini en el muelle de la ciudad",
-        "url": "app/assets/backgrounds/coches-ciudades-lamborghini-orilla-muelle-gris-noche-luces.jpg",
+        "url": "/backgrounds/coches-ciudades-lamborghini-orilla-muelle-gris-noche-luces.jpg",
         "tags": "coches-ciudades-lamborghini-orilla-muelle-gris-noche-luces",
         "categories": "coches-ciudades"
       }
@@ -769,7 +769,7 @@
       {
         "id": 86,
         "title": "Lamborghini violeta ciudad",
-        "url": "app/assets/backgrounds/coches-ciudades-lamborghini-violeta-noche-luces.jpg",
+        "url": "/backgrounds/coches-ciudades-lamborghini-violeta-noche-luces.jpg",
         "tags": "coches-ciudades-lamborghini-violeta-noche-luces",
         "categories": "coches-ciudades"
       }
@@ -778,7 +778,7 @@
       {
         "id": 87,
         "title": "Ferrari amarillo",
-        "url": "app/assets/backgrounds/coches-ferrari-amarillo-blanco.jpg",
+        "url": "/backgrounds/coches-ferrari-amarillo-blanco.jpg",
         "tags": "coches-ferrari-amarillo-blanco",
         "categories": "coches"
       }
@@ -787,7 +787,7 @@
       {
         "id": 88,
         "title": "Ford Mustang derrapando",
-        "url": "app/assets/backgrounds/coches-ford-mustang-derrapar-humo-circuito-negro-gris-verde.jpg",
+        "url": "/backgrounds/coches-ford-mustang-derrapar-humo-circuito-negro-gris-verde.jpg",
         "tags": "coches-ford-mustang-derrapar-humo-circuito-negro-gris-verde",
         "categories": "coches"
       }
@@ -796,7 +796,7 @@
       {
         "id": 89,
         "title": "Coche llameante",
-        "url": "app/assets/backgrounds/coches-fuego-llamas-negro-naranja.jpg",
+        "url": "/backgrounds/coches-fuego-llamas-negro-naranja.jpg",
         "tags": "coches-fuego-llamas-negro-naranja",
         "categories": "coches"
       }
@@ -805,7 +805,7 @@
       {
         "id": 90,
         "title": "Lamborghini negro",
-        "url": "app/assets/backgrounds/coches-lamborghini-gris-amarillo-negro-carretera.jpg",
+        "url": "/backgrounds/coches-lamborghini-gris-amarillo-negro-carretera.jpg",
         "tags": "coches-lamborghini-gris-amarillo-negro-carretera",
         "categories": "coches"
       }
@@ -814,7 +814,7 @@
       {
         "id": 91,
         "title": "Lamborghini en pueblo de montaña",
-        "url": "app/assets/backgrounds/coches-lamborghini-gris-casa-campo-arbol-montaña.jpg",
+        "url": "/backgrounds/coches-lamborghini-gris-casa-campo-arbol-montaña.jpg",
         "tags": "coches-lamborghini-gris-casa-campo-arbol-montaña",
         "categories": "coches"
       }
@@ -823,7 +823,7 @@
       {
         "id": 92,
         "title": "Mini negro y rojo en circuito",
-        "url": "app/assets/backgrounds/coches-mini-circuito-negro-rojo.jpg",
+        "url": "/backgrounds/coches-mini-circuito-negro-rojo.jpg",
         "tags": "coches-mini-circuito-negro-rojo",
         "categories": "coches"
       }
@@ -832,7 +832,7 @@
       {
         "id": 93,
         "title": "Coches Nissan en circuito",
-        "url": "app/assets/backgrounds/coches-nissan-circuito-rojo-blanco-circuito.jpg",
+        "url": "/backgrounds/coches-nissan-circuito-rojo-blanco-circuito.jpg",
         "tags": "coches-nissan-circuito-rojo-blanco-circuito",
         "categories": "coches"
       }
@@ -841,7 +841,7 @@
       {
         "id": 94,
         "title": "Coche Pagani blanco y negro",
-        "url": "app/assets/backgrounds/coches-pagani-blanco-negro-nubes.jpg",
+        "url": "/backgrounds/coches-pagani-blanco-negro-nubes.jpg",
         "tags": "coches-pagani-blanco-negro-nubes",
         "categories": "coches"
       }
@@ -850,7 +850,7 @@
       {
         "id": 95,
         "title": "BMW por carretera en otoño",
-        "url": "app/assets/backgrounds/coches-paisajes-bmw-carretera-bosque-otoño-naranja-gris.jpg",
+        "url": "/backgrounds/coches-paisajes-bmw-carretera-bosque-otoño-naranja-gris.jpg",
         "tags": "coches-paisajes-bmw-carretera-bosque-otoño-naranja-gris",
         "categories": "coches-paisajes"
       }
@@ -859,7 +859,7 @@
       {
         "id": 96,
         "title": "Coche clásico por carretera en día nublado",
-        "url": "app/assets/backgrounds/coches-paisajes-clasico-carretera-nubes-gris.jpg",
+        "url": "/backgrounds/coches-paisajes-clasico-carretera-nubes-gris.jpg",
         "tags": "coches-paisajes-clasico-carretera-nubes-gris",
         "categories": "coches-paisajes"
       }
@@ -868,7 +868,7 @@
       {
         "id": 97,
         "title": "Camioneta Volkswagen en carretera de montaña al atardecer",
-        "url": "app/assets/backgrounds/coches-paisajes-volkswagen-furgoneta-carretera-montañas-atardecer-naranja.jpg",
+        "url": "/backgrounds/coches-paisajes-volkswagen-furgoneta-carretera-montañas-atardecer-naranja.jpg",
         "tags": "coches-paisajes-volkswagen-furgoneta-carretera-montañas-atardecer-naranja",
         "categories": "coches-paisajes"
       }
@@ -877,7 +877,7 @@
       {
         "id": 98,
         "title": "Porsche en garaje",
-        "url": "app/assets/backgrounds/coches-porsche-gris-garaje.jpg",
+        "url": "/backgrounds/coches-porsche-gris-garaje.jpg",
         "tags": "coches-porsche-gris-garaje",
         "categories": "coches"
       }
@@ -886,7 +886,7 @@
       {
         "id": 99,
         "title": "Ruedas coche verde",
-        "url": "app/assets/backgrounds/coches-ruedas-verde-carretera.jpg",
+        "url": "/backgrounds/coches-ruedas-verde-carretera.jpg",
         "tags": "coches-ruedas-verde-carretera",
         "categories": "coches"
       }
@@ -895,7 +895,7 @@
       {
         "id": 100,
         "title": "Carrera coches en videojuego",
-        "url": "app/assets/backgrounds/coches-videojuego-carrera-humo.jpg",
+        "url": "/backgrounds/coches-videojuego-carrera-humo.jpg",
         "tags": "coches-videojuego-carrera-humo",
         "categories": "coches"
       }
@@ -904,7 +904,7 @@
       {
         "id": 101,
         "title": "Mercedes-Benz verde en videojuego",
-        "url": "app/assets/backgrounds/coches-videojuego-mercedes benz-verde-campo-casa-atardecer.jpg",
+        "url": "/backgrounds/coches-videojuego-mercedes benz-verde-campo-casa-atardecer.jpg",
         "tags": "coches-videojuego-mercedes benz-verde-campo-casa-atardecer",
         "categories": "coches"
       }
@@ -913,7 +913,7 @@
       {
         "id": 102,
         "title": "Moto amarilla entre luces y sombras",
-        "url": "app/assets/backgrounds/motos-amarillo-negro-sombras-luces.jpg",
+        "url": "/backgrounds/motos-amarillo-negro-sombras-luces.jpg",
         "tags": "motos-amarillo-negro-sombras-luces",
         "categories": "motos"
       }
@@ -922,7 +922,7 @@
       {
         "id": 103,
         "title": "Moto Repsol sobre agua al anochecer",
-        "url": "app/assets/backgrounds/motos-anochecer-naranja-agua.jpg",
+        "url": "/backgrounds/motos-anochecer-naranja-agua.jpg",
         "tags": "motos-anochecer-naranja-agua",
         "categories": "motos"
       }
@@ -931,7 +931,7 @@
       {
         "id": 104,
         "title": "Moto azul en la carretera",
-        "url": "app/assets/backgrounds/motos-azul-negro-dia-carretera.jpg",
+        "url": "/backgrounds/motos-azul-negro-dia-carretera.jpg",
         "tags": "motos-azul-negro-dia-carretera",
         "categories": "motos"
       }
@@ -940,7 +940,7 @@
       {
         "id": 105,
         "title": "Motorista blanco corriendo en circuito",
-        "url": "app/assets/backgrounds/motos-blanco-carretera-circuito-atardecer.jpg",
+        "url": "/backgrounds/motos-blanco-carretera-circuito-atardecer.jpg",
         "tags": "motos-blanco-carretera-circuito-atardecer",
         "categories": "motos"
       }
@@ -949,7 +949,7 @@
       {
         "id": 106,
         "title": "Moto blanca aparcada en circuito",
-        "url": "app/assets/backgrounds/motos-blanco-circuito-atardecer.jpg",
+        "url": "/backgrounds/motos-blanco-circuito-atardecer.jpg",
         "tags": "motos-blanco-circuito-atardecer",
         "categories": "motos"
       }
@@ -958,7 +958,7 @@
       {
         "id": 107,
         "title": "Motorista con pulgar hacia arriba en moto quemando rueda",
-        "url": "app/assets/backgrounds/motos-blanco-negro-atardecer-humo-circuito.jpg",
+        "url": "/backgrounds/motos-blanco-negro-atardecer-humo-circuito.jpg",
         "tags": "motos-blanco-negro-atardecer-humo-circuito",
         "categories": "motos"
       }
@@ -967,7 +967,7 @@
       {
         "id": 108,
         "title": "Motoristas corriendo por la ciudad de noche",
-        "url": "app/assets/backgrounds/motos-blanco-negro-rojo-azul-noche.jpg",
+        "url": "/backgrounds/motos-blanco-negro-rojo-azul-noche.jpg",
         "tags": "motos-blanco-negro-rojo-azul-noche",
         "categories": "motos"
       }
@@ -976,7 +976,7 @@
       {
         "id": 109,
         "title": "Motoristas haciendo caballito de pie por autopista de noche",
-        "url": "app/assets/backgrounds/motos-ciudades-amarillo-negro-noche-sombras-acrobacia.jpg",
+        "url": "/backgrounds/motos-ciudades-amarillo-negro-noche-sombras-acrobacia.jpg",
         "tags": "motos-ciudades-amarillo-negro-noche-sombras-acrobacia",
         "categories": "motos"
       }
@@ -985,7 +985,7 @@
       {
         "id": 110,
         "title": "Carrera de fuego entre moto y coche",
-        "url": "app/assets/backgrounds/motos-coches-artistico-negro-naranja-fuego-carrera.jpg",
+        "url": "/backgrounds/motos-coches-artistico-negro-naranja-fuego-carrera.jpg",
         "tags": "motos-coches-artistico-negro-naranja-fuego-carrera",
         "categories": "motos-coches"
       }
@@ -994,7 +994,7 @@
       {
         "id": 111,
         "title": "Moto Kawasaki negra",
-        "url": "app/assets/backgrounds/motos-negro-blanco-kawasaki.jpg",
+        "url": "/backgrounds/motos-negro-blanco-kawasaki.jpg",
         "tags": "motos-negro-blanco-kawasaki",
         "categories": "motos"
       }
@@ -1003,7 +1003,7 @@
       {
         "id": 112,
         "title": "Motorista negro corriendo de día",
-        "url": "app/assets/backgrounds/motos-negro-carretera-luces.jpg",
+        "url": "/backgrounds/motos-negro-carretera-luces.jpg",
         "tags": "motos-negro-carretera-luces",
         "categories": "motos"
       }
@@ -1012,7 +1012,7 @@
       {
         "id": 113,
         "title": "Moto aparcada al anochecer",
-        "url": "app/assets/backgrounds/motos-negro-naranja-anochecer.jpg",
+        "url": "/backgrounds/motos-negro-naranja-anochecer.jpg",
         "tags": "motos-negro-naranja-anochecer",
         "categories": "motos"
       }
@@ -1021,7 +1021,7 @@
       {
         "id": 114,
         "title": "Moto con luz roja brillante",
-        "url": "app/assets/backgrounds/motos-negro-rojo-luces.jpg",
+        "url": "/backgrounds/motos-negro-rojo-luces.jpg",
         "tags": "motos-negro-rojo-luces",
         "categories": "motos"
       }
@@ -1030,7 +1030,7 @@
       {
         "id": 115,
         "title": "Moto sobre luz de neón",
-        "url": "app/assets/backgrounds/motos-neon-negro-verde.jpg",
+        "url": "/backgrounds/motos-neon-negro-verde.jpg",
         "tags": "motos-neon-negro-verde",
         "categories": "motos"
       }
@@ -1039,7 +1039,7 @@
       {
         "id": 116,
         "title": "Moto aparcada con vista a montañas y mar",
-        "url": "app/assets/backgrounds/motos-paisajes-azul-mar-montañas.jpg",
+        "url": "/backgrounds/motos-paisajes-azul-mar-montañas.jpg",
         "tags": "motos-paisajes-azul-mar-montañas",
         "categories": "motos-paisajes"
       }
@@ -1048,7 +1048,7 @@
       {
         "id": 117,
         "title": "Motoristas observando el lago y las montañas",
-        "url": "app/assets/backgrounds/motos-paisajes-verde-montañas-sol-nubes.jpg",
+        "url": "/backgrounds/motos-paisajes-verde-montañas-sol-nubes.jpg",
         "tags": "motos-paisajes-verde-montañas-sol-nubes",
         "categories": "motos-paisajes"
       }
@@ -1057,7 +1057,7 @@
       {
         "id": 118,
         "title": "Motorista corriendo en la naturaleza",
-        "url": "app/assets/backgrounds/motos-rojo-blanco-hierba-arbol-acrobacia.jpg",
+        "url": "/backgrounds/motos-rojo-blanco-hierba-arbol-acrobacia.jpg",
         "tags": "motos-rojo-blanco-hierba-arbol-acrobacia",
         "categories": "motos"
       }
@@ -1066,7 +1066,7 @@
       {
         "id": 119,
         "title": "Motorista corriendo sobre tierra",
-        "url": "app/assets/backgrounds/motos-rojo-blanco-tierra.jpg",
+        "url": "/backgrounds/motos-rojo-blanco-tierra.jpg",
         "tags": "motos-rojo-blanco-tierra",
         "categories": "motos"
       }
@@ -1075,7 +1075,7 @@
       {
         "id": 120,
         "title": "Motorista haciendo acrobacia",
-        "url": "app/assets/backgrounds/motos-verde-acrobacia.jpg",
+        "url": "/backgrounds/motos-verde-acrobacia.jpg",
         "tags": "motos-verde-acrobacia",
         "categories": "motos"
       }
@@ -1084,7 +1084,7 @@
       {
         "id": 121,
         "title": "MotoGP Redbull videojuego",
-        "url": "app/assets/backgrounds/motos-videojuego-negro-naranja-circuito.jpg",
+        "url": "/backgrounds/motos-videojuego-negro-naranja-circuito.jpg",
         "tags": "motos-videojuego-negro-naranja-circuito",
         "categories": "motos"
       }
@@ -1093,7 +1093,7 @@
       {
         "id": 122,
         "title": "Avión sobre el mar dibujo",
-        "url": "app/assets/backgrounds/aviones-artistico-azul-blanco-mar-nubes.png",
+        "url": "/backgrounds/aviones-artistico-azul-blanco-mar-nubes.png",
         "tags": "aviones-artistico-azul-blanco-mar-nubes",
         "categories": "aviones"
       }
@@ -1102,7 +1102,7 @@
       {
         "id": 123,
         "title": "Chica sentada en ala de avión volando dibujo",
-        "url": "app/assets/backgrounds/aviones-artistico-noche-estrellas-chica.jpg",
+        "url": "/backgrounds/aviones-artistico-noche-estrellas-chica.jpg",
         "tags": "aviones-artistico-noche-estrellas-chica",
         "categories": "aviones"
       }
@@ -1111,7 +1111,7 @@
       {
         "id": 124,
         "title": "Avión estacionado en pista mojada",
-        "url": "app/assets/backgrounds/aviones-blanco-azul-noche-nubes-lluvia.jpg",
+        "url": "/backgrounds/aviones-blanco-azul-noche-nubes-lluvia.jpg",
         "tags": "aviones-blanco-azul-noche-nubes-lluvia",
         "categories": "aviones"
       }
@@ -1120,7 +1120,7 @@
       {
         "id": 125,
         "title": "Avión de guerra entre las nubes",
-        "url": "app/assets/backgrounds/aviones-blanco-azul-nubes-pequeño.jpg",
+        "url": "/backgrounds/aviones-blanco-azul-nubes-pequeño.jpg",
         "tags": "aviones-blanco-azul-nubes-pequeño",
         "categories": "aviones"
       }
@@ -1129,7 +1129,7 @@
       {
         "id": 126,
         "title": "Avión comercial entre el humo",
-        "url": "app/assets/backgrounds/aviones-blanco-humo.jpg",
+        "url": "/backgrounds/aviones-blanco-humo.jpg",
         "tags": "aviones-blanco-humo",
         "categories": "aviones"
       }
@@ -1138,7 +1138,7 @@
       {
         "id": 127,
         "title": "Avión volando sobre rascacielos",
-        "url": "app/assets/backgrounds/aviones-ciudades-blanco-gris-rascacielos.jpg",
+        "url": "/backgrounds/aviones-ciudades-blanco-gris-rascacielos.jpg",
         "tags": "aviones-ciudades-blanco-gris-rascacielos",
         "categories": "aviones-ciudades"
       }
@@ -1147,7 +1147,7 @@
       {
         "id": 128,
         "title": "Avión volando sobre autopista",
-        "url": "app/assets/backgrounds/aviones-coches-artistico-atardecer-sol-nubes.jpg",
+        "url": "/backgrounds/aviones-coches-artistico-atardecer-sol-nubes.jpg",
         "tags": "aviones-coches-artistico-atardecer-sol-nubes",
         "categories": "aviones-coches"
       }
@@ -1156,7 +1156,7 @@
       {
         "id": 129,
         "title": "Cazas de combate en el cielo",
-        "url": "app/assets/backgrounds/aviones-historico-caza-combate-blanco-negro-nubes.jpg",
+        "url": "/backgrounds/aviones-historico-caza-combate-blanco-negro-nubes.jpg",
         "tags": "aviones-historico-caza-combate-blanco-negro-nubes",
         "categories": "aviones"
       }
@@ -1165,7 +1165,7 @@
       {
         "id": 130,
         "title": "Ejecutivos en pista de aterrizaje",
-        "url": "app/assets/backgrounds/aviones-jet-blanco-pista-ejecutivos.jpg",
+        "url": "/backgrounds/aviones-jet-blanco-pista-ejecutivos.jpg",
         "tags": "aviones-jet-blanco-pista-ejecutivos",
         "categories": "aviones"
       }
@@ -1174,7 +1174,7 @@
       {
         "id": 131,
         "title": "Caza de combate volando sobre el mar",
-        "url": "app/assets/backgrounds/aviones-militar-artistico-mar-nubes.jpg",
+        "url": "/backgrounds/aviones-militar-artistico-mar-nubes.jpg",
         "tags": "aviones-militar-artistico-mar-nubes",
         "categories": "aviones"
       }
@@ -1183,7 +1183,7 @@
       {
         "id": 132,
         "title": "Blackbird estacionado",
-        "url": "app/assets/backgrounds/aviones-militar-blackbird-negro-pista-nubes.jpg",
+        "url": "/backgrounds/aviones-militar-blackbird-negro-pista-nubes.jpg",
         "tags": "aviones-militar-blackbird-negro-pista-nubes",
         "categories": "aviones"
       }
@@ -1192,7 +1192,7 @@
       {
         "id": 133,
         "title": "Formación de cazas españoles dibujo",
-        "url": "app/assets/backgrounds/aviones-militar-caza-artistico-cabina-piloto-nubes-formacion.jpg",
+        "url": "/backgrounds/aviones-militar-caza-artistico-cabina-piloto-nubes-formacion.jpg",
         "tags": "aviones-militar-caza-artistico-cabina-piloto-nubes-formacion",
         "categories": "aviones"
       }
@@ -1201,7 +1201,7 @@
       {
         "id": 134,
         "title": "Caza militar estacionado al atardecer",
-        "url": "app/assets/backgrounds/aviones-militar-caza-atardecer-sol-reflejo-agua.jpg",
+        "url": "/backgrounds/aviones-militar-caza-atardecer-sol-reflejo-agua.jpg",
         "tags": "aviones-militar-caza-atardecer-sol-reflejo-agua",
         "categories": "aviones"
       }
@@ -1210,7 +1210,7 @@
       {
         "id": 135,
         "title": "Caza de combate despegando de portaaviones",
-        "url": "app/assets/backgrounds/aviones-militar-caza-portaaviones-mar-nubes-azul.jpg",
+        "url": "/backgrounds/aviones-militar-caza-portaaviones-mar-nubes-azul.jpg",
         "tags": "aviones-militar-caza-portaaviones-mar-nubes-azul",
         "categories": "aviones"
       }
@@ -1219,7 +1219,7 @@
       {
         "id": 136,
         "title": "Guerra tanques y aviones de combate dibujo",
-        "url": "app/assets/backgrounds/aviones-militar-guerra-artistico-fuego-negro-naranja-tanques.jpg",
+        "url": "/backgrounds/aviones-militar-guerra-artistico-fuego-negro-naranja-tanques.jpg",
         "tags": "aviones-militar-guerra-artistico-fuego-negro-naranja-tanques",
         "categories": "aviones"
       }
@@ -1228,7 +1228,7 @@
       {
         "id": 137,
         "title": "Cabina de avión anochecer",
-        "url": "app/assets/backgrounds/aviones-negro-azul-anochecer-luces-cabina.jpg",
+        "url": "/backgrounds/aviones-negro-azul-anochecer-luces-cabina.jpg",
         "tags": "aviones-negro-azul-anochecer-luces-cabina",
         "categories": "aviones"
       }
@@ -1237,7 +1237,7 @@
       {
         "id": 138,
         "title": "Avión en orilla de playa",
-        "url": "app/assets/backgrounds/aviones-paisajes-mar-playa-azul.jpg",
+        "url": "/backgrounds/aviones-paisajes-mar-playa-azul.jpg",
         "tags": "aviones-paisajes-mar-playa-azul",
         "categories": "aviones-paisajes"
       }
@@ -1246,7 +1246,7 @@
       {
         "id": 139,
         "title": "Cazas volando sobre montaña de noche dibujo",
-        "url": "app/assets/backgrounds/aviones-paisajes-militar-caza-noche-nubes-estrellas-montañas.jpg",
+        "url": "/backgrounds/aviones-paisajes-militar-caza-noche-nubes-estrellas-montañas.jpg",
         "tags": "aviones-paisajes-militar-caza-noche-nubes-estrellas-montañas",
         "categories": "aviones-paisajes"
       }
@@ -1255,7 +1255,7 @@
       {
         "id": 140,
         "title": "Avión volando sobre montañas nevadas",
-        "url": "app/assets/backgrounds/aviones-paisajes-montañas-nieve-blanco-azul.jpg",
+        "url": "/backgrounds/aviones-paisajes-montañas-nieve-blanco-azul.jpg",
         "tags": "aviones-paisajes-montañas-nieve-blanco-azul",
         "categories": "aviones-paisajes"
       }
@@ -1264,7 +1264,7 @@
       {
         "id": 141,
         "title": "Pista de aterrizaje entre montañas desierto",
-        "url": "app/assets/backgrounds/aviones-paisajes-pista-montañas.jpg",
+        "url": "/backgrounds/aviones-paisajes-pista-montañas.jpg",
         "tags": "aviones-paisajes-pista-montañas",
         "categories": "aviones-paisajes"
       }
@@ -1273,7 +1273,7 @@
       {
         "id": 142,
         "title": "Avión en pista de aterrizaje de noche",
-        "url": "app/assets/backgrounds/aviones-pista-noche-luces.jpg",
+        "url": "/backgrounds/aviones-pista-noche-luces.jpg",
         "tags": "aviones-pista-noche-luces",
         "categories": "aviones"
       }
@@ -1282,7 +1282,7 @@
       {
         "id": 143,
         "title": "Avión de Star Wars noche",
-        "url": "app/assets/backgrounds/aviones-star wars-noche-luces-pista-blanco-azul.jpg",
+        "url": "/backgrounds/aviones-star wars-noche-luces-pista-blanco-azul.jpg",
         "tags": "aviones-star wars-noche-luces-pista-blanco-azul",
         "categories": "aviones"
       }
@@ -1291,7 +1291,7 @@
       {
         "id": 144,
         "title": "Botas de fútbol negras",
-        "url": "app/assets/backgrounds/futbol-artistico-botas-negro-flotar.jpg",
+        "url": "/backgrounds/futbol-artistico-botas-negro-flotar.jpg",
         "tags": "futbol-artistico-botas-negro-flotar",
         "categories": "futbol"
       }
@@ -1300,7 +1300,7 @@
       {
         "id": 145,
         "title": "Messi chutando la pelota",
-        "url": "app/assets/backgrounds/futbol-artistico-messi-pelota-tirar-gradas-campo.jpg",
+        "url": "/backgrounds/futbol-artistico-messi-pelota-tirar-gradas-campo.jpg",
         "tags": "futbol-artistico-messi-pelota-tirar-gradas-campo",
         "categories": "futbol"
       }
@@ -1309,7 +1309,7 @@
       {
         "id": 146,
         "title": "Neymar Jr. Paris Saint-Germain",
-        "url": "app/assets/backgrounds/futbol-artistico-neymar-campo-gradas-noche-estrellas-nubes-luna.jpg",
+        "url": "/backgrounds/futbol-artistico-neymar-campo-gradas-noche-estrellas-nubes-luna.jpg",
         "tags": "futbol-artistico-neymar-campo-gradas-noche-estrellas-nubes-luna",
         "categories": "futbol"
       }
@@ -1318,7 +1318,7 @@
       {
         "id": 147,
         "title": "Ronaldinho Brasil",
-        "url": "app/assets/backgrounds/futbol-artistico-ronaldinho-amarillo-verde-bandera.jpg",
+        "url": "/backgrounds/futbol-artistico-ronaldinho-amarillo-verde-bandera.jpg",
         "tags": "futbol-artistico-ronaldinho-amarillo-verde-bandera",
         "categories": "futbol"
       }
@@ -1327,7 +1327,7 @@
       {
         "id": 148,
         "title": "Ronaldinho jugando con el balón",
-        "url": "app/assets/backgrounds/futbol-artistico-ronaldinho-pelota-gradas-campo.jpg",
+        "url": "/backgrounds/futbol-artistico-ronaldinho-pelota-gradas-campo.jpg",
         "tags": "futbol-artistico-ronaldinho-pelota-gradas-campo",
         "categories": "futbol"
       }
@@ -1336,7 +1336,7 @@
       {
         "id": 149,
         "title": "Jugadores celebrando gol",
-        "url": "app/assets/backgrounds/futbol-blanco-equipo-abrazo.jpg",
+        "url": "/backgrounds/futbol-blanco-equipo-abrazo.jpg",
         "tags": "futbol-blanco-equipo-abrazo",
         "categories": "futbol"
       }
@@ -1345,7 +1345,7 @@
       {
         "id": 150,
         "title": "Jugador tirando desde centro campo",
-        "url": "app/assets/backgrounds/futbol-campo-estadio-jugador-pelota-focos.jpg",
+        "url": "/backgrounds/futbol-campo-estadio-jugador-pelota-focos.jpg",
         "tags": "futbol-campo-estadio-jugador-pelota-focos",
         "categories": "futbol"
       }
@@ -1354,7 +1354,7 @@
       {
         "id": 151,
         "title": "Campo de fútbol de noche",
-        "url": "app/assets/backgrounds/futbol-campo-gradas-focos-noche-porteria-pelota.jpg",
+        "url": "/backgrounds/futbol-campo-gradas-focos-noche-porteria-pelota.jpg",
         "tags": "futbol-campo-gradas-focos-noche-porteria-pelota",
         "categories": "futbol"
       }
@@ -1363,7 +1363,7 @@
       {
         "id": 152,
         "title": "Neymar celebrando gol",
-        "url": "app/assets/backgrounds/futbol-campo-gradas-jugador-victoria-celebrar-amarillo.jpg",
+        "url": "/backgrounds/futbol-campo-gradas-jugador-victoria-celebrar-amarillo.jpg",
         "tags": "futbol-campo-gradas-jugador-victoria-celebrar-amarillo",
         "categories": "futbol"
       }
@@ -1372,7 +1372,7 @@
       {
         "id": 153,
         "title": "Sevilla FC campo de fútbol",
-        "url": "app/assets/backgrounds/futbol-campo-gradas-rojo-sevilla fc.jpg",
+        "url": "/backgrounds/futbol-campo-gradas-rojo-sevilla fc.jpg",
         "tags": "futbol-campo-gradas-rojo-sevilla fc",
         "categories": "futbol"
       }
@@ -1381,7 +1381,7 @@
       {
         "id": 154,
         "title": "Lucha por balón",
-        "url": "app/assets/backgrounds/futbol-campo-pelota-azul-rojo-sol.jpg",
+        "url": "/backgrounds/futbol-campo-pelota-azul-rojo-sol.jpg",
         "tags": "futbol-campo-pelota-azul-rojo-sol",
         "categories": "futbol"
       }
@@ -1390,7 +1390,7 @@
       {
         "id": 155,
         "title": "Partido de fútbol noche",
-        "url": "app/assets/backgrounds/futbol-pelota-campo-focos-anochecer-gradas.jpg",
+        "url": "/backgrounds/futbol-pelota-campo-focos-anochecer-gradas.jpg",
         "tags": "futbol-pelota-campo-focos-anochecer-gradas",
         "categories": "futbol"
       }
@@ -1399,7 +1399,7 @@
       {
         "id": 156,
         "title": "Jugador con equipación negra",
-        "url": "app/assets/backgrounds/futbol-pelota-campo-nubes.jpg",
+        "url": "/backgrounds/futbol-pelota-campo-nubes.jpg",
         "tags": "futbol-pelota-campo-nubes",
         "categories": "futbol"
       }
@@ -1408,7 +1408,7 @@
       {
         "id": 157,
         "title": "Pelota sobre el césped",
-        "url": "app/assets/backgrounds/futbol-pelota-cesped.jpg",
+        "url": "/backgrounds/futbol-pelota-cesped.jpg",
         "tags": "futbol-pelota-cesped",
         "categories": "futbol"
       }
@@ -1417,7 +1417,7 @@
       {
         "id": 158,
         "title": "Pelota sobre césped campo de fútbol",
-        "url": "app/assets/backgrounds/futbol-pelota-gradas-cesped.jpg",
+        "url": "/backgrounds/futbol-pelota-gradas-cesped.jpg",
         "tags": "futbol-pelota-gradas-cesped",
         "categories": "futbol"
       }
@@ -1426,7 +1426,7 @@
       {
         "id": 159,
         "title": "Pelota sobre césped frente a portería",
-        "url": "app/assets/backgrounds/futbol-pelota-porteria-campo-atardecer-sol.jpg",
+        "url": "/backgrounds/futbol-pelota-porteria-campo-atardecer-sol.jpg",
         "tags": "futbol-pelota-porteria-campo-atardecer-sol",
         "categories": "futbol"
       }
@@ -1435,7 +1435,7 @@
       {
         "id": 160,
         "title": "Equipo de fútbol posando",
-        "url": "app/assets/backgrounds/futbol-portugal-blanco-verde-equipo-posar-gradas.jpg",
+        "url": "/backgrounds/futbol-portugal-blanco-verde-equipo-posar-gradas.jpg",
         "tags": "futbol-portugal-blanco-verde-equipo-posar-gradas",
         "categories": "futbol"
       }
@@ -1444,7 +1444,7 @@
       {
         "id": 161,
         "title": "Jugador balón en los pies videojuego",
-        "url": "app/assets/backgrounds/futbol-videojuego-campo-botas-pelota.jpg",
+        "url": "/backgrounds/futbol-videojuego-campo-botas-pelota.jpg",
         "tags": "futbol-videojuego-campo-botas-pelota",
         "categories": "futbol"
       }
@@ -1453,7 +1453,7 @@
       {
         "id": 162,
         "title": "Jugador chilena videojuego",
-        "url": "app/assets/backgrounds/futbol-videojuego-campo-gradas-focos-noche-pelota.jpg",
+        "url": "/backgrounds/futbol-videojuego-campo-gradas-focos-noche-pelota.jpg",
         "tags": "futbol-videojuego-campo-gradas-focos-noche-pelota",
         "categories": "futbol"
       }
@@ -1462,7 +1462,7 @@
       {
         "id": 163,
         "title": "Griezmann estadio videojuego",
-        "url": "app/assets/backgrounds/futbol-videojuego-griezmann-mirar-campo-gradas-anochecer-focos.jpg",
+        "url": "/backgrounds/futbol-videojuego-griezmann-mirar-campo-gradas-anochecer-focos.jpg",
         "tags": "futbol-videojuego-griezmann-mirar-campo-gradas-anochecer-focos",
         "categories": "futbol"
       }
@@ -1471,7 +1471,7 @@
       {
         "id": 164,
         "title": "Ferrari negro en paisaje nevado",
-        "url": "app/assets/backgrounds/coches-paisajes-ferrari-negro-blanco-nieve-atardecer.jpg",
+        "url": "/backgrounds/coches-paisajes-ferrari-negro-blanco-nieve-atardecer.jpg",
         "tags": "coches-paisajes-ferrari-negro-blanco-nieve-atardecer",
         "categories": "coches-paisajes"
       }
@@ -1480,7 +1480,7 @@
       {
         "id": 165,
         "title": "Vista castillo Monte Fuji",
-        "url": "app/assets/backgrounds/paisajes-tokio-japon-montaña-arbol-castillo.jpg",
+        "url": "/backgrounds/paisajes-tokio-japon-montaña-arbol-castillo.jpg",
         "tags": "paisajes-tokio-japon-montaña-arbol-castillo",
         "categories": "paisajes"
       }
@@ -1489,7 +1489,7 @@
       {
         "id": 166,
         "title": "Canasta brillante noche",
-        "url": "app/assets/backgrounds/baloncesto-amarillo-naranja-negro-noche-canasta.jpg",
+        "url": "/backgrounds/baloncesto-amarillo-naranja-negro-noche-canasta.jpg",
         "tags": "baloncesto-amarillo-naranja-negro-noche-canasta",
         "categories": "baloncesto"
       }
@@ -1498,7 +1498,7 @@
       {
         "id": 167,
         "title": "Mapa equipos baloncesto EEUU",
-        "url": "app/assets/backgrounds/baloncesto-artistico-equipos-estados unidos-nba.jpg",
+        "url": "/backgrounds/baloncesto-artistico-equipos-estados unidos-nba.jpg",
         "tags": "baloncesto-artistico-equipos-estados unidos-nba",
         "categories": "baloncesto"
       }
@@ -1507,7 +1507,7 @@
       {
         "id": 168,
         "title": "Pelota baloncesto artístico",
-        "url": "app/assets/backgrounds/baloncesto-artistico-naranja-rojo-verde-azul-amarillo-negro-pelota.jpg",
+        "url": "/backgrounds/baloncesto-artistico-naranja-rojo-verde-azul-amarillo-negro-pelota.jpg",
         "tags": "baloncesto-artistico-naranja-rojo-verde-azul-amarillo-negro-pelota",
         "categories": "baloncesto"
       }
@@ -1516,7 +1516,7 @@
       {
         "id": 169,
         "title": "Duelo baloncesto",
-        "url": "app/assets/backgrounds/baloncesto-artistico-negro-amarillo-blanco-pelota-duelo.jpg",
+        "url": "/backgrounds/baloncesto-artistico-negro-amarillo-blanco-pelota-duelo.jpg",
         "tags": "baloncesto-artistico-negro-amarillo-blanco-pelota-duelo",
         "categories": "baloncesto"
       }
@@ -1525,7 +1525,7 @@
       {
         "id": 170,
         "title": "Stephen Curry tiro a canasta",
-        "url": "app/assets/backgrounds/baloncesto-artistico-stephen curry-negro-gris.jpg",
+        "url": "/backgrounds/baloncesto-artistico-stephen curry-negro-gris.jpg",
         "tags": "baloncesto-artistico-stephen curry-negro-gris",
         "categories": "baloncesto"
       }
@@ -1534,7 +1534,7 @@
       {
         "id": 171,
         "title": "Jugador baloncesto encestando",
-        "url": "app/assets/backgrounds/baloncesto-artistico-violeta-canasta-pelota.jpg",
+        "url": "/backgrounds/baloncesto-artistico-violeta-canasta-pelota.jpg",
         "tags": "baloncesto-artistico-violeta-canasta-pelota",
         "categories": "baloncesto"
       }
@@ -1543,7 +1543,7 @@
       {
         "id": 172,
         "title": "Cancha baloncesto Los Ángeles atardecer",
-        "url": "app/assets/backgrounds/baloncesto-atardecer-sol-cancha-los angeles.jpg",
+        "url": "/backgrounds/baloncesto-atardecer-sol-cancha-los angeles.jpg",
         "tags": "baloncesto-atardecer-sol-cancha-los angeles",
         "categories": "baloncesto"
       }
@@ -1552,7 +1552,7 @@
       {
         "id": 173,
         "title": "Canasta azul noche",
-        "url": "app/assets/backgrounds/baloncesto-canasta-azul-negro-sol-luces-oscuro.jpg",
+        "url": "/backgrounds/baloncesto-canasta-azul-negro-sol-luces-oscuro.jpg",
         "tags": "baloncesto-canasta-azul-negro-sol-luces-oscuro",
         "categories": "baloncesto"
       }
@@ -1561,7 +1561,7 @@
       {
         "id": 174,
         "title": "Pelota encestada en canasta",
-        "url": "app/assets/backgrounds/baloncesto-canasta-pelota-publico.jpg",
+        "url": "/backgrounds/baloncesto-canasta-pelota-publico.jpg",
         "tags": "baloncesto-canasta-pelota-publico",
         "categories": "baloncesto"
       }
@@ -1570,7 +1570,7 @@
       {
         "id": 175,
         "title": "Estadio partido baloncesto",
-        "url": "app/assets/backgrounds/baloncesto-cancha-gradas-publico.jpg",
+        "url": "/backgrounds/baloncesto-cancha-gradas-publico.jpg",
         "tags": "baloncesto-cancha-gradas-publico",
         "categories": "baloncesto"
       }
@@ -1579,7 +1579,7 @@
       {
         "id": 176,
         "title": "Logo jugador NBA",
-        "url": "app/assets/backgrounds/baloncesto-dibujo-blanco-negro-figura.jpg",
+        "url": "/backgrounds/baloncesto-dibujo-blanco-negro-figura.jpg",
         "tags": "baloncesto-dibujo-blanco-negro-figura",
         "categories": "baloncesto"
       }
@@ -1588,7 +1588,7 @@
       {
         "id": 177,
         "title": "Pelota baloncesto en el suelo de calle",
-        "url": "app/assets/backgrounds/baloncesto-gris-naranja-pelota-suelo.jpg",
+        "url": "/backgrounds/baloncesto-gris-naranja-pelota-suelo.jpg",
         "tags": "baloncesto-gris-naranja-pelota-suelo",
         "categories": "baloncesto"
       }
@@ -1597,7 +1597,7 @@
       {
         "id": 178,
         "title": "Partido NBA histórico",
-        "url": "app/assets/backgrounds/baloncesto-historico-blanco-negro-pelota-canasta-pista-duelo.png",
+        "url": "/backgrounds/baloncesto-historico-blanco-negro-pelota-canasta-pista-duelo.png",
         "tags": "baloncesto-historico-blanco-negro-pelota-canasta-pista-duelo",
         "categories": "baloncesto"
       }
@@ -1606,7 +1606,7 @@
       {
         "id": 179,
         "title": "Tributo Kobe Bryant",
-        "url": "app/assets/backgrounds/baloncesto-kobe bryant-amarillo-lakers-tributo.jpg",
+        "url": "/backgrounds/baloncesto-kobe bryant-amarillo-lakers-tributo.jpg",
         "tags": "baloncesto-kobe bryant-amarillo-lakers-tributo",
         "categories": "baloncesto"
       }
@@ -1615,7 +1615,7 @@
       {
         "id": 180,
         "title": "Logo Chicago Bulls",
-        "url": "app/assets/backgrounds/baloncesto-logo-poster-artistico-chicago bulls.jpg",
+        "url": "/backgrounds/baloncesto-logo-poster-artistico-chicago bulls.jpg",
         "tags": "baloncesto-logo-poster-artistico-chicago bulls",
         "categories": "baloncesto"
       }
@@ -1624,7 +1624,7 @@
       {
         "id": 181,
         "title": "Pelota baloncesto primer plano",
-        "url": "app/assets/backgrounds/baloncesto-naranja-negro-pelota.jpg",
+        "url": "/backgrounds/baloncesto-naranja-negro-pelota.jpg",
         "tags": "baloncesto-naranja-negro-pelota",
         "categories": "baloncesto"
       }
@@ -1633,7 +1633,7 @@
       {
         "id": 182,
         "title": "Pelota baloncesto artistico",
-        "url": "app/assets/backgrounds/baloncesto-naranja-pelota-artistico.jpg",
+        "url": "/backgrounds/baloncesto-naranja-pelota-artistico.jpg",
         "tags": "baloncesto-naranja-pelota-artistico",
         "categories": "baloncesto"
       }
@@ -1642,7 +1642,7 @@
       {
         "id": 183,
         "title": "Persona encestando en canasta",
-        "url": "app/assets/backgrounds/baloncesto-negro-azul-sombras-canasta-pelota-sol-nubes.jpg",
+        "url": "/backgrounds/baloncesto-negro-azul-sombras-canasta-pelota-sol-nubes.jpg",
         "tags": "baloncesto-negro-azul-sombras-canasta-pelota-sol-nubes",
         "categories": "baloncesto"
       }
@@ -1651,7 +1651,7 @@
       {
         "id": 184,
         "title": "Jugador baloncesto Nike",
-        "url": "app/assets/backgrounds/baloncesto-nike-blanco-negro-canasta-pelota.jpg",
+        "url": "/backgrounds/baloncesto-nike-blanco-negro-canasta-pelota.jpg",
         "tags": "baloncesto-nike-blanco-negro-canasta-pelota",
         "categories": "baloncesto"
       }
@@ -1660,7 +1660,7 @@
       {
         "id": 185,
         "title": "Canasta baloncesto montañas",
-        "url": "app/assets/backgrounds/baloncesto-paisajes-blanco-negro-cancha-canasta-montañas.jpg",
+        "url": "/backgrounds/baloncesto-paisajes-blanco-negro-cancha-canasta-montañas.jpg",
         "tags": "baloncesto-paisajes-blanco-negro-cancha-canasta-montañas",
         "categories": "baloncesto-paisajes"
       }
@@ -1669,7 +1669,7 @@
       {
         "id": 186,
         "title": "Pelota baloncesto primer plano",
-        "url": "app/assets/backgrounds/baloncesto-pelota-naranja-primer plano.jpg",
+        "url": "/backgrounds/baloncesto-pelota-naranja-primer plano.jpg",
         "tags": "baloncesto-pelota-naranja-primer plano",
         "categories": "baloncesto"
       }
@@ -1678,7 +1678,7 @@
       {
         "id": 187,
         "title": "Pelota baloncesto canasta reflejo",
-        "url": "app/assets/backgrounds/baloncesto-pelota-suelo-canasta-agua-lluvia-reflejo.jpg",
+        "url": "/backgrounds/baloncesto-pelota-suelo-canasta-agua-lluvia-reflejo.jpg",
         "tags": "baloncesto-pelota-suelo-canasta-agua-lluvia-reflejo",
         "categories": "baloncesto"
       }
@@ -1687,7 +1687,7 @@
       {
         "id": 188,
         "title": "Pelotas tenis sobre raqueta",
-        "url": "app/assets/backgrounds/tenis-amarillo-negro-raqueta-pelotas.jpg",
+        "url": "/backgrounds/tenis-amarillo-negro-raqueta-pelotas.jpg",
         "tags": "tenis-amarillo-negro-raqueta-pelotas",
         "categories": "tenis"
       }
@@ -1696,7 +1696,7 @@
       {
         "id": 189,
         "title": "Raqueta sobre pelota tenis",
-        "url": "app/assets/backgrounds/tenis-amarillo-raqueta-azul-negro-sombras.jpg",
+        "url": "/backgrounds/tenis-amarillo-raqueta-azul-negro-sombras.jpg",
         "tags": "tenis-amarillo-raqueta-azul-negro-sombras",
         "categories": "tenis"
       }
@@ -1705,7 +1705,7 @@
       {
         "id": 190,
         "title": "Andrea Petkovic jugadora tenis",
-        "url": "app/assets/backgrounds/tenis-artistico-andrea petkovic-azul-blanco.jpg",
+        "url": "/backgrounds/tenis-artistico-andrea petkovic-azul-blanco.jpg",
         "tags": "tenis-artistico-andrea petkovic-azul-blanco",
         "categories": "tenis"
       }
@@ -1714,7 +1714,7 @@
       {
         "id": 191,
         "title": "Andy Murray jugador tenis",
-        "url": "app/assets/backgrounds/tenis-artistico-andy murray-azul-blanco.jpg",
+        "url": "/backgrounds/tenis-artistico-andy murray-azul-blanco.jpg",
         "tags": "tenis-artistico-andy murray-azul-blanco",
         "categories": "tenis"
       }
@@ -1723,7 +1723,7 @@
       {
         "id": 192,
         "title": "Jugador tenis artístico",
-        "url": "app/assets/backgrounds/tenis-artistico-blanco-negro-raqueta.jpg",
+        "url": "/backgrounds/tenis-artistico-blanco-negro-raqueta.jpg",
         "tags": "tenis-artistico-blanco-negro-raqueta",
         "categories": "tenis"
       }
@@ -1732,7 +1732,7 @@
       {
         "id": 193,
         "title": "Rafael Nadal jugador tenis",
-        "url": "app/assets/backgrounds/tenis-artistico-rafael nadal-blanco-amarillo.jpg",
+        "url": "/backgrounds/tenis-artistico-rafael nadal-blanco-amarillo.jpg",
         "tags": "tenis-artistico-rafael nadal-blanco-amarillo",
         "categories": "tenis"
       }
@@ -1741,7 +1741,7 @@
       {
         "id": 194,
         "title": "Partido por parejas tenis",
-        "url": "app/assets/backgrounds/tenis-azul-equipo-raqueta-pelota-red-pista.jpg",
+        "url": "/backgrounds/tenis-azul-equipo-raqueta-pelota-red-pista.jpg",
         "tags": "tenis-azul-equipo-raqueta-pelota-red-pista",
         "categories": "tenis"
       }
@@ -1750,7 +1750,7 @@
       {
         "id": 195,
         "title": "Pista de tenis azul",
-        "url": "app/assets/backgrounds/tenis-azul-pista.jpg",
+        "url": "/backgrounds/tenis-azul-pista.jpg",
         "tags": "tenis-azul-pista",
         "categories": "tenis"
       }
@@ -1759,7 +1759,7 @@
       {
         "id": 196,
         "title": "Jugador en pista de tenis azul",
-        "url": "app/assets/backgrounds/tenis-azul-pista-sombras.jpg",
+        "url": "/backgrounds/tenis-azul-pista-sombras.jpg",
         "tags": "tenis-azul-pista-sombras",
         "categories": "tenis"
       }
@@ -1768,7 +1768,7 @@
       {
         "id": 197,
         "title": "Jugador tenis primer plano",
-        "url": "app/assets/backgrounds/tenis-azul-raqueta-primer plano.jpg",
+        "url": "/backgrounds/tenis-azul-raqueta-primer plano.jpg",
         "tags": "tenis-azul-raqueta-primer plano",
         "categories": "tenis"
       }
@@ -1777,7 +1777,7 @@
       {
         "id": 198,
         "title": "Pista tenis en el mar",
-        "url": "app/assets/backgrounds/tenis-ciudades-mar-atardecer-pista-agua.jpg",
+        "url": "/backgrounds/tenis-ciudades-mar-atardecer-pista-agua.jpg",
         "tags": "tenis-ciudades-mar-atardecer-pista-agua",
         "categories": "tenis-ciudades"
       }
@@ -1786,7 +1786,7 @@
       {
         "id": 199,
         "title": "Rafel Nadal saque de pelota",
-        "url": "app/assets/backgrounds/tenis-naranja-azul-rafael nadal-tierra-raqueta.jpg",
+        "url": "/backgrounds/tenis-naranja-azul-rafael nadal-tierra-raqueta.jpg",
         "tags": "tenis-naranja-azul-rafael nadal-tierra-raqueta",
         "categories": "tenis"
       }
@@ -1795,7 +1795,7 @@
       {
         "id": 200,
         "title": "Jugadora tenis recepción pelota",
-        "url": "app/assets/backgrounds/tenis-negro-azul-raqueta-pelota-pista-sombras.jpg",
+        "url": "/backgrounds/tenis-negro-azul-raqueta-pelota-pista-sombras.jpg",
         "tags": "tenis-negro-azul-raqueta-pelota-pista-sombras",
         "categories": "tenis"
       }
@@ -1804,7 +1804,7 @@
       {
         "id": 201,
         "title": "Jugadora tenis mirando",
-        "url": "app/assets/backgrounds/tenis-negro-mirar.jpg",
+        "url": "/backgrounds/tenis-negro-mirar.jpg",
         "tags": "tenis-negro-mirar",
         "categories": "tenis"
       }
@@ -1813,7 +1813,7 @@
       {
         "id": 202,
         "title": "Novak Djokovic golpeando pelota",
-        "url": "app/assets/backgrounds/tenis-Novak Djokovic-blanco-verde-raqueta-pelota-pista.jpg",
+        "url": "/backgrounds/tenis-Novak Djokovic-blanco-verde-raqueta-pelota-pista.jpg",
         "tags": "tenis-Novak Djokovic-blanco-verde-raqueta-pelota-pista",
         "categories": "tenis"
       }
@@ -1822,7 +1822,7 @@
       {
         "id": 203,
         "title": "Pelota tenis en el suelo con hojas",
-        "url": "app/assets/backgrounds/tenis-pelota-amarillo-negro-carretera-hojas.jpg",
+        "url": "/backgrounds/tenis-pelota-amarillo-negro-carretera-hojas.jpg",
         "tags": "tenis-pelota-amarillo-negro-carretera-hojas",
         "categories": "tenis"
       }
@@ -1831,7 +1831,7 @@
       {
         "id": 204,
         "title": "Pelota tenis en el suelo sol",
-        "url": "app/assets/backgrounds/tenis-pelota-naranja-sombras-sol.jpg",
+        "url": "/backgrounds/tenis-pelota-naranja-sombras-sol.jpg",
         "tags": "tenis-pelota-naranja-sombras-sol",
         "categories": "tenis"
       }
@@ -1840,7 +1840,7 @@
       {
         "id": 205,
         "title": "Rafael Nadal pose",
-        "url": "app/assets/backgrounds/tenis-rafael nadal-amarillo-azul.jpg",
+        "url": "/backgrounds/tenis-rafael nadal-amarillo-azul.jpg",
         "tags": "tenis-rafael nadal-amarillo-azul",
         "categories": "tenis"
       }
@@ -1849,7 +1849,7 @@
       {
         "id": 206,
         "title": "Rafael Nadal golpeando pelota",
-        "url": "app/assets/backgrounds/tenis-rafael nadal-negro-rosa-raqueta.jpg",
+        "url": "/backgrounds/tenis-rafael nadal-negro-rosa-raqueta.jpg",
         "tags": "tenis-rafael nadal-negro-rosa-raqueta",
         "categories": "tenis"
       }
@@ -1858,7 +1858,7 @@
       {
         "id": 207,
         "title": "Roger Federer celebrando",
-        "url": "app/assets/backgrounds/tenis-roger federer-raqueta-blanco-negro-celebrar.jpg",
+        "url": "/backgrounds/tenis-roger federer-raqueta-blanco-negro-celebrar.jpg",
         "tags": "tenis-roger federer-raqueta-blanco-negro-celebrar",
         "categories": "tenis"
       }

@@ -33,6 +33,7 @@ module Api
         @background.destroy
         render json: {status:'SECCESS', message:'Background deleted', data:background, status: :ok}
       end
+
       
       private
       def get_params
