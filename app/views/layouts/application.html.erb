@@ -62,37 +62,12 @@
             <li class='nav-item'>
               <a class='nav-link' href='#'>Fondos destacados</a>
             </li>
-            <li class='nav-item'>
-              <%= link_to "Animales", {:controller => "category", :action => "show"}, :id => '1' %>
-              <%# link_to "Profile", controller: "profiles", action: "show", id: @profile %>
-            </li>
-            <li class='nav-item'>
-              <a class='nav-link' href='#'>Paisaje</a>
-            </li>
-            <li class='nav-item'>
-              <a class='nav-link' href='#'>Universo</a>
-            </li>
-            <li class='nav-item'>
-              <a class='nav-link' href='#'>Cuidades</a>
-            </li>
-            <li class='nav-item'>
-              <a class='nav-link' href='#'>Fútbol</a>
-            </li>
-            <li class='nav-item'>
-              <a class='nav-link' href='#'>Baloncesto</a>
-            </li>
-            <li class='nav-item'>
-              <a class='nav-link' href='#'>Tenis</a>
-            </li>
-            <li class='nav-item'>
-              <a class='nav-link' href='#'>Coches</a>
-            </li>
-            <li class='nav-item'>
-              <a class='nav-link' href='#'>Motos</a>
-            </li>
-            <li class='nav-item'>
-              <a class='nav-link' href='#'>Aviones</a>
-            </li>
+            <% @categories.each do |category| %>
+              <li class='nav-item'>
+                <%= link_to category.name, api_v1_category_path(category.id), :class => "nav-link" %>
+                <%# <%=category.name%>
+              </li>
+            <% end %>
           </ul>
         </nav>
 
@@ -113,7 +88,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://pagination.js.org/dist/2.1.5/pagination.min.js"></script>
         <script src="scripts.js"></script>
-        <%# <%= javascript_include_tag "scripts.js" %> %>
+        <%# <%= javascript_include_tag "scripts.js" %>
         <%= javascript_tag "updateImagesDestacadas()" %>
         <%= javascript_tag "updateImagesRecientes()" %>
         <%#echo '<script type="text/javascript">updateImagesDestacadas(); </script>';

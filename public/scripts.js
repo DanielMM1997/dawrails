@@ -81,7 +81,7 @@ function updateImagesDestacadas() {
 }
 
 function updateImagesRecientes() {
-  var datos = JSON.parse(getJSON('http://localhost:3000/api/v1/backgrounds'));
+  var datos = getJSON('http://localhost:3000/api/v1/backgrounds');
   for (let i = 6; i < 12; i++) {
     var img = '<div class="col-' + colunmSize + ' responsive p-1">' +
       '<a href="view_image.php?id=' + datos[i]['id'] + '&category=' + datos[i]['categories'] + '">' +

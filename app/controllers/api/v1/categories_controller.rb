@@ -1,6 +1,6 @@
 module Api
   module V1
-    class CategoriesController < ApplicationController
+    class CategoriesController < ActionController::Base
 
       before_action :find_category, only: [:show, :update, :destroy, :find_backgrounds]
 
@@ -9,8 +9,10 @@ module Api
       end
       
       def show
+        @categories = Category.all
         backgrounds = @category.backgrounds
-        render json: {status:'SECCESS', message:'Category updated', data:backgrounds, status: :ok}
+        render layout:"application"
+        #render json: {status:'SECCESS', message:'Category updated', data:backgrounds, status: :ok}
       end
       
       def create
