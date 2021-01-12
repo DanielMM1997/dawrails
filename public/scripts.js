@@ -1,3 +1,5 @@
+//= require js-routes
+
 var colunmSize = 4;
 
 if ($(window).width() < 1200) {
@@ -36,24 +38,11 @@ function getJSON(url) {
   return request.status == 200 ? JSON.parse(request.responseText) : ''
 }
 
-function getImage(id) {
-  var datos = getJSON('http://localhost:3000/backgrounds');
-  var imagen;
-    $.each(datos.backgrounds, function (i, element) {
-    for (let field = 0; field < element.length; field++) {
-      if (element[field].id == id) {
-        imagen = element[field];
-      }
-    }
-  });
-  return imagen;
-}
-
 function updateImagesDestacadas() {
   var datos = getJSON('http://localhost:3000/backgrounds');
   for (let i = 0; i < 6; i++) {
     var img = '<div class="col-' + colunmSize + ' responsive p-1">' +
-      '<a href="view_image.php?id=' + datos[i]['id'] + '&category=' + datos[i]['categories'] + '">' +
+      '<a href="/backgrounds/' + datos[i]['id'] + '">' +
       '<img id="' + datos[i]['id'] + '" src="' + datos[i]['path'] + '"alt="' + datos[i]['title'] + '"></a></div>';
       // <%= asset_path("backgrounds/" + "datos[i]['path']") %> 
     $('.rellenarDestacadas').append(img);
@@ -64,7 +53,7 @@ function updateImagesRecientes() {
   var datos = getJSON('http://localhost:3000/backgrounds');
   for (let i = 6; i < 12; i++) {
     var img = '<div class="col-' + colunmSize + ' responsive p-1">' +
-      '<a href="view_image.php?id=' + datos[i]['id'] + '&category=' + datos[i]['categories'] + '">' +
+      '<a href="/backgrounds/' + datos[i]['id'] + '">' +
       '<img id="' + datos[i]['id'] + '" src="' + datos[i]['path'] + '" alt="' + datos[i]['title'] + '"></a></div>';
     $('.rellenarRecientes').append(img);
   }
@@ -82,22 +71,14 @@ function updateImagesCategories(category) {
     callback: function (data, pagination) {
       $('.rellenarCategorias').empty();
       $.each(data, function (i, element) {
-        console.log(element, 'asd')
+        //console.log(element, 'asd')
           var img = '<div class="col-' + colunmSize + ' responsive p-1">' +
-            '<a href="#">'  +
+            '<a href="/backgrounds/' + element['id'] + '">'  +
             '<img id="' + element['id'] + '" src="' + element['path'] + '" alt="' + element['title'] + '"></a></div>';
           $('.rellenarCategorias').append(img);
       });
     }
   });
-}
-
-
-function updateImage(id) {
-  var ele = getImage(id);
-  var img = '<div class="col-12 responsive p-3">' +
-    '<img id="' + ele['id'] + '" src="' + ele['url'] + '" alt="' + ele['title'] + '"></div>';
-  $('.rellenarImagen').append(img);
 }
 
 function validarDatos() {
