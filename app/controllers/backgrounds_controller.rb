@@ -7,7 +7,11 @@ class BackgroundsController < ApplicationController
   end
   
   def show
-    render json: @background
+    @categories = Category.all
+    @category = @background.category
+    @backgrounds = @category.backgrounds
+    render layout:"application"
+    #render json: {status:'SECCESS', message:'Category updated', data:@backgrounds, status: :ok}
   end
     
   def create
@@ -41,7 +45,7 @@ class BackgroundsController < ApplicationController
     # backgrounds = Like.find(@background).count()
     render json: {status:'SECCESS', message:'SECCESS', data:backgrounds, status: :ok}
   end
-      
+
   private
   def get_params
     params.required(:background).permit(:title, :url, :tags, :categories)

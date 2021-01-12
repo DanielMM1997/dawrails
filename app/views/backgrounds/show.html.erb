@@ -1,0 +1,40 @@
+<% content_for :head do %>
+  <title>Wallpapers House - <%=@background.name%></title>
+<% end %>
+
+<% content_for :content do %>
+<article class="article col-lg-10 col-12">
+  <section class="destacados">
+    <div class="container-xl p-lg-3 p-0">
+      <div class="row rellenarImagen"></div>
+      <div class="row justify-content-center">
+        <div class="actions">
+          <img src="/imgs/heart-regular-24.png" alt="me gusta">
+          <img src="/imgs/download-regular-24.png" alt="descargar">
+          <img src="/imgs/save-regular-24.png" alt="guardar">
+          <img src="/imgs/share-alt-regular-24.png" alt="compartir">
+          <img src="/imgs/info-circle-regular-24.png" alt="informacion">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="recientes">
+    <div class="container-fluid">
+      <h2>Fondos similares</h2>
+      <div class="row rellenarCategorias"></div>
+      <div id="pagination" class="row justify-content-center my-4"></div>
+      </div>
+    </div>
+  </section>
+</article>
+</div>
+<% end %>
+
+<% content_for :pageScripts do %>
+  <script>
+    var background = '<%= @backgrounds.to_json.html_safe %>';
+    // console.log(category_backgrounds);
+    updateImage(backgrounds);
+    updateImagesCategories(backgrounds);
+  </script>
+<% end %>

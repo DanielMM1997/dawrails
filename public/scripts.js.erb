@@ -84,7 +84,7 @@ function updateImagesCategories(category) {
       $.each(data, function (i, element) {
         console.log(element, 'asd')
           var img = '<div class="col-' + colunmSize + ' responsive p-1">' +
-            '<a href="#">' +
+            '<a href="#">'  +
             '<img id="' + element['id'] + '" src="' + element['path'] + '" alt="' + element['title'] + '"></a></div>';
           $('.rellenarCategorias').append(img);
       });
