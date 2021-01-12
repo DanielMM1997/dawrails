@@ -19,7 +19,7 @@
 <% content_for :pageScripts do %>
   <script>
     var category_backgrounds = '<%= @backgrounds.to_json.html_safe %>';
-    console.log(category_backgrounds);
+    // console.log(category_backgrounds);
     updateImagesCategories(category_backgrounds);
   </script>
 <% end %>

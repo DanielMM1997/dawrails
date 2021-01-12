@@ -47,7 +47,6 @@ backgrounds.each do |background|
 
     #Categoría: paisajes
     if i.between?(21, 40)
-        Like.create([{ :background_id => 1, :user_id => 1 }])
         BackgroundCategory.create([{ :background_id => i, :category_id => 2 }])
     elsif i.between?(95, 97)
         BackgroundCategory.create([{ :background_id => i, :category_id => 2 }])

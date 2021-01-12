@@ -32,6 +32,15 @@ class BackgroundsController < ApplicationController
     render json: {status:'SECCESS', message:'Background deleted', data:background, status: :ok}
   end
 
+  def recientes
+    render json: Background.all.order('created_at DESC').limit('6')
+  end
+
+  def destacados
+    backgrounds = Background.all.order('created_at DESC').limit('6')
+    # backgrounds = Like.find(@background).count()
+    render json: {status:'SECCESS', message:'SECCESS', data:backgrounds, status: :ok}
+  end
       
   private
   def get_params

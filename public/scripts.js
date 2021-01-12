@@ -10,20 +10,15 @@ if ($(window).width() < 768) {
   colunmSize = 4;
   $('li .d-none').removeClass('d-none');
 }
-
 if ($(window).width() < 576) {
   colunmSize = 6;
 }
-
 if ($(window).width() < 360) {
   colunmSize = 12;
 }
-
 if ($(window).width() >= 768 && $(window).width() <= 1024) {
   $('ul').removeClass('flex-column');
-
 }
-
 $('.menu-hidden .menu').on('click', function () {
   $('.article').toggle();
   $('.my-nav').toggle();
@@ -34,25 +29,11 @@ $('.menu-hidden .search').on('click', function () {
   $('#movil_search').toggle();
 });
 
-
 function getJSON(url) {
   var request = new XMLHttpRequest();
   request.open("GET", url, false);
   request.send(null);
   return request.status == 200 ? JSON.parse(request.responseText) : ''
-}
-
-function getCategory(category) {
-  var datos = getJSON('http://localhost:3000/categories/' + category);
-  var onylThisCategory = [];
-  $.each(datos.backgrounds, function (i, element) {
-    for (let field = 0; field < element.length; field++) {
-      if (element[field].categories == category) {
-        onylThisCategory.push(element);
-      }
-    }
-  });
-  return onylThisCategory;
 }
 
 function getImage(id) {
@@ -70,7 +51,6 @@ function getImage(id) {
 
 function updateImagesDestacadas() {
   var datos = getJSON('http://localhost:3000/backgrounds');
-  console.log(datos)
   for (let i = 0; i < 6; i++) {
     var img = '<div class="col-' + colunmSize + ' responsive p-1">' +
       '<a href="view_image.php?id=' + datos[i]['id'] + '&category=' + datos[i]['categories'] + '">' +
@@ -91,19 +71,22 @@ function updateImagesRecientes() {
 }
 
 function updateImagesCategories(category) {
-  var thisCategory = category;
+  var arrCategory = [];
+  $.each(JSON.parse(category), function (i, background) {
+      arrCategory.push(background);
+  });
+  console.log(arrCategory)
   $('#pagination').pagination({
-    dataSource: thisCategory,
+    dataSource: arrCategory,
     pageSize: 6,
     callback: function (data, pagination) {
       $('.rellenarCategorias').empty();
       $.each(data, function (i, element) {
-        for (let field = 0; field < element.length; field++) {
+        console.log(element, 'asd')
           var img = '<div class="col-' + colunmSize + ' responsive p-1">' +
             '<a href="#">' +
-            '<img id="' + element[field]['id'] + '" src="' + element[field]['path'] + '" alt="' + element[field]['title'] + '"></a></div>';
+            '<img id="' + element['id'] + '" src="' + element['path'] + '" alt="' + element['title'] + '"></a></div>';
           $('.rellenarCategorias').append(img);
-        }
       });
     }
   });
