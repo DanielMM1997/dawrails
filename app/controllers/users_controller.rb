@@ -8,6 +8,7 @@ class UsersController < ActionController::Base
   end
       
   def show
+    @categories = Category.all
     @backgrounds = @user.backgrounds
     @own_backgrounds = @user.own_backgrounds
     render layout:"application"

@@ -11,25 +11,33 @@
               <img class="logo" src="/imgs/profile.png" alt="imagen">
             </div>
             <div class="col-6 align-self-center">
-              <p>Nick: <%=@user.nickname%></p>
-              <p>Email: <%=@user.email%></p>
-              <p>Tipo de usuario: <%=@user.type%></p>
+              <p><strong>Nick:</strong> <%=@user.nickname%></p>
+              <p><strong>Email:</strong> <%=@user.email%></p>
+              <p><strong>Tipo de usuario:</strong> 
+                <% if @user.type == 1 %>
+                  Administrador
+                <% elsif @user.type == 2 %>
+                  Moderador
+                <% else %>
+                  Usuario registrado
+                <% end %>
+              </p>
             </div>
             <div class="col-3 align-self-center">
               <div class="upload">
                 <form action="">
                   <input type="file" hidden>
-                  <input id="upload" class="btn btn-success" type="submit" value="subir">
+                  <input id="upload" class="btn btn-success" type="submit" value="Subir nuevo fondo">
                 </form>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <%#<h2>Mis fondos</h2>
       <section class="destacados">
         <div class="mb-5">
-
-          <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+          <div class="gallery js-flickity fondosPropios" data-flickity-options='{ "wrapAround": true }'>
             <div class="gallery-cell"><img src="/imgs/basico.png" alt="imagen"></div>
             <div class="gallery-cell"><img src="/imgs/basico.png" alt="imagen"></div>
             <div class="gallery-cell"><img src="/imgs/basico.png" alt="imagen"></div>
@@ -39,7 +47,31 @@
             <div class="gallery-cell"><img src="/imgs/basico.png" alt="imagen"></div>
           </div>
         </div>
-      </section>
+      </section>%>
+      <h2>Mis fondos subidos</h2>
+      <% if @own_backgrounds.count == 0 %>
+        <h3>No se han subido fondos</h3>
+      <% else %>
+        <section class="destacados">
+          <div class="mb-5">
+            <div class="row fondosPropios"></div>
+            <div id="pagination" class="row justify-content-center my-4"></div>
+          </div>
+        </section>
+      <% end %>
+
+      <h2>Fondos favoritos</h2>
+      <% if @backgrounds.count == 0 %>
+        <h3>No hay fondos favoritos</h3>
+      <% else %>
+        <section class="destacados">
+          <div class="mb-5">
+            <div class="row fondosFavoritos"></div>
+            <div id="pagination2" class="row justify-content-center my-4"></div>
+          </div>
+        </section>
+      <% end %>
+      
       <section class="destacados d-none">
         <div class="container-fluid">
           <h2>Imágenes favoritas</h2>
@@ -106,4 +138,13 @@
       </section>
     </article>
   </div>
+<% end %>
+
+<% content_for :pageScripts do %>
+  <script>
+    var backgrounds = '<%= @backgrounds.to_json.html_safe %>';
+    var own_backgrounds = '<%= @own_backgrounds.to_json.html_safe %>';
+    updateFondosPerfil(own_backgrounds, '.fondosPropios', '#pagination');
+    updateFondosPerfil(backgrounds, '.fondosFavoritos', '#pagination2');
+  </script>
 <% end %>
