@@ -11,6 +11,7 @@ file = File.read('app\assets\backgrounds.json')
 
 User.create({:nickname => "admin", :email => "admin@gmail.com", :password => "123456789", :type => 1})
 User.create({:nickname => "moderador", :email => "moderador@gmail.com", :password => "123456789", :type => 2})
+user = User.create({:nickname => "pepe", :email => "pepe@gmail.com", :password => "123456789", :type => 3})
 
 Category.create([
     { :name => 'Animales' }, 
@@ -41,10 +42,12 @@ backgrounds.each do |background|
     #Categoría: animales
     if i.between?(1, 20)
         BackgroundCategory.create([{ :background_id => i, :category_id => 1 }])
+        Like.create([{ :background_id => i, :user_id => 1 }])
     end
 
     #Categoría: paisajes
     if i.between?(21, 40)
+        Like.create([{ :background_id => 1, :user_id => 1 }])
         BackgroundCategory.create([{ :background_id => i, :category_id => 2 }])
     elsif i.between?(95, 97)
         BackgroundCategory.create([{ :background_id => i, :category_id => 2 }])

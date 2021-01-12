@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_08_174438) do
+ActiveRecord::Schema.define(version: 2021_01_12_122954) do
 
   create_table "background_categories", force: :cascade do |t|
     t.integer "background_id", null: false
@@ -38,10 +38,11 @@ ActiveRecord::Schema.define(version: 2021_01_08_174438) do
   end
 
   create_table "likes", force: :cascade do |t|
-    t.integer "user_id", null: false
     t.integer "background_id", null: false
+    t.integer "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["background_id", "user_id"], name: "index_likes_on_background_id_and_user_id", unique: true
     t.index ["background_id"], name: "index_likes_on_background_id"
     t.index ["user_id"], name: "index_likes_on_user_id"
   end
