@@ -1,5 +1,3 @@
-//= require js-routes
-
 var colunmSize = 4;
 
 if ($(window).width() < 1200) {
@@ -119,11 +117,11 @@ function validarDatos() {
     $('#span_correo').text("El eamil debe tener de 6 a 32 caracteres");
     return false;
   }
-  if (contra.length <= 8) {
+  if (contra.length <= 6) {
     $("#span_contra").text("La contraseña debe tener más de 8 caracteres");
     return false;
   }
-  if (contra2.length <= 8) {
+  if (contra2.length <= 6) {
     $("#span_contra2").text("La contraseña debe tener más de 8 caracteres");
     return false;
   }

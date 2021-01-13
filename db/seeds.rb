@@ -21,7 +21,7 @@ Category.create([
     { :name => 'Coches' }, 
     { :name => 'Motos' }, 
     { :name => 'Aviones' }, 
-    { :name => 'Fútbol' }, 
+    { :name => 'Fútbol' },
     { :name => 'Baloncesto' }, 
     { :name => 'Tenis' }])
 
