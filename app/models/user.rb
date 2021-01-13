@@ -2,7 +2,7 @@ class User < ApplicationRecord
   require 'digest'
 
   self.inheritance_column = nil
-  has_many :backgrounds, foreign_key: :author_id
+  has_many :own_backgrounds, foreign_key: :author_id, class_name: "Background"
   has_many :likes
   has_many :backgrounds, through: :likes
   validates_presence_of :nickname, :email, :password, :type

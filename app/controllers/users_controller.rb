@@ -1,4 +1,4 @@
-class UsersController < ApplicationController
+class UsersController < ActionController::Base
 
   require 'digest'
   before_action :find_user, only: [:show, :update, :destroy]
@@ -8,7 +8,10 @@ class UsersController < ApplicationController
   end
       
   def show
-    render json: @user
+    @categories = Category.all
+    @backgrounds = @user.backgrounds
+    @own_backgrounds = @user.own_backgrounds
+    render layout:"application"
   end
       
   def create

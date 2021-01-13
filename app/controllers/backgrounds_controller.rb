@@ -1,4 +1,4 @@
-class BackgroundsController < ApplicationController
+class BackgroundsController < ActionController::Base
 
   before_action :find_background, only: [:show, :update, :destroy]
 
@@ -8,7 +8,7 @@ class BackgroundsController < ApplicationController
   
   def show
     @categories = Category.all
-    @category = @background.category
+    @category = @background.categories.first
     @backgrounds = @category.backgrounds
     render layout:"application"
     #render json: {status:'SECCESS', message:'Category updated', data:@backgrounds, status: :ok}
