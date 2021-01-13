@@ -6,6 +6,12 @@ class UsersController < ActionController::Base
   def index
     render json:User.all
   end
+
+  def new
+    @user = User.new
+    @categories = Category.all
+    render layout:"application"
+  end
       
   def show
     @categories = Category.all
@@ -15,12 +21,9 @@ class UsersController < ActionController::Base
   end
       
   def create
-    user = User.new(get_params)
-    if user.save
-      render json: {status:'SECCESS', message:'User saved', data:user, status: :ok}
-    else
-      render json: {status:'ERROR', message:'User not saved', data:user.errors, status: :unprocessable_entity}
-    end
+    @user = User.create(params.require(:user).permit(:nickname, :email, :password, :type))
+    session[:user_id] = @user.id
+    redirect_to welcome_path
   end
       
   def update
@@ -46,9 +49,14 @@ class UsersController < ActionController::Base
     end
   end
 
+  def logout
+    session[:user_id] = nil
+    redirect_to welcome_path
+  end
+
   private
   def get_params
-    params.required(:User).permit(:name, :email, :password)
+    params.required(:User).permit(:nickname, :email, :password)
   end
       
   def find_user

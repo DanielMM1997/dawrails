@@ -1,0 +1,23 @@
+<% content_for :head do %>
+  <title>Wallpapers House - Crear nuevo usuario</title>
+<% end %>
+
+<% content_for :content do %>
+    <article class="article col-lg-10 col-12">
+        <section>
+            <div class="formlogin">
+                <h1>Crear nuevo usuario</h1>
+                <%= form_for @user do |f|%>
+                    <%= f.label :nickname%><br>
+                    <%= f.text_field :nickname%><br>
+                    <%= f.label :email%><br>
+                    <%= f.email_field :email%><br>
+                    <%= f.label :password%><br>
+                    <%= f.password_field :password%><br>
+                    <%= f.hidden_field :type, value: 3 %>
+                    <%= f.submit %>
+                <%end%>
+            </div>
+        </section>
+    </article>
+<% end %>

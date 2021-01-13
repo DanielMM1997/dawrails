@@ -57,30 +57,6 @@
       </div>
     </header>
 
-    <%#navigation%>
-    <div class='row body mx-0'>
-        <nav class='my-nav col-2 px-0 '>
-          <ul class='nav flex-column'>
-            <li class='nav-item'>
-              <a class='nav-link d-none' href='#'>Iniciar sesión</a>
-            </li>
-            <li class='nav-item'>
-              <a class='nav-link d-none' href='#'>Regístrate</a>
-            </li>
-            <li class='nav-item'>
-              <a class='nav-link' href='#'>Fondos recientes</a>
-            </li>
-            <li class='nav-item'>
-              <a class='nav-link' href='#'>Fondos destacados</a>
-            </li>
-            <% @categories.each do |category| %>
-              <li class='nav-item'>
-                <%= link_to category.name, category_path(category.id), :class => "nav-link" %>
-              </li>
-            <% end %>
-          </ul>
-        </nav>
-
         <%#content%>
         <%= yield :content %>
 

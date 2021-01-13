@@ -10,19 +10,14 @@ class SessionController < ActionController::Base
       render layout: 'application'
   end
 
-  def checkLogin
-      user = User.find_by_email(params[:email])
-      puts params[:email]
-      puts params[:password]
-      puts 'asdasdasd'
-      digestPasword =  Digest::SHA2.hexdigest params[:password]
-      if user.password == params[:password]
-          session[:email] = user.email
-          session[:token] = user.token
-          redirect_to welcome_path
-      else
-          redirect_to login
-      end
+  def create
+    @user = User.find_by(nickname: params[:nickname])
+    if @user && @user.authenticate(params[:nickname])
+       sessions[:user_id] = @user.id
+       redirect_to welcome_path
+    else
+       redirect_to login_path
+    end
   end
   
 
