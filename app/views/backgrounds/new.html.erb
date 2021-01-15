@@ -7,18 +7,25 @@
         <section>
             <div class="formlogin">
                 <h1>Subir nueva fondo</h1>
-                <%= form_for @background, multipart: true do |f|%>
-                    <%= f.label :data, 'Fondo' %>
-                    <%= f.file_field :data %>
+                <%= form_for @background, url: create_user_background_path, multipart: true do |f|%>
+                    <%= f.file_field :file %>
                     <%= f.label :title, 'Título' %><br>
                     <%= f.text_field :title%><br>
-                    <label for="categories">Categorías</label>
-                    <div id="categories">
+                    <label for="categories">Categoría 1</label>
+                    <select id="categories" name="categories">
                         <% @categories.each do |category| %>
-                            <input id="<%= category.name %>" name="<%= category.name %>" type="checkbox" value="<%= category.name %>" />
-                            <%= category.name %><br>
+                            <option value="<%= category.name %>"><%= category.name %></option>
                         <% end %>
-                    </div>
+                    </select>
+                    <br>
+                    <label for="categories_2">Categoría 2 (Opcional)</label>
+                    <select id="categories_2" name="categories_2">
+                        <option value="No">No</option>
+                        <% @categories.each do |category| %>
+                            <option value="<%= category.name %>"><%= category.name %></option>
+                        <% end %>
+                    </select>
+                    <%= f.hidden_field :author_id, value: current_user.id %>
                     <%= f.submit "Subir" %>
                 <%end%>
             </div>

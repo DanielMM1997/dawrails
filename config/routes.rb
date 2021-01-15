@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get '/registro', to: 'session#registro'
   get 'recientes', to: 'backgrounds#recientes'
   get 'destacados', to: 'backgrounds#destacados'
+  post 'create_user_background', to: 'backgrounds#create_user_background'
   get '/logout' => 'users#logout'
   
   resources :backgrounds
