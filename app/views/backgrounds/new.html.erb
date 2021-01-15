@@ -1,0 +1,27 @@
+<% content_for :head do %>
+  <title>Wallpapers House - Subir nueva fondo</title>
+<% end %>
+
+<% content_for :content do %>
+    <article class="article col-lg-10 col-12">
+        <section>
+            <div class="formlogin">
+                <h1>Subir nueva fondo</h1>
+                <%= form_for @background, multipart: true do |f|%>
+                    <%= f.label :data, 'Fondo' %>
+                    <%= f.file_field :data %>
+                    <%= f.label :title, 'Título' %><br>
+                    <%= f.text_field :title%><br>
+                    <label for="categories">Categorías</label>
+                    <div id="categories">
+                        <% @categories.each do |category| %>
+                            <input id="<%= category.name %>" name="<%= category.name %>" type="checkbox" value="<%= category.name %>" />
+                            <%= category.name %><br>
+                        <% end %>
+                    </div>
+                    <%= f.submit "Subir" %>
+                <%end%>
+            </div>
+        </section>
+    </article>
+<% end %>

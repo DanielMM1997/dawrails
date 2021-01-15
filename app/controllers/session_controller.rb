@@ -7,7 +7,7 @@ class SessionController < ActionController::Base
   
   def new
       @categories = Category.all
-      render layout: 'application'
+      render layout: 'form'
   end
 
   def create
@@ -16,9 +16,11 @@ class SessionController < ActionController::Base
     @pass = Digest::SHA256.new << @pass
     if @pass == @user.password
        session[:user_id] = @user.id
+       flash[:success] = 'Has iniciado sesión como ' + @user.nickname
        redirect_to welcome_path
     else
-       redirect_to login_path
+      flash[:danger] = 'Las credenciales proporcionadas no corresponden a ningún usuario.'
+      redirect_to login_path
     end
   end
   

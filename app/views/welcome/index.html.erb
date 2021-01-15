@@ -3,8 +3,10 @@
 <% end %>
 
 <% content_for :content do %>
-
     <article class="article col-lg-10 col-12">
+      <% flash.each do |key, value| %>
+          <div class="alert alert-<%= key %>"><%= value %></div>
+      <% end %>
       <section class="destacados">
         <div class="container-fluid p-lg-3 p-0">
           <div class="my-3">

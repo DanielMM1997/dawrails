@@ -13,6 +13,12 @@ class BackgroundsController < ActionController::Base
     render layout:"application"
     #render json: {status:'SECCESS', message:'Category updated', data:@backgrounds, status: :ok}
   end
+
+  def new
+    @background = Background.new
+    @categories = Category.all
+    render layout:"form"
+  end
     
   def create
     background = Background.new(get_params)

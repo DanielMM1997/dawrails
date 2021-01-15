@@ -10,7 +10,7 @@ class UsersController < ActionController::Base
   def new
     @user = User.new
     @categories = Category.all
-    render layout:"application"
+    render layout:"form"
   end
       
   def show
@@ -51,6 +51,7 @@ class UsersController < ActionController::Base
 
   def logout
     session[:user_id] = nil
+    flash[:warning] = 'Has cerrado la sesión'
     redirect_to welcome_path
   end
 

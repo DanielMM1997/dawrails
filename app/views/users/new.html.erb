@@ -8,14 +8,14 @@
             <div class="formlogin">
                 <h1>Crear nuevo usuario</h1>
                 <%= form_for @user do |f|%>
-                    <%= f.label :nickname%><br>
+                    <%= f.label :nickname, 'Nickname' %><br>
                     <%= f.text_field :nickname%><br>
-                    <%= f.label :email%><br>
+                    <%= f.label :email, 'Correo electrónico' %><br>
                     <%= f.email_field :email%><br>
-                    <%= f.label :password%><br>
+                    <%= f.label :password, 'Contraseña' %><br>
                     <%= f.password_field :password%><br>
                     <%= f.hidden_field :type, value: 3 %>
-                    <%= f.submit %>
+                    <%= f.submit "Registrarse" %>
                 <%end%>
             </div>
         </section>
