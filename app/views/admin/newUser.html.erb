@@ -1,0 +1,27 @@
+<% content_for :head do %>
+  <title>Wallpapers House - Crear nuevo usuario</title>
+<% end %>
+
+<% content_for :content do %>
+    <article class="article col-lg-10 col-12">
+        <section>
+            <div class="formlogin">
+                <h1>Crear nuevo usuario</h1>
+                <%= form_for @user do |f|%>
+                    <%= f.label :nickname, 'Nickname' %><br>
+                    <%= f.text_field :nickname%><br>
+                    <%= f.label :email, 'Correo electrónico' %><br>
+                    <%= f.email_field :email%><br>
+                    <%= f.label :password, 'Contraseña' %><br>
+                    <%= f.password_field :password%><br>
+                    <select id="type" name="type">
+                            <option value="1"> administrador</option>
+                            <option value="2"> moderador</option>
+                            <option value="3"> usuario normal</option>
+                    </select>
+                    <%= f.submit "Crear nuevo usuario" %>
+                <%end%>
+            </div>
+        </section>
+    </article>
+<% end %>

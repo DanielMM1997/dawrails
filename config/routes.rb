@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   get 'destacados', to: 'backgrounds#destacados'
   post 'create_user_background', to: 'backgrounds#create_user_background'
   get '/logout' => 'users#logout'
+  get 'admin/index'
+  get 'admin/createUser', to: 'admin#newUser'
+  get 'admin/createCategory', to: 'admin#newCategory'
   
   resources :backgrounds
   resources :categories

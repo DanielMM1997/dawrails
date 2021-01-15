@@ -1,6 +1,6 @@
 class CategoriesController < ActionController::Base
 
-  before_action :find_category, only: [:show, :update, :destroy, :find_backgrounds]
+  before_action :find_category, only: [:show, :update, :destroy, :edit, :find_backgrounds]
 
   def index
     render json:Category.all
@@ -11,6 +11,10 @@ class CategoriesController < ActionController::Base
     @backgrounds = @category.backgrounds
     render layout:"application"
     #render json: {status:'SECCESS', message:'Category updated', data:@backgrounds, status: :ok}
+  end
+
+  def edit
+    render layout:"form"
   end
       
   def create
@@ -32,7 +36,7 @@ class CategoriesController < ActionController::Base
       
   def destroy
     @category.destroy
-    render json: {status:'SECCESS', message:'Category deleted', data:category, status: :ok}
+    render json: {status:'SECCESS', message:'Category deleted', data:@category, status: :ok}
   end
 
   def find_backgrounds

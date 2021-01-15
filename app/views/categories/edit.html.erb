@@ -1,0 +1,14 @@
+<% content_for :head do %>
+  <title>Wallpapers House - Editar Categoria</title>
+<% end %>
+
+<% content_for :content do %>
+<%= form_for :category, url: category_path, method: :PUT do |f| %>
+    <div class="form-group">
+      <label for="productName" class="col-12 col-form-label">Nombre</label>
+      <div class="col-12">
+        <%= f.text_field :name, class:'form-control'%>
+      </div>
+    </div>
+<% end %>
+<% end %>

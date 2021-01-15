@@ -1,7 +1,7 @@
 class UsersController < ActionController::Base
 
   require 'digest'
-  before_action :find_user, only: [:show, :update, :destroy]
+  before_action :find_user, only: [:show, :update, :destroy, :edit]
 
   def index
     render json:User.all
@@ -18,6 +18,10 @@ class UsersController < ActionController::Base
     @backgrounds = @user.backgrounds
     @own_backgrounds = @user.own_backgrounds
     render layout:"application"
+  end
+
+  def edit
+    render layout:"form"
   end
       
   def create
@@ -36,7 +40,7 @@ class UsersController < ActionController::Base
       
   def destroy
     @user.destroy
-    render json: {status:'SECCESS', message:'User deleted', data:user, status: :ok}
+    render json: {status:'SECCESS', message:'User deleted', data:@user, status: :ok}
   end
       
   def login

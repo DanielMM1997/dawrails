@@ -1,6 +1,6 @@
 class BackgroundsController < ActionController::Base
 
-  before_action :find_background, only: [:show, :update, :destroy]
+  before_action :find_background, only: [:show, :update, :destroy, :edit]
 
   def index
     render json:Background.all
@@ -17,6 +17,10 @@ class BackgroundsController < ActionController::Base
   def new
     @background = Background.new
     @categories = Category.all
+    render layout:"form"
+  end
+
+  def edit
     render layout:"form"
   end
     
@@ -75,7 +79,7 @@ class BackgroundsController < ActionController::Base
       
   def destroy
     @background.destroy
-    render json: {status:'SECCESS', message:'Background deleted', data:background, status: :ok}
+    render json: {status:'SECCESS', message:'Background deleted', data:@background, status: :ok}
   end
 
   def recientes

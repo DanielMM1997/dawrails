@@ -1,0 +1,37 @@
+<% content_for :head do %>
+  <title>Wallpapers House - Editar User</title>
+<% end %>
+
+<% content_for :content do %>
+<%= form_for :user, url: user_path, method: :PUT do |f| %>
+    <div class="form-group">
+        <label for="productName" class="col-12 col-form-label">Nombre</label>
+        <div class="col-12">
+            <%= f.text_field :nickname, class:'form-control'%>
+        </div>
+        <div class="col-12">
+            <%= f.text_field :email, class:'form-control'%>
+        </div>
+        <div class="col-12">
+            <select id="type" name="type">
+                <% if @user.type == 1 %>
+                    <option selected="selected" value="1"> Administrador</option>
+                    <option value="2">Moderador</option>
+                    <option value="3">Usuario normal</option>
+                <% elif @user.type == 2 %>
+                    <option value="1"> Administrador</option>
+                    <option selected="selected" value="2">Moderador</option>
+                    <option value="3">Usuario normal</option>
+                <% else %>
+                    <option value="1"> Administrador</option>
+                    <option value="2">Moderador</option>
+                    <option selected="selected" value="3">Usuario normal</option>
+                <% end %>
+            </select>
+        </div>
+        <div class="row justify-content-center">
+            <button type="submit" class="btn btn-primary">Confirmar</button>
+        </div>
+    </div>
+<% end %>
+<% end %>

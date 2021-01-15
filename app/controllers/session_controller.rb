@@ -17,7 +17,11 @@ class SessionController < ActionController::Base
     if @pass == @user.password
        session[:user_id] = @user.id
        flash[:success] = 'Has iniciado sesión como ' + @user.nickname
-       redirect_to welcome_path
+       if @user.type == 1
+        redirect_to admin_index_path
+       else
+        redirect_to welcome_path
+       end
     else
       flash[:danger] = 'Las credenciales proporcionadas no corresponden a ningún usuario.'
       redirect_to login_path
