@@ -1,16 +1,21 @@
 <% content_for :head do %>
   <title>Wallpapers House - Iniciar sesión</title>
+  <% flash.each do |key, value| %>
+  <% end %>
 <% end %>
 
 <% content_for :content do %>
+    <% flash.each do |key, value| %>
+        <div class="alert alert-<%= key %>"><%= value %></div>
+    <% end %>
     <article class="article col-lg-10 col-12">
         <section>
             <div class="formlogin">
                 <h1>Iniciar sesión</h1>
                 <%= form_tag '/login' do %>
-                    <%= label_tag :nickname%>
+                    <%= label_tag :nickname, 'Nickname' %>
                     <%= text_field_tag :nickname%>
-                    <%= label_tag :password%>
+                    <%= label_tag :password, 'Contraseña' %>
                     <%= password_field_tag :password%>
                     <%= submit_tag "Iniciar sesión"%>
                 <%end%>

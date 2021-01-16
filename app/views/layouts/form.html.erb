@@ -27,6 +27,11 @@
       <div class='options col-2 col-md-3 col-xl-4 pr-4'>
         <div class='row mb-xl-4 mb-2 mx-0 justify-content-end'>
           <% if logged_in? %>
+          <% if current_user.type == 1 %>
+            <div class='pr-4'>
+              <%= link_to "Admin", admin_index_path, :class => "nolinks" %>
+            </div>
+            <% end %>
             <div class='pr-4'>
               <%= link_to "Perfil", user_path(current_user.id), :class => "nolinks" %>
             </div>

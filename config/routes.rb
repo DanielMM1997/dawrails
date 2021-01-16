@@ -12,9 +12,13 @@ Rails.application.routes.draw do
   get '/destacados', to: 'backgrounds#destacados'
   get '/allDestacados', to: 'backgrounds#allDestacados'
   get '/showAllDestacados', to: 'categories#showAllDestacados'
-  get '/logout' => 'users#logout'
   get '/like/:id', to: 'backgrounds#like'
   get '/dislike/:id', to: 'backgrounds#dislike'
+  post 'create_user_background', to: 'backgrounds#create_user_background'
+  get '/logout' => 'users#logout'
+  get 'admin/index'
+  get 'admin/createUser', to: 'admin#newUser'
+  get 'admin/createCategory', to: 'admin#newCategory'
   
   resources :backgrounds
   resources :categories

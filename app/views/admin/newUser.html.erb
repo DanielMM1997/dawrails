@@ -14,8 +14,12 @@
                     <%= f.email_field :email%><br>
                     <%= f.label :password, 'Contraseña' %><br>
                     <%= f.password_field :password%><br>
-                    <%= f.hidden_field :type, value: 3 %>
-                    <%= f.submit "Registrarse" %>
+                    <select id="type" name="type">
+                            <option value="1"> administrador</option>
+                            <option value="2"> moderador</option>
+                            <option value="3"> usuario normal</option>
+                    </select>
+                    <%= f.submit "Crear nuevo usuario" %>
                 <%end%>
             </div>
         </section>
