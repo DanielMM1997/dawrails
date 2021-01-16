@@ -99,7 +99,7 @@ class BackgroundsController < ActionController::Base
       
   def destroy
     @background.destroy
-    render json: {status:'SECCESS', message:'Background deleted', data:@background, status: :ok}
+    redirect_to admin_index_path
   end
 
   def recientes
