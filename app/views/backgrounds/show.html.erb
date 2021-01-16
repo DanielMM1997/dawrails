@@ -3,20 +3,26 @@
 <% end %>
 
 <% content_for :content do %>
+<% flash.each do |type, msg| %>
+  <div class="alert alert-info">
+    <%= msg %>
+  </div>
+<% end %>
 <article class="article col-lg-10 col-12">
   <section class="destacados">
     <div class="container-xl p-lg-3 p-0">
+      <h1><%= @background.title %></h1>
       <div class="row rellenarImagen col-12 responsive p-3"><%= image_tag(@background.path) %></div>
       <div class="row justify-content-center">
         <div class="actions">
-        <% if @num_like == 1 %>
-          <% puts @num_like %>
-          <a href="/dislike/<%=@background.id%>"><img src="/imgs/heart.png" alt="me gusta"></a>
+        <strong><%= @num_likes %></strong>
+        <% if @user_like == 1 %>
+          <a href="<%=dislike_path(@background.id)%>"><img src="/imgs/heart.png" alt="me gusta"></a>
         <% else %>
-          <a href="/like/<%=@background.id%>"><img src="/imgs/heart-regular-24.png" alt="me gusta"></a>
+          <a href="<%=like_path(@background.id)%>"><img src="/imgs/heart-regular-24.png" alt="No me gusta"></a>
         <% end %>
-          <img src="/imgs/download-regular-24.png" alt="descargar">
-          <img src="/imgs/save-regular-24.png" alt="guardar">
+          <%= link_to image_tag("/imgs/download-regular-24.png", alt: "MyInc Logo"), asset_path(@background.path), download: @background.title %>
+          <%#<img src="/imgs/save-regular-24.png" alt="guardar">%>
           <img src="/imgs/share-alt-regular-24.png" alt="compartir">
           <a data-toggle="modal" data-target="#exampleModalCenter"><img src="/imgs/info-circle-regular-24.png" alt="informacion"></a>
         </div>
@@ -36,7 +42,19 @@
           <ul>
             <li>Nombre: <%= @background.title%> </li>
             <li>Etiquetas: <%= @background.tags%> </li>
-            <li>Categorias: <%= @background.categories.first.name%> </li>
+            <li> 
+                <% if @background.categories.first == nil %>
+                  Categoría(s): Sin categoría(s) asignada(s)
+                <% else %>
+                  <% @background.categories.each do | category |%>
+                    <% if @background.categories.first.name == category.name %>
+                      Categoría(s): <%= category.name %>
+                    <% else %>
+                      - <%=category.name %>
+                    <% end %>
+                  <% end %>
+                <% end %>
+            </li>
             <li>Subida por: <%= @background.author.nickname%> </li>
           </ul>
         </div>
