@@ -31,10 +31,10 @@ class UsersController < ActionController::Base
   end
       
   def update
-    if @user.update(get_params)
-      render json: {status:'SECCESS', message:'User update', data:user, status: :ok}
+    if @user.update(user_params)
+      redirect_to @user, notice: 'User was successfully updated'
     else
-      render json: {status:'ERROR', message:'User not updated', data:User.errors, status: :unprocessable_entity}
+      render edit
     end
   end
       

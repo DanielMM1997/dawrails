@@ -8,18 +8,18 @@
             <div class="formlogin">
                 <h1>Subir nueva fondo</h1>
                 <%= form_for @background, url: create_user_background_path, multipart: true do |f|%>
-                    <%= f.file_field :file %>
+                    <%= f.file_field :file, required: true %>
                     <%= f.label :title, 'Título' %><br>
-                    <%= f.text_field :title%><br>
+                    <%= f.text_field :title, required: true, minlength: 4, maxlength:16 %><br>
                     <label for="categories">Categoría 1</label>
-                    <select id="categories" name="categories">
+                    <select id="categories" name="categories" required>
                         <% @categories.each do |category| %>
                             <option value="<%= category.name %>"><%= category.name %></option>
                         <% end %>
                     </select>
                     <br>
                     <label for="categories_2">Categoría 2 (Opcional)</label>
-                    <select id="categories_2" name="categories_2">
+                    <select id="categories_2" name="categories_2" required>
                         <option value="No">No</option>
                         <% @categories.each do |category| %>
                             <option value="<%= category.name %>"><%= category.name %></option>

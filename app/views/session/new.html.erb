@@ -14,9 +14,9 @@
                 <h1>Iniciar sesión</h1>
                 <%= form_tag '/login' do %>
                     <%= label_tag :nickname, 'Nickname' %>
-                    <%= text_field_tag :nickname%>
+                    <%= text_field_tag :nickname, nil, required: true%>
                     <%= label_tag :password, 'Contraseña' %>
-                    <%= password_field_tag :password%>
+                    <%= password_field_tag :password, nil, required: true %>
                     <%= submit_tag "Iniciar sesión"%>
                 <%end%>
             </div>
