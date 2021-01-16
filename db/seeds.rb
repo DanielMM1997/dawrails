@@ -105,12 +105,12 @@ backgrounds.each do |background|
     end
 
     #Categoría: baloncesto
-    if i.between?(166, 187)
+    if i.between?(166, 170)
         BackgroundCategory.create([{ :background_id => i, :category_id => 9 }])
     end
 
     #Categoría: tenis
-    if i.between?(188, 207)
+    if i.between?(171, 175)
         BackgroundCategory.create([{ :background_id => i, :category_id => 10 }])
     end
 

@@ -1533,159 +1533,6 @@
     [
       {
         "id": 171,
-        "title": "Jugador baloncesto encestando",
-        "url": "/backgrounds/baloncesto-artistico-violeta-canasta-pelota.jpg",
-        "tags": "baloncesto-artistico-violeta-canasta-pelota",
-        "categories": "baloncesto"
-      }
-    ],
-    [
-      {
-        "id": 172,
-        "title": "Cancha baloncesto Los Ángeles atardecer",
-        "url": "/backgrounds/baloncesto-atardecer-sol-cancha-los angeles.jpg",
-        "tags": "baloncesto-atardecer-sol-cancha-los angeles",
-        "categories": "baloncesto"
-      }
-    ],
-    [
-      {
-        "id": 173,
-        "title": "Canasta azul noche",
-        "url": "/backgrounds/baloncesto-canasta-azul-negro-sol-luces-oscuro.jpg",
-        "tags": "baloncesto-canasta-azul-negro-sol-luces-oscuro",
-        "categories": "baloncesto"
-      }
-    ],
-    [
-      {
-        "id": 174,
-        "title": "Pelota encestada en canasta",
-        "url": "/backgrounds/baloncesto-canasta-pelota-publico.jpg",
-        "tags": "baloncesto-canasta-pelota-publico",
-        "categories": "baloncesto"
-      }
-    ],
-    [
-      {
-        "id": 175,
-        "title": "Estadio partido baloncesto",
-        "url": "/backgrounds/baloncesto-cancha-gradas-publico.jpg",
-        "tags": "baloncesto-cancha-gradas-publico",
-        "categories": "baloncesto"
-      }
-    ],
-    [
-      {
-        "id": 176,
-        "title": "Logo jugador NBA",
-        "url": "/backgrounds/baloncesto-dibujo-blanco-negro-figura.jpg",
-        "tags": "baloncesto-dibujo-blanco-negro-figura",
-        "categories": "baloncesto"
-      }
-    ],
-    [
-      {
-        "id": 177,
-        "title": "Pelota baloncesto en el suelo de calle",
-        "url": "/backgrounds/baloncesto-gris-naranja-pelota-suelo.jpg",
-        "tags": "baloncesto-gris-naranja-pelota-suelo",
-        "categories": "baloncesto"
-      }
-    ],
-    [
-      {
-        "id": 178,
-        "title": "Partido NBA histórico",
-        "url": "/backgrounds/baloncesto-historico-blanco-negro-pelota-canasta-pista-duelo.png",
-        "tags": "baloncesto-historico-blanco-negro-pelota-canasta-pista-duelo",
-        "categories": "baloncesto"
-      }
-    ],
-    [
-      {
-        "id": 179,
-        "title": "Tributo Kobe Bryant",
-        "url": "/backgrounds/baloncesto-kobe bryant-amarillo-lakers-tributo.jpg",
-        "tags": "baloncesto-kobe bryant-amarillo-lakers-tributo",
-        "categories": "baloncesto"
-      }
-    ],
-    [
-      {
-        "id": 180,
-        "title": "Logo Chicago Bulls",
-        "url": "/backgrounds/baloncesto-logo-poster-artistico-chicago bulls.jpg",
-        "tags": "baloncesto-logo-poster-artistico-chicago bulls",
-        "categories": "baloncesto"
-      }
-    ],
-    [
-      {
-        "id": 181,
-        "title": "Pelota baloncesto primer plano",
-        "url": "/backgrounds/baloncesto-naranja-negro-pelota.jpg",
-        "tags": "baloncesto-naranja-negro-pelota",
-        "categories": "baloncesto"
-      }
-    ],
-    [
-      {
-        "id": 182,
-        "title": "Pelota baloncesto artistico",
-        "url": "/backgrounds/baloncesto-naranja-pelota-artistico.jpg",
-        "tags": "baloncesto-naranja-pelota-artistico",
-        "categories": "baloncesto"
-      }
-    ],
-    [
-      {
-        "id": 183,
-        "title": "Persona encestando en canasta",
-        "url": "/backgrounds/baloncesto-negro-azul-sombras-canasta-pelota-sol-nubes.jpg",
-        "tags": "baloncesto-negro-azul-sombras-canasta-pelota-sol-nubes",
-        "categories": "baloncesto"
-      }
-    ],
-    [
-      {
-        "id": 184,
-        "title": "Jugador baloncesto Nike",
-        "url": "/backgrounds/baloncesto-nike-blanco-negro-canasta-pelota.jpg",
-        "tags": "baloncesto-nike-blanco-negro-canasta-pelota",
-        "categories": "baloncesto"
-      }
-    ],
-    [
-      {
-        "id": 185,
-        "title": "Canasta baloncesto montañas",
-        "url": "/backgrounds/baloncesto-paisajes-blanco-negro-cancha-canasta-montañas.jpg",
-        "tags": "baloncesto-paisajes-blanco-negro-cancha-canasta-montañas",
-        "categories": "baloncesto-paisajes"
-      }
-    ],
-    [
-      {
-        "id": 186,
-        "title": "Pelota baloncesto primer plano",
-        "url": "/backgrounds/baloncesto-pelota-naranja-primer plano.jpg",
-        "tags": "baloncesto-pelota-naranja-primer plano",
-        "categories": "baloncesto"
-      }
-    ],
-    [
-      {
-        "id": 187,
-        "title": "Pelota baloncesto canasta reflejo",
-        "url": "/backgrounds/baloncesto-pelota-suelo-canasta-agua-lluvia-reflejo.jpg",
-        "tags": "baloncesto-pelota-suelo-canasta-agua-lluvia-reflejo",
-        "categories": "baloncesto"
-      }
-    ],
-    [
-      {
-        "id": 188,
         "title": "Pelotas tenis sobre raqueta",
         "url": "/backgrounds/tenis-amarillo-negro-raqueta-pelotas.jpg",
         "tags": "tenis-amarillo-negro-raqueta-pelotas",
@@ -1694,7 +1541,7 @@
     ],
     [
       {
-        "id": 189,
+        "id": 172,
         "title": "Raqueta sobre pelota tenis",
         "url": "/backgrounds/tenis-amarillo-raqueta-azul-negro-sombras.jpg",
         "tags": "tenis-amarillo-raqueta-azul-negro-sombras",
@@ -1703,7 +1550,7 @@
     ],
     [
       {
-        "id": 190,
+        "id": 173,
         "title": "Andrea Petkovic jugadora tenis",
         "url": "/backgrounds/tenis-artistico-andrea petkovic-azul-blanco.jpg",
         "tags": "tenis-artistico-andrea petkovic-azul-blanco",
@@ -1712,7 +1559,7 @@
     ],
     [
       {
-        "id": 191,
+        "id": 174,
         "title": "Andy Murray jugador tenis",
         "url": "/backgrounds/tenis-artistico-andy murray-azul-blanco.jpg",
         "tags": "tenis-artistico-andy murray-azul-blanco",
@@ -1721,145 +1568,10 @@
     ],
     [
       {
-        "id": 192,
+        "id": 175,
         "title": "Jugador tenis artístico",
         "url": "/backgrounds/tenis-artistico-blanco-negro-raqueta.jpg",
         "tags": "tenis-artistico-blanco-negro-raqueta",
-        "categories": "tenis"
-      }
-    ],
-    [
-      {
-        "id": 193,
-        "title": "Rafael Nadal jugador tenis",
-        "url": "/backgrounds/tenis-artistico-rafael nadal-blanco-amarillo.jpg",
-        "tags": "tenis-artistico-rafael nadal-blanco-amarillo",
-        "categories": "tenis"
-      }
-    ],
-    [
-      {
-        "id": 194,
-        "title": "Partido por parejas tenis",
-        "url": "/backgrounds/tenis-azul-equipo-raqueta-pelota-red-pista.jpg",
-        "tags": "tenis-azul-equipo-raqueta-pelota-red-pista",
-        "categories": "tenis"
-      }
-    ],
-    [
-      {
-        "id": 195,
-        "title": "Pista de tenis azul",
-        "url": "/backgrounds/tenis-azul-pista.jpg",
-        "tags": "tenis-azul-pista",
-        "categories": "tenis"
-      }
-    ],
-    [
-      {
-        "id": 196,
-        "title": "Jugador en pista de tenis azul",
-        "url": "/backgrounds/tenis-azul-pista-sombras.jpg",
-        "tags": "tenis-azul-pista-sombras",
-        "categories": "tenis"
-      }
-    ],
-    [
-      {
-        "id": 197,
-        "title": "Jugador tenis primer plano",
-        "url": "/backgrounds/tenis-azul-raqueta-primer plano.jpg",
-        "tags": "tenis-azul-raqueta-primer plano",
-        "categories": "tenis"
-      }
-    ],
-    [
-      {
-        "id": 198,
-        "title": "Pista tenis en el mar",
-        "url": "/backgrounds/tenis-ciudades-mar-atardecer-pista-agua.jpg",
-        "tags": "tenis-ciudades-mar-atardecer-pista-agua",
-        "categories": "tenis-ciudades"
-      }
-    ],
-    [
-      {
-        "id": 199,
-        "title": "Rafel Nadal saque de pelota",
-        "url": "/backgrounds/tenis-naranja-azul-rafael nadal-tierra-raqueta.jpg",
-        "tags": "tenis-naranja-azul-rafael nadal-tierra-raqueta",
-        "categories": "tenis"
-      }
-    ],
-    [
-      {
-        "id": 200,
-        "title": "Jugadora tenis recepción pelota",
-        "url": "/backgrounds/tenis-negro-azul-raqueta-pelota-pista-sombras.jpg",
-        "tags": "tenis-negro-azul-raqueta-pelota-pista-sombras",
-        "categories": "tenis"
-      }
-    ],
-    [
-      {
-        "id": 201,
-        "title": "Jugadora tenis mirando",
-        "url": "/backgrounds/tenis-negro-mirar.jpg",
-        "tags": "tenis-negro-mirar",
-        "categories": "tenis"
-      }
-    ],
-    [
-      {
-        "id": 202,
-        "title": "Novak Djokovic golpeando pelota",
-        "url": "/backgrounds/tenis-Novak Djokovic-blanco-verde-raqueta-pelota-pista.jpg",
-        "tags": "tenis-Novak Djokovic-blanco-verde-raqueta-pelota-pista",
-        "categories": "tenis"
-      }
-    ],
-    [
-      {
-        "id": 203,
-        "title": "Pelota tenis en el suelo con hojas",
-        "url": "/backgrounds/tenis-pelota-amarillo-negro-carretera-hojas.jpg",
-        "tags": "tenis-pelota-amarillo-negro-carretera-hojas",
-        "categories": "tenis"
-      }
-    ],
-    [
-      {
-        "id": 204,
-        "title": "Pelota tenis en el suelo sol",
-        "url": "/backgrounds/tenis-pelota-naranja-sombras-sol.jpg",
-        "tags": "tenis-pelota-naranja-sombras-sol",
-        "categories": "tenis"
-      }
-    ],
-    [
-      {
-        "id": 205,
-        "title": "Rafael Nadal pose",
-        "url": "/backgrounds/tenis-rafael nadal-amarillo-azul.jpg",
-        "tags": "tenis-rafael nadal-amarillo-azul",
-        "categories": "tenis"
-      }
-    ],
-    [
-      {
-        "id": 206,
-        "title": "Rafael Nadal golpeando pelota",
-        "url": "/backgrounds/tenis-rafael nadal-negro-rosa-raqueta.jpg",
-        "tags": "tenis-rafael nadal-negro-rosa-raqueta",
-        "categories": "tenis"
-      }
-    ],
-    [
-      {
-        "id": 207,
-        "title": "Roger Federer celebrando",
-        "url": "/backgrounds/tenis-roger federer-raqueta-blanco-negro-celebrar.jpg",
-        "tags": "tenis-roger federer-raqueta-blanco-negro-celebrar",
         "categories": "tenis"
       }
     ]
