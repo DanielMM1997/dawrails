@@ -1,0 +1,76 @@
+<% content_for :head do %>
+  <title>Wallpapers House - Home</title>
+<% end %>
+
+<% content_for :content do %>
+  <article class="article col-lg-10 col-12">
+    <section class="destacados">
+      <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Título</th>
+          <th scope="col">Etiquetas</th>
+          <th scope="col">Categoría</th>
+          <th scope="col">Autor</th>
+          <th scope="col">Acciones</th>
+        </tr>
+      </thead>
+      <% @backgrounds.each do | background |%>
+      <tr>
+        <td> <%= background.title%> </td>
+        <td> <%= background.tags%> </td>
+        <td> <%= background.categories.first.name%> </td>
+        <td> <%= background.author.nickname%> </td>
+        <td><a href="#" class="text-primary"><i class="fa fa-fw fa-show"></i>Ver</a>
+        <a href="#" class="text-primary"><i class="fa fa-fw fa-edit"></i>Editar</a>
+        <a href="#" class="text-primary"><i class="fa fa-fw fa-delete"></i>Eliminar</a></td>
+      </tr>
+      <% end %>
+      </table>
+    </section>
+    <section class="destacados">
+      <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Nombre</th>
+          <th scope="col">Acciones</th>
+        </tr>
+      </thead>
+      <% @categories.each do | category |%>
+      <tr>
+        <td> <%= category.name%> </td>
+        <td><a href="#" class="text-primary"><i class="fa fa-fw fa-show"></i>Ver</a>
+        <a href="#" class="text-primary"><i class="fa fa-fw fa-edit"></i>Editar</a>
+        <a href="#" class="text-primary"><i class="fa fa-fw fa-delete"></i>Eliminar</a></td>
+      </tr>
+      <% end %>
+      </table>
+    </section>
+    <section class="destacados">
+      <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Nombre</th>
+          <th scope="col">Correo</th>
+          <th scope="col">Tipo</th>
+          <th scope="col">Acciones</th>
+        </tr>
+      </thead>
+      <% @users.each do | user |%>
+      <tr>
+        <td> <%= user.nickname%> </td>
+        <td> <%= user.email%> </td>
+        <td> <%= user.type%> </td>
+        <td><a href="#" class="text-primary"><i class="fa fa-fw fa-show"></i>Ver</a>
+        <a href="#" class="text-primary"><i class="fa fa-fw fa-edit"></i>Editar</a>
+        <a href="#" class="text-primary"><i class="fa fa-fw fa-delete"></i>Eliminar</a></td>
+      </tr>
+      <% end %>
+      </table>
+    </section>
+  </article>
+
+<% end %>
+
+<% content_for :pageScripts do %>
+<% end %>

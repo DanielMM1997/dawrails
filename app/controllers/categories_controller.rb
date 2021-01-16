@@ -12,6 +12,18 @@ class CategoriesController < ActionController::Base
     render layout:"application"
     #render json: {status:'SECCESS', message:'Category updated', data:@backgrounds, status: :ok}
   end
+
+  def showAllRecientes
+    @categories = Category.all
+    @backgrounds = Background.all.order('created_at DESC')
+    render layout: 'application'
+  end
+
+  def showAllDestacados
+    @categories = Category.all
+    @backgrounds = Background.all.order('created_at ASC')
+    render layout: 'application'
+  end
       
   def create
     category = Category.new(get_params)

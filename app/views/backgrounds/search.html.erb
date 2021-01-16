@@ -1,0 +1,25 @@
+<% content_for :head do %>
+  <title>Wallpapers House - Busqueda</title>
+<% end %>
+
+<% content_for :content do %>
+
+    <article class="article col-lg-10 col-12">
+      <section class="destacados">
+        <div class="container-fluid p-lg-3 p-0">
+          <h2>Busqueda</h2>
+          <div class="row rellenarCategorias mx-0"></div>
+          <div id="pagination" class="row justify-content-center my-4"></div>
+        </div>
+      </section>
+    </article>
+
+<% end %>
+
+<% content_for :pageScripts do %>
+  <script>
+    var backgrounds = '<%= @backgrounds.to_json.html_safe %>';
+    // console.log(category_backgrounds);
+    updateImagesSearch(backgrounds);
+  </script>
+<% end %>

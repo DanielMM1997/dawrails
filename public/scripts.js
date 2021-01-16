@@ -37,24 +37,65 @@ function getJSON(url) {
 }
 
 function updateImagesDestacadas() {
-  var datos = getJSON('http://localhost:3000/backgrounds');
-  for (let i = 0; i < 6; i++) {
+  var datos = getJSON('http://localhost:3000/destacados');
+  $.each(datos.data, function(i, background) {
     var img = '<div class="col-' + colunmSize + ' responsive p-1">' +
-      '<a href="/backgrounds/' + datos[i]['id'] + '">' +
-      '<img id="' + datos[i]['id'] + '" src="' + datos[i]['path'] + '"alt="' + datos[i]['title'] + '"></a></div>';
-      // <%= asset_path("backgrounds/" + "datos[i]['path']") %> 
+    '<a href="/backgrounds/' + background['id'] + '">' +
+    '<img id="' + background['id'] + '" src="' + background['path'] + '"alt="' + background['title'] + '"></a></div>';
     $('.rellenarDestacadas').append(img);
-  }
+  })
 }
 
 function updateImagesRecientes() {
-  var datos = getJSON('http://localhost:3000/backgrounds');
-  for (let i = 6; i < 12; i++) {
+  var datos = getJSON('http://localhost:3000/recientes');
+  $.each(datos.data, function(i, background) {
     var img = '<div class="col-' + colunmSize + ' responsive p-1">' +
-      '<a href="/backgrounds/' + datos[i]['id'] + '">' +
-      '<img id="' + datos[i]['id'] + '" src="' + datos[i]['path'] + '" alt="' + datos[i]['title'] + '"></a></div>';
+      '<a href="/backgrounds/' + background['id'] + '">' +
+      '<img id="' + background['id'] + '" src="' + background['path'] + '" alt="' + background['title'] + '"></a></div>';
     $('.rellenarRecientes').append(img);
-  }
+  })
+}
+
+function updateAllImagesRecientes() {
+  var datos = getJSON('http://localhost:3000/allRecientes');
+  var arrCategory = [];
+  $.each(datos.data, function (i, background) {
+      arrCategory.push(background);
+  });
+  $('#pagination').pagination({
+    dataSource: arrCategory,
+    pageSize: 6,
+    callback: function (data, pagination) {
+      $('.rellenarCategorias').empty();
+      $.each(data, function (i, element) {
+        var img = '<div class="col-' + colunmSize + ' responsive p-1">' +
+            '<a href="/backgrounds/' + element['id'] + '">'  +
+            '<img id="' + element['id'] + '" src="' + element['path'] + '" alt="' + element['title'] + '"></a></div>';
+          $('.rellenarCategorias').append(img);
+      });
+    }
+  });
+}
+
+function updateAllImagesDestacados() {
+  var datos = getJSON('http://localhost:3000/allDestacados');
+  var arrCategory = [];
+  $.each(datos.data, function (i, background) {
+      arrCategory.push(background);
+  });
+  $('#pagination').pagination({
+    dataSource: arrCategory,
+    pageSize: 6,
+    callback: function (data, pagination) {
+      $('.rellenarCategorias').empty();
+      $.each(data, function (i, element) {
+        var img = '<div class="col-' + colunmSize + ' responsive p-1">' +
+            '<a href="/backgrounds/' + element['id'] + '">'  +
+            '<img id="' + element['id'] + '" src="' + element['path'] + '" alt="' + element['title'] + '"></a></div>';
+          $('.rellenarCategorias').append(img);
+      });
+    }
+  });
 }
 
 function updateImagesCategories(category) {
@@ -62,7 +103,27 @@ function updateImagesCategories(category) {
   $.each(JSON.parse(category), function (i, background) {
       arrCategory.push(background);
   });
-  console.log(arrCategory)
+  $('#pagination').pagination({
+    dataSource: arrCategory,
+    pageSize: 6,
+    callback: function (data, pagination) {
+      $('.rellenarCategorias').empty();
+      $.each(data, function (i, element) {
+        //console.log(element, 'asd')
+          var img = '<div class="col-' + colunmSize + ' responsive p-1">' +
+            '<a href="/backgrounds/' + element['id'] + '">'  +
+            '<img id="' + element['id'] + '" src="' + element['path'] + '" alt="' + element['title'] + '"></a></div>';
+          $('.rellenarCategorias').append(img);
+      });
+    }
+  });
+}
+
+function updateImagesSearch(category){
+  var arrCategory = [];
+  $.each(JSON.parse(category), function (background) {
+      arrCategory.push(background);
+  });
   $('#pagination').pagination({
     dataSource: arrCategory,
     pageSize: 6,
@@ -84,7 +145,6 @@ function updateFondosPerfil(category, div, pag) {
   $.each(JSON.parse(category), function (i, background) {
       arrCategory.push(background);
   });
-  console.log(arrCategory)
   $(pag).pagination({
     dataSource: arrCategory,
     pageSize: 6,

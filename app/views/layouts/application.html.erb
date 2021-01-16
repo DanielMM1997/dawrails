@@ -20,7 +20,7 @@
       </div>
       <div class='title col-8 col-md-7 col-xl-6'>
         <h1 class='web_name'>Wallpapers house</h1>
-        <form id='movil_search' class='form-inline' action=''>
+        <form id='movil_search' class='form-inline' method="POST" action="/search">
           <input class='form-control' type='search' name='query' placeholder='Buscar...'>
         </form>
       </div>
@@ -68,10 +68,10 @@
               <a class='nav-link d-none' href='#'>Regístrate</a>
             </li>
             <li class='nav-item'>
-              <a class='nav-link' href='#'>Fondos recientes</a>
+              <a class='nav-link' href='/showAllRecientes'>Fondos recientes</a>
             </li>
             <li class='nav-item'>
-              <a class='nav-link' href='#'>Fondos destacados</a>
+              <a class='nav-link' href='/showAllDestacados'>Fondos destacados</a>
             </li>
             <% @categories.each do |category| %>
               <li class='nav-item'>
