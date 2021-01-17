@@ -30,6 +30,16 @@ class BackgroundsController < ActionController::Base
   end
 
   def edit
+    @categories = Category.all
+    i = 0
+    @background.categories.each do | category |
+      i += 1
+      if i == 1
+        @bg1 = category
+      elsif i == 2
+        @bg2 = category
+      end
+    end 
     render layout:"form"
   end
     
@@ -90,10 +100,33 @@ class BackgroundsController < ActionController::Base
   end
 
   def update
-    if @background.update(get_params)
-      render json: {status:'SECCESS', message:'Background updated', data:background, status: :ok}
+    @background.title = params[:title]
+    i = 0
+    @bg2 = nil
+    @background.categories.each do | category |
+      i += 1
+      if i == 1
+        @bg1 = category
+      elsif i == 2
+        @bg2 = category
+      end
+    end
+    if @bg1.name != params[:categories]
+      aux = BackgroundCategory.where(background_id: @background.id, category_id: @bg1.id)
+      aux[0].delete
+      cat = Category.where(name: params[:categories]).first
+      BackgroundCategory.create([{ :background_id => @background.id, :category.id => cat.id}])
+    end
+    if @bg2 != nil and @bg2.name != params[:categories_2]
+      aux = BackgroundCategory.where(background_id: @background.id, category_id: @bg2.id)
+      aux[0].delete
+      cat = Category.where(name: params[:categories_2]).first
+      BackgroundCategory.create([{ :background_id => @background.id, :category.id => cat.id}])
+    end  
+    if @background.save
+      redirect_to admin_index_path
     else
-      render json: {status:'ERROR', message:'Background not updated', data:background.errors, status: :unprocessable_entity}
+      render json: {status:'ERROR', message:'Background not updated', data:@background.errors, status: :unprocessable_entity}
     end
   end
       
@@ -154,7 +187,7 @@ class BackgroundsController < ActionController::Base
 
   private
   def get_params
-    params.required(:background).permit(:title, :url, :tags, :categories)
+    params.require(:background).permit(:title, :url, :tags, :categories)
   end
 
   def find_background

@@ -9,7 +9,6 @@ class UsersController < ActionController::Base
 
   def new
     @user = User.new
-    @categories = Category.all
     render layout:"form"
   end
       
@@ -31,16 +30,23 @@ class UsersController < ActionController::Base
   end
       
   def update
-    if @user.update(user_params)
-      redirect_to @user, notice: 'User was successfully updated'
+    @user.nickname = params[:nickname]
+    @user.email = params[:email]
+    if !params[:password].blank?
+    @user.password = params[:password]
+    @user.password = Digest::SHA256.new << @user.password
+    end
+    @user.type = params[:type]
+    if @user.save
+      redirect_to admin_index_path
     else
-      render edit
+      render json: {status:'ERROR', message:'User not updated', data:params, status: :unprocessable_entity}
     end
   end
       
   def destroy
     @user.destroy
-    render json: {status:'SECCESS', message:'User deleted', data:@user, status: :ok}
+    redirect_to admin_index_path
   end
       
   def login
@@ -61,7 +67,7 @@ class UsersController < ActionController::Base
 
   private
   def get_params
-    params.required(:User).permit(:nickname, :email, :password)
+    params.require(:user).permit(:nickname, :email, :password)
   end
       
   def find_user

@@ -25,30 +25,32 @@ class CategoriesController < ActionController::Base
     render layout: 'application'
   end
 
+  def new
+    @category = Category.new
+    render layout:"form"
+  end
+
   def edit
     render layout:"form"
   end
       
   def create
-    category = Category.new(get_params)
-    if category.save
-      render json: {status:'SECCESS', message:'Category saved', data:category, status: :ok}
-    else
-      render json: {status:'ERROR', message:'Category not saved', data:Category.errors, status: :unprocessable_entity}
-    end
+    @category = Category.create(params.require(:category).permit(:name))
+    redirect_to admin_index_path
   end
       
   def update
-    if @category.update(get_params)
-      render json: {status:'SECCESS', message:'Category updated', data:category, status: :ok}
+    @category.name = params[:name]
+    if @category.save
+      redirect_to admin_index_path
     else
-      render json: {status:'ERROR', message:'Category not updated', data:Category.errors, status: :unprocessable_entity}
+      render json: {status:'ERROR', message:'Category not updated', data:@category.errors, status: :unprocessable_entity}
     end
   end
       
   def destroy
     @category.destroy
-    render json: {status:'SECCESS', message:'Category deleted', data:@category, status: :ok}
+    redirect_to admin_index_path
   end
 
   def find_backgrounds
@@ -58,7 +60,7 @@ class CategoriesController < ActionController::Base
       
   private
   def get_params
-    params.required(:Category).permit(:name)
+    params.require(:category).permit(:name)
   end
       
   def find_category

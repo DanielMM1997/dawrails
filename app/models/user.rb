@@ -6,7 +6,7 @@ class User < ApplicationRecord
   has_many :likes, dependent: :destroy
   has_many :backgrounds, through: :likes
   validates_presence_of :nickname, :email, :password, :type
-  validates :password, length:{minimum:8,maximum:32}
+  validates :password, length:{minimum:8,maximum:32}, on: :create
   validates :nickname, uniqueness: true, length:{minimum:5,maximum:20}
   validates :email, uniqueness: true, length:{minimum:6,maximum:32}
 

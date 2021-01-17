@@ -1,14 +1,46 @@
 <% content_for :head do %>
-  <title>Wallpapers House - Editar Background</title>
+  <title>Wallpapers House - Editar Fondo</title>
 <% end %>
 
 <% content_for :content do %>
-<%= form_for :background, url: background_path, method: :PUT do |f| %>
-    <div class="form-group">
-      <label for="productName" class="col-12 col-form-label">Nombre</label>
-      <div class="col-12">
-        <%= f.text_field :title, class:'form-control'%>
-      </div>
-    </div>
-<% end %>
+    <% flash.each do |key, value| %>
+        <div class="alert alert-<%= key %>"><%= value %></div>
+    <% end %>
+    <article class="col-12">
+        <section>
+            <div class="formlogin">
+                <h1>Editar Fondo</h1>
+                <%= form_with model: @background do |f| %>
+                    <%= label_tag :title, 'Nombre del fondo' %>
+                    <%= text_field_tag :title, @background.title, required: true, minlength: 4, maxlength: 16 %>
+                    <%= label_tag :categories, 'Categoria 1' %>
+                    <select id="categories" name="categories" required>
+                      <% @categories.each do |category| %>
+                        <% if @bg1.name == category.name %>
+                          <option selected="selected" value="<%= category.name %>"><%= category.name %></option>
+                        <% else %>
+                          <option value="<%= category.name %>"><%= category.name %></option>
+                        <% end %>
+                      <% end %>
+                    </select>
+                    <%= label_tag :categories_2, 'Categoria 2 (Opcional)' %>
+                    <select id="categories_2" name="categories_2" required>
+                      <% @categories.each do |category| %>
+                        <%if @bg2 != nil %>
+                          <% if @bg2.name == category.name %>
+                            <option selected="selected" value="<%= category.name %>"><%= category.name %></option>
+                          <% else %>
+                            <option value="<%= category.name %>"><%= category.name %></option>
+                          <% end %>
+                        <% else %>
+                        <option value="<%= category.name %>"><%= category.name %></option>
+                        <% end %> 
+                      <% end %>
+                    </select>
+                    <%= f.hidden_field :id, value: @background.id %>
+                    <%= submit_tag "Actualizar"%>
+                <%end%>
+            </div>
+        </section>
+    </article>
 <% end %>

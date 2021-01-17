@@ -7,20 +7,12 @@ class AdminController < ActionController::Base
     end
 
     def newUser 
-      render layout:"form" 
-      @user = User.create(params.require(:user).permit(:nickname, :email, :password, :type))
-      session[:user_id] = @user.id
-      redirect_to welcome_path
+      @user = User.new
+      render layout:"form"
     end
 
-    def newCategory
-      render layout:"form"
-      category = Category.new(get_params)
-      if category.save
-        render json: {status:'SECCESS', message:'Category saved', data:category, status: :ok}
-      else
-        render json: {status:'ERROR', message:'Category not saved', data:Category.errors, status: :unprocessable_entity}
-      end
+    def createUser
+      @user = User.create(params.require(:user).permit(:nickname, :email, :password, :type))
+      redirect_to admin_index_path
     end
-    
 end

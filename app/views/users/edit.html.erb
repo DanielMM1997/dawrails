@@ -1,37 +1,39 @@
 <% content_for :head do %>
-  <title>Wallpapers House - Editar User</title>
+  <title>Wallpapers House - Crear nuevo usuario</title>
 <% end %>
 
 <% content_for :content do %>
-<%= form_for :user, url: user_path, method: :PUT do |f| %>
-    <div class="form-group">
-        <label for="productName" class="col-12 col-form-label">Nombre</label>
-        <div class="col-12">
-            <%= f.text_field :nickname, class:'form-control'%>
-        </div>
-        <div class="col-12">
-            <%= f.text_field :email, class:'form-control'%>
-        </div>
-        <div class="col-12">
-            <select id="type" name="type">
-                <% if @user.type == 1 %>
-                    <option selected="selected" value="1"> Administrador</option>
-                    <option value="2">Moderador</option>
-                    <option value="3">Usuario normal</option>
-                <% elif @user.type == 2 %>
-                    <option value="1"> Administrador</option>
-                    <option selected="selected" value="2">Moderador</option>
-                    <option value="3">Usuario normal</option>
-                <% else %>
-                    <option value="1"> Administrador</option>
-                    <option value="2">Moderador</option>
-                    <option selected="selected" value="3">Usuario normal</option>
-                <% end %>
-            </select>
-        </div>
-        <div class="row justify-content-center">
-            <button type="submit" class="btn btn-primary">Confirmar</button>
-        </div>
-    </div>
-<% end %>
+    <article class="article col-lg-10 col-12">
+        <section>
+            <div class="formlogin">
+                <h1>Editar usuario</h1>
+                <%= form_with model: @user do |f| %>
+                    <%= label_tag :nickname, 'Nickname' %>
+                    <%= text_field_tag :nickname, @user.nickname, required: true, minlength: 5, maxlength: 20 %>
+                    <%= label_tag :email, 'Correo electrónico' %>
+                    <%= email_field_tag :email, @user.email, required: true, minlength: 6, maxlength: 32, pattern: "^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]{4,}@[a-zA-Z0-9-]{4,}(?:.[a-zA-Z0-9-]+)$" %>
+                    <%= label_tag :password, 'Contraseña' %>
+                    <%= password_field_tag :password, nil, minlength: 8, maxlength: 32, pattern: "(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,}" %>
+                    <%= label_tag :type, 'Tipo de usuario' %>
+                    <select id="type" name="type">
+                        <% if @user.type == 1 %>
+                            <option selected="selected" value="1"> Administrador</option>
+                            <option value="2">Moderador</option>
+                            <option value="3">Usuario normal</option>
+                        <% elif @user.type == 2 %>
+                            <option value="1"> Administrador</option>
+                            <option selected="selected" value="2">Moderador</option>
+                            <option value="3">Usuario normal</option>
+                        <% else %>
+                            <option value="1"> Administrador</option>
+                            <option value="2">Moderador</option>
+                            <option selected="selected" value="3">Usuario normal</option>
+                        <% end %>
+                    </select>
+                    <%= f.hidden_field :id, value: @user.id %>
+                    <%= f.submit "Actualizar" %>
+                <%end%>
+            </div>
+        </section>
+    </article>
 <% end %>

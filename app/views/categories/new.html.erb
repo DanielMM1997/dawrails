@@ -1,0 +1,18 @@
+<% content_for :head do %>
+  <title>Wallpapers House - Crear nueva categoría</title>
+<% end %>
+
+<% content_for :content do %>
+    <article class="article col-lg-10 col-12">
+        <section>
+            <div class="formlogin">
+                <h1>Crear nueva categoría</h1>
+                <%= form_for @category do |f|%>
+                    <%= f.label :name, 'Nombre de la categoría' %><br>
+                    <%= f.text_field :name, required: true, minlength: 4, maxlength:16 %><br>
+                    <%= f.submit "Crear" %>
+                <%end%>
+            </div>
+        </section>
+    </article>
+<% end %>

@@ -3,12 +3,20 @@
 <% end %>
 
 <% content_for :content do %>
-<%= form_for :category, url: category_path, method: :PUT do |f| %>
-    <div class="form-group">
-      <label for="productName" class="col-12 col-form-label">Nombre</label>
-      <div class="col-12">
-        <%= f.text_field :name, class:'form-control'%>
-      </div>
-    </div>
-<% end %>
+    <% flash.each do |key, value| %>
+        <div class="alert alert-<%= key %>"><%= value %></div>
+    <% end %>
+    <article class="col-12">
+        <section>
+            <div class="formlogin">
+                <h1>Editar Categoría</h1>
+                <%= form_with model: @category do |f| %>
+                    <%= label_tag :name, 'Nombre de la categoría' %>
+                    <%= text_field_tag :name, @category.name, required: true, minlength: 4, maxlength: 16 %>
+                    <%= f.hidden_field :id, value: @category.id %>
+                    <%= submit_tag "Actualizar"%>
+                <%end%>
+            </div>
+        </section>
+    </article>
 <% end %>

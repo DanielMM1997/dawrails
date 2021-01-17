@@ -7,17 +7,18 @@
         <section>
             <div class="formlogin">
                 <h1>Crear nuevo usuario</h1>
-                <%= form_for @user do |f|%>
+                <%= form_for @user, url: create_user_admin_path do |f| %>
                     <%= f.label :nickname, 'Nickname' %><br>
-                    <%= f.text_field :nickname%><br>
+                    <%= f.text_field :nickname, required: true, minlength: 5, maxlength: 20 %><br>
                     <%= f.label :email, 'Correo electrónico' %><br>
-                    <%= f.email_field :email%><br>
+                    <%= f.email_field :email, required: true, minlength: 6, maxlength: 32, pattern: "^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]{4,}@[a-zA-Z0-9-]{4,}(?:.[a-zA-Z0-9-]+)$"%><br>
                     <%= f.label :password, 'Contraseña' %><br>
-                    <%= f.password_field :password%><br>
-                    <select id="type" name="type">
-                            <option value="1"> administrador</option>
-                            <option value="2"> moderador</option>
-                            <option value="3"> usuario normal</option>
+                    <%= f.password_field :password, required: true, minlength: 8, maxlength: 32, pattern: "(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,}" %><br>
+                    <%= f.label :type, 'Tipo de usuario' %><br>
+                    <select id="type" name="type" required>
+                            <option value="1"> Administrador</option>
+                            <option value="2"> Moderador</option>
+                            <option value="3"> Usuario normal</option>
                     </select>
                     <%= f.submit "Crear nuevo usuario" %>
                 <%end%>

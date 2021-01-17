@@ -18,7 +18,7 @@ Rails.application.routes.draw do
   get '/logout' => 'users#logout'
   get 'admin/index'
   get 'admin/createUser', to: 'admin#newUser'
-  get 'admin/createCategory', to: 'admin#newCategory'
+  post 'create_user_admin', to: 'admin#createUser'
   
   resources :backgrounds
   resources :categories
