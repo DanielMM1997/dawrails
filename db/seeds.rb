@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'json'
 
-file = File.read('app\assets\backgrounds.json')
+file = File.read('app\app\assets\backgrounds.json')
 
 User.create({:nickname => "admin", :email => "admin@gmail.com", :password => "Admin123456789", :type => 1})
 User.create({:nickname => "moderador", :email => "moderador@gmail.com", :password => "Moderador123456789", :type => 2})
