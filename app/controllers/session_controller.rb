@@ -33,10 +33,4 @@ class SessionController < ActionController::Base
     end
   end
   
-
-  def registro
-    @categories = Category.all
-    render layout: 'application'
-  end
-  
 end

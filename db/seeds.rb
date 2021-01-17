@@ -9,9 +9,9 @@ require 'json'
 
 file = File.read('app\assets\backgrounds.json')
 
-User.create({:nickname => "admin", :email => "admin@gmail.com", :password => "123456789", :type => 1})
-User.create({:nickname => "moderador", :email => "moderador@gmail.com", :password => "123456789", :type => 2})
-User.create({:nickname => "pepemel", :email => "pepemel@gmail.com", :password => "123456789", :type => 3})
+User.create({:nickname => "admin", :email => "admin@gmail.com", :password => "Admin123456789", :type => 1})
+User.create({:nickname => "moderador", :email => "moderador@gmail.com", :password => "Moderador123456789", :type => 2})
+User.create({:nickname => "pepemel", :email => "pepemel@gmail.com", :password => "Pepemel1", :type => 3})
 
 Category.create([
     { :name => 'Animales' }, 

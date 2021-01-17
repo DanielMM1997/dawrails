@@ -140,6 +140,27 @@ function updateFondosPerfil(category, div, pag) {
   });
 }
 
+function updateFondosPerfil_2(category, div, pag) {
+  var arrCategory = [];
+  $.each(JSON.parse(category), function (i, background) {
+      arrCategory.push(background);
+  });
+  $(pag).pagination({
+    dataSource: arrCategory,
+    pageSize: 6,
+    callback: function (data, pagination) {
+      $(div).empty();
+      $.each(data, function (i, element) {
+        //console.log(element, 'asd')
+          var img = '<div class="col-' + colunmSize + ' responsive p-1">' +
+            '<a href="/backgrounds/' + element['id'] + '">'  +
+            '<img id="' + element['id'] + '" src="' + element['path'] + '" alt="' + element['title'] + '"></a></div>';
+          $(div).append(img);
+      });
+    }
+  });
+}
+
 function validarDatos() {
   var nombre = $("#nombre").val();
   var correo = $("#correo").val();

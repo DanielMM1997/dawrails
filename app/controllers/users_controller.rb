@@ -1,5 +1,5 @@
 class UsersController < ActionController::Base
-
+  include ApplicationHelper
   require 'digest'
   before_action :find_user, only: [:show, :update, :destroy, :edit]
 
@@ -13,14 +13,26 @@ class UsersController < ActionController::Base
   end
       
   def show
-    @categories = Category.all
-    @backgrounds = @user.backgrounds
-    @own_backgrounds = @user.own_backgrounds.order('created_at DESC')
-    render layout:"application"
+    if logged_in?
+      @categories = Category.all
+      @backgrounds = @user.backgrounds
+      @own_backgrounds = @user.own_backgrounds.order('created_at DESC')
+      render layout:"application"
+    else
+      redirect_to login_path
+    end  
   end
 
   def edit
-    render layout:"form"
+    if logged_in?
+      if current_user.type == 1
+        render layout:"form"
+      else
+        redirect_to welcome_path
+      end
+    else
+      redirect_to welcome_path
+    end
   end
       
   def create
@@ -30,23 +42,39 @@ class UsersController < ActionController::Base
   end
       
   def update
-    @user.nickname = params[:nickname]
-    @user.email = params[:email]
-    if !params[:password].blank?
-    @user.password = params[:password]
-    @user.password = Digest::SHA256.new << @user.password
-    end
-    @user.type = params[:type]
-    if @user.save
-      redirect_to admin_index_path
+    if logged_in?
+      if current_user.type == 1
+        @user.nickname = params[:nickname]
+        @user.email = params[:email]
+        if !params[:password].blank?
+        @user.password = params[:password]
+        @user.password = Digest::SHA256.new << @user.password
+        end
+        @user.type = params[:type]
+        if @user.save
+          redirect_to admin_index_path
+        else
+          render json: {status:'ERROR', message:'User not updated', data:params, status: :unprocessable_entity}
+        end
+      else
+        redirect_to welcome_path
+      end
     else
-      render json: {status:'ERROR', message:'User not updated', data:params, status: :unprocessable_entity}
+      redirect_to welcome_path
     end
   end
       
   def destroy
-    @user.destroy
-    redirect_to admin_index_path
+    if logged_in?
+      if current_user.type == 1
+        @user.destroy
+        redirect_to admin_index_path
+      else
+        redirect_to welcome_path
+      end
+    else
+      redirect_to welcome_path
+    end
   end
       
   def login

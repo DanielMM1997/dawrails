@@ -35,20 +35,28 @@ class BackgroundsController < ActionController::Base
   end
 
   def edit
-    @categories = Category.all
-    i = 0
-    @background.categories.each do | category |
-      i += 1
-      if i == 1
-        @bg1 = category
-      elsif i == 2
-        @bg2 = category
+    if logged_in?
+      if current_user.type == 1
+        @categories = Category.all
+        i = 0
+        @background.categories.each do | category |
+          i += 1
+          if i == 1
+            @bg1 = category
+          elsif i == 2
+            @bg2 = category
+          end
+        end 
+        if i == 0 
+          @bg1 = Category.all.first
+        end
+        render layout:"form"
+      else
+        redirect_to welcome_path
       end
-    end 
-    if i == 0 
-      @bg1 = Category.all.first
+    else
+      redirect_to welcome_path
     end
-    render layout:"form"
   end
     
   def create
@@ -108,52 +116,68 @@ class BackgroundsController < ActionController::Base
   end
 
   def update
-    @background.title = params[:title]
-    i = 0
-    @bg2 = nil
-    @background.categories.each do | category |
-      i += 1
-      if i == 1
-        @bg1 = category
-      elsif i == 2
-        @bg2 = category
+    if logged_in?
+      if current_user.type == 1
+        @background.title = params[:title]
+        i = 0
+        @bg2 = nil
+        @background.categories.each do | category |
+          i += 1
+          if i == 1
+            @bg1 = category
+          elsif i == 2
+            @bg2 = category
+          end
+        end
+        @bg1 = Category.where(name: params[:categories]).first
+        if i == 0 
+          @cat = @bg1
+          BackgroundCategory.create([{ :background_id => @background.id, :category_id => @cat.id}])
+        end
+        if @bg1.name != params[:categories]
+          aux = BackgroundCategory.where(background_id: @background.id, category_id: @bg1.id)
+          aux[0].delete
+          @cat = Category.where(name: params[:categories]).first
+          BackgroundCategory.create([{ :background_id => @background.id, :category_id => @cat.id}])
+        end
+        if @bg2 != nil and @bg2.name != params[:categories_2]
+          aux = BackgroundCategory.where(background_id: @background.id, category_id: @bg2.id)
+          aux[0].delete
+          if params[:categories_2] != "No"
+            @cat = Category.where(name: params[:categories_2]).first
+            BackgroundCategory.create([{ :background_id => @background.id, :category_id => @cat.id}])
+          end
+        end
+        if @bg2 == nil and "No" != params[:categories_2]
+          @cat = Category.where(name: params[:categories_2]).first
+          BackgroundCategory.create([{ :background_id => @background.id, :category_id => @cat.id}])
+        end
+        if @background.save
+          redirect_to admin_index_path
+        else
+          render json: {status:'ERROR', message:'Background not updated', data:@background.errors, status: :unprocessable_entity}
+        end
+      else
+        redirect_to welcome_path
       end
-    end
-    @bg1 = Category.where(name: params[:categories]).first
-    if i == 0 
-      @cat = @bg1
-      BackgroundCategory.create([{ :background_id => @background.id, :category_id => @cat.id}])
-    end
-    if @bg1.name != params[:categories]
-      aux = BackgroundCategory.where(background_id: @background.id, category_id: @bg1.id)
-      aux[0].delete
-      @cat = Category.where(name: params[:categories]).first
-      BackgroundCategory.create([{ :background_id => @background.id, :category_id => @cat.id}])
-    end
-    if @bg2 != nil and @bg2.name != params[:categories_2]
-      aux = BackgroundCategory.where(background_id: @background.id, category_id: @bg2.id)
-      aux[0].delete
-      if params[:categories_2] != "No"
-        @cat = Category.where(name: params[:categories_2]).first
-        BackgroundCategory.create([{ :background_id => @background.id, :category_id => @cat.id}])
-      end
-    end
-    if @bg2 == nil and "No" != params[:categories_2]
-      @cat = Category.where(name: params[:categories_2]).first
-      BackgroundCategory.create([{ :background_id => @background.id, :category_id => @cat.id}])
-    end
-    if @background.save
-      redirect_to admin_index_path
     else
-      render json: {status:'ERROR', message:'Background not updated', data:@background.errors, status: :unprocessable_entity}
+      redirect_to welcome_path
     end
   end
       
   def destroy
-    dir = "public" + @background.path
-    File.delete(Rails.root + dir)
-    @background.destroy
-    redirect_to admin_index_path
+    if logged_in?
+      if current_user.type == 1
+        dir = "public" + @background.path
+        File.delete(Rails.root + dir)
+        @background.destroy
+        redirect_to admin_index_path
+      else
+        redirect_to welcome_path
+      end
+    else
+      redirect_to welcome_path
+    end
   end
 
   def recientes
@@ -167,12 +191,12 @@ class BackgroundsController < ActionController::Base
   end
 
   def destacados
-    backgrounds = Background.all.order('created_at ASC').limit('6')
+    backgrounds = Background.joins(:likes).having('count(*) > 0').group('background_id').order('count() DESC').limit('6')
     render json: {status:'SECCESS', message:'SECCESS', data:backgrounds, status: :ok}
   end
 
   def allDestacados
-    backgrounds = Background.all.order('created_at ASC')
+    backgrounds = Background.joins(:likes).having('count(*) > 0').group('background_id').order('count() DESC')
     render json: {status:'SECCESS', message:'SECCESS', data:backgrounds, status: :ok}
   end
 

@@ -1,5 +1,5 @@
 class CategoriesController < ActionController::Base
-
+  include ApplicationHelper
   before_action :find_category, only: [:show, :update, :destroy, :edit, :find_backgrounds]
 
   def index
@@ -26,31 +26,71 @@ class CategoriesController < ActionController::Base
   end
 
   def new
-    @category = Category.new
-    render layout:"form"
+    if logged_in?
+      if current_user.type == 1
+        @category = Category.new
+        render layout:"form"
+      else
+        redirect_to welcome_path
+      end
+    else
+      redirect_to welcome_path
+    end
   end
 
   def edit
-    render layout:"form"
+    if logged_in?
+      if current_user.type == 1
+        render layout:"form"
+      else
+        redirect_to welcome_path
+      end
+    else
+      redirect_to welcome_path
+    end
   end
       
   def create
-    @category = Category.create(params.require(:category).permit(:name))
-    redirect_to admin_index_path
+    if logged_in?
+      if current_user.type == 1
+        @category = Category.create(params.require(:category).permit(:name))
+        redirect_to admin_index_path
+      else
+        redirect_to welcome_path
+      end
+    else
+      redirect_to welcome_path
+    end
   end
       
   def update
-    @category.name = params[:name]
-    if @category.save
-      redirect_to admin_index_path
+    if logged_in?
+      if current_user.type == 1
+        @category.name = params[:name]
+        if @category.save
+          redirect_to admin_index_path
+        else
+          render json: {status:'ERROR', message:'Category not updated', data:@category.errors, status: :unprocessable_entity}
+        end
+      else
+        redirect_to welcome_path
+      end
     else
-      render json: {status:'ERROR', message:'Category not updated', data:@category.errors, status: :unprocessable_entity}
+      redirect_to welcome_path
     end
   end
       
   def destroy
-    @category.destroy
-    redirect_to admin_index_path
+    if logged_in?
+      if current_user.type == 1
+        @category.destroy
+        redirect_to admin_index_path
+      else
+        redirect_to welcome_path
+      end
+    else
+      redirect_to welcome_path
+    end
   end
 
   def find_backgrounds

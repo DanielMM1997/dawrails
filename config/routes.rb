@@ -1,11 +1,9 @@
 Rails.application.routes.draw do
   root 'welcome#index', as: 'welcome'
-  get 'welcome/index'
   get 'admin/index'
   post '/search', to: 'backgrounds#search'
   get '/login', to: 'session#new'
   post '/login', to: 'session#create'
-  get '/registro', to: 'session#registro'
   get '/recientes', to: 'backgrounds#recientes'
   get '/allRecientes', to: 'backgrounds#allRecientes'
   get '/showAllRecientes', to: 'categories#showAllRecientes'
@@ -16,7 +14,6 @@ Rails.application.routes.draw do
   get '/dislike/:id', to: 'backgrounds#dislike', as: 'dislike'
   post 'create_user_background', to: 'backgrounds#create_user_background'
   get '/logout' => 'users#logout'
-  get 'admin/index'
   get 'admin/createUser', to: 'admin#newUser'
   post 'create_user_admin', to: 'admin#createUser'
   

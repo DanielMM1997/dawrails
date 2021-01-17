@@ -79,7 +79,12 @@
   <script>
     var backgrounds = '<%= @backgrounds.to_json.html_safe %>';
     var own_backgrounds = '<%= @own_backgrounds.to_json.html_safe %>';
-    updateFondosPerfil(own_backgrounds, '.fondosPropios', '#pagination');
-    updateFondosPerfil(backgrounds, '.fondosFavoritos', '#pagination2');
+    if (own_backgrounds !== null){
+      updateFondosPerfil(own_backgrounds, '.fondosPropios', '#pagination');
+    }
+    if (backgrounds !== null){
+      updateFondosPerfil(backgrounds, '.fondosFavoritos', '#pagination2');
+    }
+
   </script>
 <% end %>
