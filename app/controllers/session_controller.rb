@@ -12,19 +12,24 @@ class SessionController < ActionController::Base
 
   def create
     @user = User.find_by(nickname: params[:nickname])
-    @pass = params[:password]
-    @pass = Digest::SHA256.new << @pass
-    if @pass == @user.password
-       session[:user_id] = @user.id
-       flash[:success] = 'Has iniciado sesión como ' + @user.nickname
-       if @user.type == 1
-        redirect_to admin_index_path
-       else
-        redirect_to welcome_path
-       end
-    else
+    if @user == nil
       flash[:danger] = 'Las credenciales proporcionadas no corresponden a ningún usuario.'
       redirect_to login_path
+    else
+      @pass = params[:password]
+      @pass = Digest::SHA256.new << @pass
+      if @pass == @user.password
+         session[:user_id] = @user.id
+         flash[:success] = 'Has iniciado sesión como ' + @user.nickname
+         if @user.type == 1
+          redirect_to admin_index_path
+         else
+          redirect_to welcome_path
+         end
+      else
+        flash[:danger] = 'Las credenciales proporcionadas no corresponden a ningún usuario.'
+        redirect_to login_path
+      end
     end
   end
   

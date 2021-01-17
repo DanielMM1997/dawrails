@@ -11,9 +11,11 @@
                     <%= f.label :nickname, 'Nickname' %><br>
                     <%= f.text_field :nickname, required: true, minlength: 5, maxlength: 20 %><br>
                     <%= f.label :email, 'Correo electrónico' %><br>
-                    <%= f.email_field :email, required: true, minlength: 6, maxlength: 32, pattern: "^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]{4,}@[a-zA-Z0-9-]{4,}(?:.[a-zA-Z0-9-]+)$" %><br>
+                    <%= f.email_field :email, required: true, minlength: 6, maxlength: 32, pattern: "^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]{4,}@[a-zA-Z0-9-]{4,}(?:.[a-zA-Z0-9-]+)$",
+                    title: "Ejemplo: correo781@caracteres.dominio" %><br>
                     <%= f.label :password, 'Contraseña' %><br>
-                    <%= f.password_field :password, required: true, minlength: 8, maxlength: 32, pattern: "(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,}" %><br>
+                    <%= f.password_field :password, required: true, minlength: 8, maxlength: 32, pattern: "(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,}",
+                    title: "Debes introducir mínimo un número, una mayúscula y una minúscula" %><br>
                     <%= f.hidden_field :type, value: 3 %>
                     <%= f.submit "Registrarse" %>
                 <%end%>

@@ -3,11 +3,6 @@
 <% end %>
 
 <% content_for :content do %>
-<% flash.each do |type, msg| %>
-  <div class="alert alert-info">
-    <%= msg %>
-  </div>
-<% end %>
 <article class="article col-lg-10 col-12">
   <section class="destacados">
     <div class="container-xl p-lg-3 p-0">
@@ -55,7 +50,13 @@
                   <% end %>
                 <% end %>
             </li>
-            <li>Subida por: <%= @background.author.nickname%> </li>
+            <% if @background.author != nil %>
+              <li>Subida por: <%= @background.author.nickname%> </li>
+            <% else %>
+              <li>Subida por: Sin autor </li>
+            <% end %>
+            <li>Dimensiones: <%= @width %> x <%= @heigth %> </li>
+            <li>Tipo: <%= @type %> </li>
           </ul>
         </div>
       </div>

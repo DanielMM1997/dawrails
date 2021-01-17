@@ -74,6 +74,7 @@ GEM
     concurrent-ruby (1.1.7)
     crass (1.0.6)
     erubi (1.10.0)
+    fastimage (2.2.1)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     i18n (1.8.5)
@@ -152,6 +153,7 @@ DEPENDENCIES
   active_model_serializers
   bootsnap (>= 1.4.4)
   byebug
+  fastimage
   puma (~> 5.0)
   rails (~> 6.1.0)
   sqlite3 (~> 1.4)

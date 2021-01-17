@@ -9,6 +9,11 @@ class BackgroundsController < ActionController::Base
   end
   
   def show
+    dir = "public" + @background.path
+    @dimensions = FastImage.size(Rails.root + dir)
+    @type = FastImage.type(Rails.root + dir)
+    @width = @dimensions[0]
+    @heigth = @dimensions[1]
     @categories = Category.all
     @category = @background.categories.first
     @backgrounds = @category.backgrounds
@@ -40,6 +45,9 @@ class BackgroundsController < ActionController::Base
         @bg2 = category
       end
     end 
+    if i == 0 
+      @bg1 = Category.all.first
+    end
     render layout:"form"
   end
     
@@ -110,6 +118,11 @@ class BackgroundsController < ActionController::Base
       elsif i == 2
         @bg2 = category
       end
+    end
+    @bg1 = Category.where(name: params[:categories]).first
+    if i == 0 
+      @cat = @bg1
+      BackgroundCategory.create([{ :background_id => @background.id, :category_id => @cat.id}])
     end
     if @bg1.name != params[:categories]
       aux = BackgroundCategory.where(background_id: @background.id, category_id: @bg1.id)
