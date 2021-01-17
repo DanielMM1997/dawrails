@@ -137,6 +137,8 @@ class BackgroundsController < ActionController::Base
   end
       
   def destroy
+    dir = "public" + @background.path
+    File.delete(Rails.root + dir)
     @background.destroy
     redirect_to admin_index_path
   end

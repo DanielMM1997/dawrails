@@ -15,7 +15,7 @@ class UsersController < ActionController::Base
   def show
     @categories = Category.all
     @backgrounds = @user.backgrounds
-    @own_backgrounds = @user.own_backgrounds
+    @own_backgrounds = @user.own_backgrounds.order('created_at DESC')
     render layout:"application"
   end
 
