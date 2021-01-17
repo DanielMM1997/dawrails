@@ -114,15 +114,21 @@ class BackgroundsController < ActionController::Base
     if @bg1.name != params[:categories]
       aux = BackgroundCategory.where(background_id: @background.id, category_id: @bg1.id)
       aux[0].delete
-      cat = Category.where(name: params[:categories]).first
-      BackgroundCategory.create([{ :background_id => @background.id, :category.id => cat.id}])
+      @cat = Category.where(name: params[:categories]).first
+      BackgroundCategory.create([{ :background_id => @background.id, :category_id => @cat.id}])
     end
     if @bg2 != nil and @bg2.name != params[:categories_2]
       aux = BackgroundCategory.where(background_id: @background.id, category_id: @bg2.id)
       aux[0].delete
-      cat = Category.where(name: params[:categories_2]).first
-      BackgroundCategory.create([{ :background_id => @background.id, :category.id => cat.id}])
-    end  
+      if params[:categories_2] != "No"
+        @cat = Category.where(name: params[:categories_2]).first
+        BackgroundCategory.create([{ :background_id => @background.id, :category_id => @cat.id}])
+      end
+    end
+    if @bg2 == nil and "No" != params[:categories_2]
+      @cat = Category.where(name: params[:categories_2]).first
+      BackgroundCategory.create([{ :background_id => @background.id, :category_id => @cat.id}])
+    end
     if @background.save
       redirect_to admin_index_path
     else

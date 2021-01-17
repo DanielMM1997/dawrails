@@ -12,7 +12,7 @@
                 <h1>Editar Fondo</h1>
                 <%= form_with model: @background do |f| %>
                     <%= label_tag :title, 'Nombre del fondo' %>
-                    <%= text_field_tag :title, @background.title, required: true, minlength: 4, maxlength: 16 %>
+                    <%= text_field_tag :title, @background.title, required: true, minlength: 4, maxlength: 80 %>
                     <%= label_tag :categories, 'Categoria 1' %>
                     <select id="categories" name="categories" required>
                       <% @categories.each do |category| %>
@@ -25,17 +25,21 @@
                     </select>
                     <%= label_tag :categories_2, 'Categoria 2 (Opcional)' %>
                     <select id="categories_2" name="categories_2" required>
-                      <% @categories.each do |category| %>
-                        <%if @bg2 != nil %>
+                      <% if @bg2 == nil %>
+                        <option selected="selected" value="No">No</option>
+                        <% @categories.each do |category| %>
+                        <option value="<%= category.name %>"><%= category.name %></option>
+                        <% end %>
+                        <% else %>
+                        <option value="No">No</option>
+                        <% @categories.each do |category| %>
                           <% if @bg2.name == category.name %>
                             <option selected="selected" value="<%= category.name %>"><%= category.name %></option>
                           <% else %>
                             <option value="<%= category.name %>"><%= category.name %></option>
-                          <% end %>
-                        <% else %>
-                        <option value="<%= category.name %>"><%= category.name %></option>
-                        <% end %> 
-                      <% end %>
+                          <% end %> 
+                        <% end %>
+                      <% end %>  
                     </select>
                     <%= f.hidden_field :id, value: @background.id %>
                     <%= submit_tag "Actualizar"%>

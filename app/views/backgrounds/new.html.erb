@@ -10,7 +10,7 @@
                 <%= form_for @background, url: create_user_background_path, multipart: true do |f|%>
                     <%= f.file_field :file, required: true %>
                     <%= f.label :title, 'Título' %><br>
-                    <%= f.text_field :title, required: true, minlength: 4, maxlength:16 %><br>
+                    <%= f.text_field :title, required: true, minlength: 4, maxlength:80 %><br>
                     <label for="categories">Categoría 1</label>
                     <select id="categories" name="categories" required>
                         <% @categories.each do |category| %>
