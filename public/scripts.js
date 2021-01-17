@@ -37,7 +37,7 @@ function getJSON(url) {
 }
 
 function updateImagesDestacadas() {
-  var datos = getJSON('http://localhost:3000/destacados');
+  var datos = getJSON('https://wallpapershouse.herokuapp.com/destacados');
   $.each(datos.data, function(i, background) {
     var img = '<div class="col-' + colunmSize + ' responsive p-1">' +
     '<a href="/backgrounds/' + background['id'] + '">' +
@@ -47,7 +47,7 @@ function updateImagesDestacadas() {
 }
 
 function updateImagesRecientes() {
-  var datos = getJSON('http://localhost:3000/recientes');
+  var datos = getJSON('https://wallpapershouse.herokuapp.com/recientes');
   $.each(datos.data, function(i, background) {
     var img = '<div class="col-' + colunmSize + ' responsive p-1">' +
       '<a href="/backgrounds/' + background['id'] + '">' +
@@ -57,7 +57,7 @@ function updateImagesRecientes() {
 }
 
 function updateAllImagesRecientes() {
-  var datos = getJSON('http://localhost:3000/allRecientes');
+  var datos = getJSON('https://wallpapershouse.herokuapp.com/allRecientes');
   var arrCategory = [];
   $.each(datos.data, function (i, background) {
       arrCategory.push(background);
@@ -109,7 +109,6 @@ function updateImagesCategories(category) {
     callback: function (data, pagination) {
       $('.rellenarCategorias').empty();
       $.each(data, function (i, element) {
-        //console.log(element, 'asd')
           var img = '<div class="col-' + colunmSize + ' responsive p-1">' +
             '<a href="/backgrounds/' + element['id'] + '">'  +
             '<img id="' + element['id'] + '" src="' + element['path'] + '" alt="' + element['title'] + '"></a></div>';
@@ -130,7 +129,6 @@ function updateFondosPerfil(category, div, pag) {
     callback: function (data, pagination) {
       $(div).empty();
       $.each(data, function (i, element) {
-        //console.log(element, 'asd')
           var img = '<div class="col-' + colunmSize + ' responsive p-1">' +
             '<a href="/backgrounds/' + element['id'] + '">'  +
             '<img id="' + element['id'] + '" src="' + element['path'] + '" alt="' + element['title'] + '"></a></div>';
@@ -151,7 +149,6 @@ function updateFondosPerfil_2(category, div, pag) {
     callback: function (data, pagination) {
       $(div).empty();
       $.each(data, function (i, element) {
-        //console.log(element, 'asd')
           var img = '<div class="col-' + colunmSize + ' responsive p-1">' +
             '<a href="/backgrounds/' + element['id'] + '">'  +
             '<img id="' + element['id'] + '" src="' + element['path'] + '" alt="' + element['title'] + '"></a></div>';

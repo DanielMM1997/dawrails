@@ -70,7 +70,6 @@ function getImage(id) {
 
 function updateImagesDestacadas() {
   var datos = JSON.parse(getJSON('http://localhost:3000/api/v1/backgrounds'));
-  console.log(datos)
   for (let i = 0; i < 6; i++) {
     var img = '<div class="col-' + colunmSize + ' responsive p-1">' +
       '<a href="view_image.php?id=' + datos[i]['id'] + '&category=' + datos[i]['categories'] + '">' +
