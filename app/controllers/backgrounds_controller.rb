@@ -191,12 +191,14 @@ class BackgroundsController < ActionController::Base
   end
 
   def destacados
-    backgrounds = Background.joins(:likes).having('count(*) > 0').group('background_id').order('count() DESC').limit('6')
+    #backgrounds = Background.joins(:likes).having('count(*) > 0').group('background_id').order('count() DESC').limit('6')
+    backgrounds = Background.all.order('created_at DESC').limit('6')
     render json: {status:'SECCESS', message:'SECCESS', data:backgrounds, status: :ok}
   end
 
   def allDestacados
-    backgrounds = Background.joins(:likes).having('count(*) > 0').group('background_id').order('count() DESC')
+    #backgrounds = Background.joins(:likes).having('count(*) > 0').group('background_id').order('count() DESC')
+    backgrounds = Background.all.order('created_at DESC')
     render json: {status:'SECCESS', message:'SECCESS', data:backgrounds, status: :ok}
   end
 

@@ -78,7 +78,7 @@ function updateAllImagesRecientes() {
 }
 
 function updateAllImagesDestacados() {
-  var datos = getJSON('http://localhost:3000/allDestacados');
+  var datos = getJSON('https://wallpapershouse.herokuapp.com/allDestacados');
   var arrCategory = [];
   $.each(datos.data, function (i, background) {
       arrCategory.push(background);
